@@ -6,7 +6,7 @@
 
 Решение разработано в рамках трека **inVision U** — бесплатного университета нового формата, инициированного Арсеном Томским и поддерживаемого inDrive, с кампусом в Алматы в партнёрстве с Satbayev University.
 
-Подробнее о проекте: [inVision U — Wiki](https://github.com/kamsqe/decentrathon5-ai-indrive/wiki)
+Подробнее о проекте: [inVision U — Wiki](https://github.com/kamsqe/decentrathon5-ai-indrive/wiki/inVision-U)
 
 ## Стек технологий
 

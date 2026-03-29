@@ -1,0 +1,153 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'AI-система скоринга сельскохозяйственных субсидий' } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | AgroScore</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen font-sans antialiased">
+    <div class="flex flex-col min-h-screen">
+      <!-- Header -->
+      <header class="sticky top-0 z-50 bg-navy border-b border-[#2a4a6f]" style="background: linear-gradient(135deg, #1e3a5f 0%, #0f2744 100%);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-3 group">
+              <div class="relative">
+                <div class="w-9 h-9 bg-white/10 backdrop-blur rounded-lg flex items-center justify-center border border-white/20">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#d4a436" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div class="absolute -bottom-0.5 -right-0.5 w-2 h-2 rounded-full" style="background: #0d9488;"></div>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-white text-lg leading-tight">AgroScore</span>
+                <span class="text-[10px] text-white/50 font-medium tracking-wider uppercase">Kazakhstan</span>
+              </div>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center gap-1">
+              <a href="/" class={`text-sm font-medium px-4 py-2 rounded-lg transition-all ${currentPath === '/' ? 'text-white bg-white/10' : 'text-white/70 hover:text-white hover:bg-white/5'}`}>
+                Главная
+              </a>
+              <a href="/simulator" class={`text-sm font-medium px-4 py-2 rounded-lg transition-all ${currentPath === '/simulator' ? 'text-white bg-white/10' : 'text-white/70 hover:text-white hover:bg-white/5'}`}>
+                Симулятор
+              </a>
+              <a href="/dashboard" class={`text-sm font-medium px-4 py-2 rounded-lg transition-all ${currentPath === '/dashboard' ? 'text-white bg-white/10' : 'text-white/70 hover:text-white hover:bg-white/5'}`}>
+                Дашборд
+              </a>
+              <a href="/precheck" class="ml-2 text-sm font-semibold px-5 py-2 rounded-lg transition-all text-[#0f2744] hover:opacity-90" style="background: #d4a436;">
+                Pre-Check
+              </a>
+            </nav>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden p-2 text-white/70 hover:text-white" aria-label="Menu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Main content -->
+      <main class="flex-1 bg-[#fafaf9]">
+        <slot />
+      </main>
+      
+      <!-- Footer -->
+      <footer class="mt-auto" style="background: linear-gradient(135deg, #0f2744 0%, #1e3a5f 100%);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div class="grid md:grid-cols-3 gap-8 pb-8 border-b border-white/10">
+            <!-- Brand -->
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-white/10 backdrop-blur rounded-lg flex items-center justify-center border border-white/20">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#d4a436" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-bold text-white text-lg">AgroScore</div>
+                  <div class="text-xs text-white/50">Merit-based Subsidy Scoring</div>
+                </div>
+              </div>
+              <p class="text-sm text-white/60 leading-relaxed">
+                AI-система для справедливого и прозрачного распределения сельскохозяйственных субсидий в Казахстане.
+              </p>
+            </div>
+            
+            <!-- Links -->
+            <div>
+              <h4 class="font-semibold mb-4" style="color: #fff !important;">Навигация</h4>
+              <ul class="space-y-2">
+                <li><a href="/" class="text-sm text-white/60 hover:text-white transition-colors">Главная</a></li>
+                <li><a href="/simulator" class="text-sm text-white/60 hover:text-white transition-colors">What-If Симулятор</a></li>
+                <li><a href="/dashboard" class="text-sm text-white/60 hover:text-white transition-colors">Scoring Dashboard</a></li>
+                <li><a href="/precheck" class="text-sm text-white/60 hover:text-white transition-colors">Pre-Check заявки</a></li>
+              </ul>
+            </div>
+            
+            <!-- Info -->
+            <div>
+              <h4 class="font-semibold mb-4" style="color: #fff !important;">О проекте</h4>
+              <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                  <div class="w-2 h-2 rounded-full" style="background: #0d9488;"></div>
+                  <span class="text-sm text-white/60">Decentrathon 5.0</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-2 h-2 rounded-full" style="background: #d4a436;"></div>
+                  <span class="text-sm text-white/60">AI inDrive Track</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-2 h-2 rounded-full" style="background: #627d98;"></div>
+                  <span class="text-sm text-white/60">Case 2: Agricultural Subsidies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Copyright -->
+          <div class="pt-6 text-center">
+            <p class="text-sm text-white/40">
+              © 2026 AgroScore. Все права защищены.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+</style>

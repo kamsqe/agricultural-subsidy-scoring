@@ -1,0 +1,364 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Дашборд">
+  <div class="py-10 lg:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header - Premium -->
+      <div class="mb-10 animate-fade-in-up">
+        <div class="inline-flex items-center gap-2 rounded-full px-5 py-2 mb-4" style="background: linear-gradient(135deg, rgba(30, 58, 95, 0.1) 0%, rgba(30, 58, 95, 0.05) 100%); border: 1px solid rgba(30, 58, 95, 0.15);">
+          <span class="w-2 h-2 rounded-full animate-pulse" style="background: #0d9488;"></span>
+          <span class="text-sm font-semibold" style="color: #1e3a5f;">Аналитика в реальном времени</span>
+        </div>
+        <h1 class="text-4xl lg:text-5xl font-extrabold mb-3" style="color: #1e3a5f;">
+          Scoring Dashboard
+        </h1>
+        <p class="text-lg" style="color: #627d98;">
+          Обзор распределения субсидий и Impact Score по регионам Казахстана
+        </p>
+      </div>
+      
+      <!-- Stats Grid - 3D Cards with Glows -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div class="card-3d group p-6 hover:shadow-glow-navy-strong" style="border-top: 4px solid #1e3a5f;">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 icon-container icon-float" style="background: linear-gradient(135deg, rgba(30, 58, 95, 0.15) 0%, rgba(30, 58, 95, 0.05) 100%);">
+            <svg class="w-7 h-7 text-navy-700 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <div class="stat-dramatic gradient-text-navy">36,651</div>
+          <div class="text-sm font-semibold mt-2" style="color: #627d98;">Всего заявок</div>
+        </div>
+        
+        <div class="card-3d group p-6 hover:shadow-glow-teal-strong" style="border-top: 4px solid #0d9488;">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 icon-container icon-float" style="background: linear-gradient(135deg, rgba(13, 148, 136, 0.15) 0%, rgba(13, 148, 136, 0.05) 100%); animation-delay: 0.3s;">
+            <svg class="w-7 h-7 text-teal-600 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div class="stat-dramatic gradient-text-teal">33,742</div>
+          <div class="text-sm font-semibold mt-2" style="color: #627d98;">Одобрено</div>
+          <div class="flex items-center gap-1.5 mt-3 px-3 py-1.5 rounded-full inline-flex" style="background: rgba(13, 148, 136, 0.1);">
+            <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+            <span class="text-sm font-bold text-teal-700">92.1%</span>
+          </div>
+        </div>
+        
+        <div class="card-3d group p-6 hover:shadow-glow-red-strong" style="border-top: 4px solid #dc2626;">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 icon-container icon-float" style="background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(220, 38, 38, 0.05) 100%); animation-delay: 0.6s;">
+            <svg class="w-7 h-7 text-red-600 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div class="stat-dramatic" style="color: #dc2626;">2,909</div>
+          <div class="text-sm font-semibold mt-2" style="color: #627d98;">Отклонено</div>
+          <div class="flex items-center gap-1.5 mt-3 px-3 py-1.5 rounded-full inline-flex" style="background: rgba(220, 38, 38, 0.1);">
+            <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+            <span class="text-sm font-bold text-red-700">7.9%</span>
+          </div>
+        </div>
+        
+        <div class="card-3d group p-6 hover:shadow-glow-gold-strong" style="border-top: 4px solid #d4a436;">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 icon-container icon-float" style="background: linear-gradient(135deg, rgba(212, 164, 54, 0.15) 0%, rgba(212, 164, 54, 0.05) 100%); animation-delay: 0.9s;">
+            <svg class="w-7 h-7 text-amber-600 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div class="stat-dramatic gradient-text-gold">66</div>
+          <div class="text-sm font-semibold mt-2" style="color: #627d98;">млрд ₸ бюджет</div>
+        </div>
+      </div>
+      
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Map Section - WOW FACTOR with Scan Line -->
+        <div class="lg:col-span-2">
+          <div class="card-3d rounded-3xl p-8 overflow-hidden" style="border-top: 5px solid #1e3a5f;">
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-2xl font-bold" style="color: #1e3a5f;">Карта Казахстана</h2>
+              <span class="px-4 py-2 rounded-full text-xs font-bold" style="background: linear-gradient(135deg, rgba(212, 164, 54, 0.2) 0%, rgba(212, 164, 54, 0.1) 100%); color: #a16207; border: 1px solid rgba(212, 164, 54, 0.3); animation: glow-pulse-gold 3s ease-in-out infinite;">
+                Coming Soon
+              </span>
+            </div>
+            <div class="aspect-[16/10] rounded-2xl flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(135deg, #1e3a5f 0%, #0f2744 100%);">
+              <!-- Animated scan line -->
+              <div class="scan-line"></div>
+              
+              <!-- Grid pattern overlay -->
+              <div class="absolute inset-0 opacity-10 bg-grid-pattern"></div>
+              
+              <!-- Floating orbs -->
+              <div class="orb orb-teal w-32 h-32 top-10 left-10" style="opacity: 0.2;"></div>
+              <div class="orb orb-gold w-40 h-40 bottom-10 right-10" style="opacity: 0.15; animation-delay: 1.5s;"></div>
+              
+              <!-- Center content -->
+              <div class="relative z-10 text-center p-8">
+                <div class="w-24 h-24 mx-auto mb-6 rounded-2xl flex items-center justify-center icon-float" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.15);">
+                  <svg class="w-12 h-12 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                </div>
+                <p class="text-xl font-bold text-white text-glow mb-2">Интерактивная SVG карта</p>
+                <p class="text-sm text-white/60">Визуализация распределения по 17 областям с D3.js</p>
+              </div>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-6 text-sm">
+              <div class="flex items-center gap-2">
+                <div class="w-4 h-4 rounded-md" style="background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);"></div>
+                <span style="color: #627d98;">Высокий Score (80+)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-4 h-4 rounded-md" style="background: linear-gradient(135deg, #1e3a5f 0%, #334e68 100%);"></div>
+                <span style="color: #627d98;">Средний (60-80)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-4 h-4 rounded-md" style="background: linear-gradient(135deg, #d4a436 0%, #facc15 100%);"></div>
+                <span style="color: #627d98;">Ниже среднего (40-60)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-4 h-4 rounded-md" style="background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);"></div>
+                <span style="color: #627d98;">Низкий (&lt;40)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Sidebar Stats - Enhanced with hover glows -->
+        <div class="space-y-6">
+          <!-- Top Regions -->
+          <div class="card-3d rounded-3xl p-6" style="border-top: 4px solid #0d9488;">
+            <h2 class="text-xl font-bold mb-6" style="color: #1e3a5f;">Топ областей по бюджету</h2>
+            <div class="space-y-5">
+              <div class="flex items-center gap-3 group p-3 -mx-3 rounded-xl hover:bg-teal-50/50 transition-colors cursor-default">
+                <span class="rank-medal rank-1" style="animation: glow-pulse-gold 3s ease-in-out infinite;">1</span>
+                <div class="flex-1">
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-sm font-semibold" style="color: #1e3a5f;">Алматинская</span>
+                    <span class="text-sm font-bold gradient-text-teal">12.4 млрд ₸</span>
+                  </div>
+                  <div class="progress-bar progress-bar-teal h-3">
+                    <div class="progress-bar-fill" style="width: 100%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 group p-3 -mx-3 rounded-xl hover:bg-gray-50 transition-colors cursor-default">
+                <span class="rank-medal rank-2">2</span>
+                <div class="flex-1">
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-sm font-semibold" style="color: #1e3a5f;">Туркестанская</span>
+                    <span class="text-sm font-bold" style="color: #1e3a5f;">9.8 млрд ₸</span>
+                  </div>
+                  <div class="progress-bar progress-bar-navy h-3">
+                    <div class="progress-bar-fill" style="width: 79%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 group p-3 -mx-3 rounded-xl hover:bg-gray-50 transition-colors cursor-default">
+                <span class="rank-medal rank-3">3</span>
+                <div class="flex-1">
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-sm font-semibold" style="color: #1e3a5f;">ВКО</span>
+                    <span class="text-sm font-bold" style="color: #1e3a5f;">7.2 млрд ₸</span>
+                  </div>
+                  <div class="progress-bar progress-bar-navy h-3">
+                    <div class="progress-bar-fill" style="width: 58%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold" style="background: #f5f5f4; color: #627d98;">4</span>
+                <div class="flex-1">
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="text-sm font-medium" style="color: #1e3a5f;">Жамбылская</span>
+                    <span class="text-sm font-bold" style="color: #627d98;">6.5 млрд ₸</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 52%; background: #e7e5e4;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold" style="background: #f5f5f4; color: #627d98;">5</span>
+                <div class="flex-1">
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="text-sm font-medium" style="color: #1e3a5f;">Акмолинская</span>
+                    <span class="text-sm font-bold" style="color: #627d98;">5.9 млрд ₸</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 48%; background: #e7e5e4;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Score Distribution - Enhanced -->
+          <div class="card-3d rounded-3xl p-6" style="border-top: 4px solid #d4a436;">
+            <h2 class="text-xl font-bold mb-6" style="color: #1e3a5f;">Распределение Score</h2>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-medium" style="color: #0f766e;">80-100 (высокий)</span>
+                  <span class="font-bold" style="color: #0d9488;">15%</span>
+                </div>
+                <div class="progress-bar progress-bar-teal">
+                  <div class="progress-bar-fill" style="width: 15%;"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-medium" style="color: #334e68;">60-80 (средний)</span>
+                  <span class="font-bold" style="color: #1e3a5f;">35%</span>
+                </div>
+                <div class="progress-bar progress-bar-navy">
+                  <div class="progress-bar-fill" style="width: 35%;"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-medium" style="color: #a16207;">40-60 (ниже среднего)</span>
+                  <span class="font-bold" style="color: #d4a436;">32%</span>
+                </div>
+                <div class="progress-bar progress-bar-gold">
+                  <div class="progress-bar-fill" style="width: 32%;"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <span class="font-medium" style="color: #991b1b;">0-40 (низкий)</span>
+                  <span class="font-bold" style="color: #dc2626;">18%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar-fill" style="width: 18%; background: linear-gradient(90deg, #dc2626, #ef4444);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Table Section - WOW FACTOR -->
+      <div class="mt-10 card-3d rounded-3xl p-8" style="border-top: 5px solid #1e3a5f;">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <div>
+            <h2 class="text-xl font-bold" style="color: #1e3a5f;">Топ заявок по Impact Score</h2>
+            <p class="text-sm mt-1" style="color: #627d98;">Ранжирование заявок по прогнозируемому эффекту</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <select class="select-premium text-sm" style="padding: 0.5rem 2.5rem 0.5rem 1rem;">
+              <option>Все области</option>
+              <option>Алматинская</option>
+              <option>Туркестанская</option>
+              <option>ВКО</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="overflow-x-auto rounded-2xl" style="border: 1px solid rgba(0,0,0,0.05);">
+          <table class="table-premium">
+            <thead>
+              <tr>
+                <th>Ранг</th>
+                <th>Область</th>
+                <th>Тип субсидии</th>
+                <th class="text-right">Сумма</th>
+                <th class="text-right">Score</th>
+                <th class="text-center">Статус</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="rank-medal rank-1">1</span></td>
+                <td class="font-medium" style="color: #1e3a5f;">Алматинская</td>
+                <td>Покупка КРС</td>
+                <td class="text-right font-semibold" style="color: #1e3a5f;">2.5 млн ₸</td>
+                <td class="text-right"><span class="score-pill score-pill-high">94.2</span></td>
+                <td class="text-center">
+                  <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold" style="background: linear-gradient(135deg, rgba(13, 148, 136, 0.15) 0%, rgba(13, 148, 136, 0.05) 100%); color: #0d9488;">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    Одобрено
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="rank-medal rank-2">2</span></td>
+                <td class="font-medium" style="color: #1e3a5f;">Туркестанская</td>
+                <td>Племенное</td>
+                <td class="text-right font-semibold" style="color: #1e3a5f;">1.8 млн ₸</td>
+                <td class="text-right"><span class="score-pill score-pill-high">91.8</span></td>
+                <td class="text-center">
+                  <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold" style="background: linear-gradient(135deg, rgba(13, 148, 136, 0.15) 0%, rgba(13, 148, 136, 0.05) 100%); color: #0d9488;">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    Одобрено
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="rank-medal rank-3">3</span></td>
+                <td class="font-medium" style="color: #1e3a5f;">ВКО</td>
+                <td>Молоко</td>
+                <td class="text-right font-semibold" style="color: #1e3a5f;">3.2 млн ₸</td>
+                <td class="text-right"><span class="score-pill score-pill-high">89.5</span></td>
+                <td class="text-center">
+                  <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold" style="background: linear-gradient(135deg, rgba(13, 148, 136, 0.15) 0%, rgba(13, 148, 136, 0.05) 100%); color: #0d9488;">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    Одобрено
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="w-7 h-7 inline-flex items-center justify-center rounded-full text-xs font-bold" style="background: #f5f5f4; color: #627d98;">4</span></td>
+                <td class="font-medium" style="color: #1e3a5f;">Жамбылская</td>
+                <td>Покупка КРС</td>
+                <td class="text-right font-semibold" style="color: #1e3a5f;">1.5 млн ₸</td>
+                <td class="text-right"><span class="score-pill score-pill-high">87.3</span></td>
+                <td class="text-center">
+                  <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold" style="background: linear-gradient(135deg, rgba(13, 148, 136, 0.15) 0%, rgba(13, 148, 136, 0.05) 100%); color: #0d9488;">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    Одобрено
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="w-7 h-7 inline-flex items-center justify-center rounded-full text-xs font-bold" style="background: #f5f5f4; color: #627d98;">5</span></td>
+                <td class="font-medium" style="color: #1e3a5f;">Акмолинская</td>
+                <td>Племенное</td>
+                <td class="text-right font-semibold" style="color: #1e3a5f;">2.1 млн ₸</td>
+                <td class="text-right"><span class="score-pill score-pill-mid">85.1</span></td>
+                <td class="text-center">
+                  <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold" style="background: linear-gradient(135deg, rgba(13, 148, 136, 0.15) 0%, rgba(13, 148, 136, 0.05) 100%); color: #0d9488;">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    Одобрено
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="mt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <span class="text-sm font-medium" style="color: #627d98;">Показано 5 из 500 заявок</span>
+          <div class="flex items-center gap-2">
+            <button class="btn-premium btn-premium-navy px-4 py-2 text-sm opacity-50" disabled>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Назад
+            </button>
+            <button class="btn-premium btn-premium-teal px-4 py-2 text-sm">
+              Далее
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

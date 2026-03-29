@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  label?: string;
+  background?: 'white' | 'stone' | 'wheat' | 'navy';
+  id?: string;
+}
+
+const { title, subtitle, label, background = 'stone', id } = Astro.props;
+
+const bgStyles: Record<string, string> = {
+  white: 'background: #ffffff;',
+  stone: 'background: #fafaf9;',
+  wheat: 'background: linear-gradient(180deg, #f5e6c8 0%, #fdfcfb 100%);',
+  navy: 'background: linear-gradient(135deg, #1e3a5f 0%, #0f2744 100%); color: white;'
+};
+---
+
+<section id={id} class="py-16 lg:py-24" style={bgStyles[background]}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      {label && (
+        <h2 class="text-sm font-semibold uppercase tracking-wider mb-2" style={background === 'navy' ? 'color: #d4a436;' : 'color: #0d9488;'}>
+          {label}
+        </h2>
+      )}
+      <p class="text-3xl md:text-4xl font-bold" style={background === 'navy' ? 'color: white;' : 'color: #1e3a5f;'}>
+        {title}
+      </p>
+      {subtitle && (
+        <p class="text-lg mt-3 max-w-2xl mx-auto" style={background === 'navy' ? 'color: rgba(255,255,255,0.7);' : 'color: #627d98;'}>
+          {subtitle}
+        </p>
+      )}
+    </div>
+    
+    <!-- Section Content -->
+    <slot />
+  </div>
+</section>

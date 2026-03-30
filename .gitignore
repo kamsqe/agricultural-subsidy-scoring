@@ -1,0 +1,9 @@
+# Temporary v2 development
+agroscore-v2/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/

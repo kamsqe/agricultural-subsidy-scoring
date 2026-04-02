@@ -240,10 +240,13 @@ def score_fraud_risk(app: dict) -> float:
     
     Factors:
     1. Round number flag
-    2. Weekend submission
-    3. Extreme outlier amount
-    4. High retry velocity
-    5. District monopolization
+    2. Extreme outlier amount
+    3. High retry velocity
+    4. District monopolization
+    5. Late-night submission
+    
+    NOTE: Weekend submission removed — data shows +0.2pp reject rate
+    delta (8.1% weekend vs 7.9% weekday), which is noise.
     """
     risk = 0
     
@@ -252,10 +255,6 @@ def score_fraud_risk(app: dict) -> float:
         risk += 15
     elif int(app.get("is_round_100k", 0)):
         risk += 5
-    
-    # Weekend submission (max 8)
-    if int(app.get("is_weekend", 0)):
-        risk += 8
     
     # Extreme volume outlier (max 25)
     ratio = float(app.get("amount_vs_median", 1))
@@ -306,6 +305,38 @@ BASE_WEIGHT = 0.10
 BASE_SCORE = 50
 
 
+def score_exception_points(app: dict):
+    """
+    Exception Points [0-15]: Bonus for special circumstances.
+    Inspired by UNOS exception points and research recommendations.
+    
+    Returns (points, list of reason strings).
+    """
+    points = 0
+    reasons = []
+    
+    # First-time applicant bonus (+5)
+    retry = int(app.get("retry_count", 0))
+    if retry == 0:
+        points += 5
+        reasons.append("first_time_applicant")
+    
+    # High-need oblast bonus (+5) — oblast with budget backlog > 30%
+    backlog = float(app.get("oblast_backlog_ratio", 0))
+    if backlog > 0.30:
+        points += 5
+        reasons.append("high_need_oblast")
+    
+    # Small farmer in monopolized district (+5)
+    amount = float(app.get("amount", 0))
+    top1 = float(app.get("district_top1_share", 0))
+    if amount < 5_000_000 and top1 > 0.4:
+        points += 5
+        reasons.append("small_farmer_monopoly_district")
+    
+    return min(points, 15), reasons
+
+
 def calculate_impact_score(app: dict) -> dict:
     """Calculate the full Impact Score with all components."""
     
@@ -314,6 +345,7 @@ def calculate_impact_score(app: dict) -> dict:
     need = score_regional_need(app)
     efficiency = score_efficiency(app)
     fraud = score_fraud_risk(app)
+    exception, exception_reasons = score_exception_points(app)
     
     base = (
         WEIGHTS["strategic"] * strategic +
@@ -324,17 +356,31 @@ def calculate_impact_score(app: dict) -> dict:
     )
     
     penalty = WEIGHTS["fraud_penalty"] * fraud
-    final = max(0, round(base - penalty, 1))
+    # Exception points added directly (max 15, capped at 100 total)
+    final = min(100, max(0, round(base - penalty + exception, 1)))
+    
+    # Triage band: A=critical(score<40), B=high(40-55), C=standard(55-65), D=low(65+)
+    if final < 40:
+        triage = "D"
+    elif final < 55:
+        triage = "C"
+    elif final < 65:
+        triage = "B"
+    else:
+        triage = "A"
     
     return {
         "score": final,
+        "triage": triage,
         "components": {
             "strategic": round(strategic, 1),
             "fairness": round(fairness, 1),
             "need": round(need, 1),
             "efficiency": round(efficiency, 1),
             "fraud_risk": round(fraud, 1),
+            "exception": round(exception, 1),
         },
+        "exception_reasons": exception_reasons,
         "flags": {
             "high_fraud_risk": fraud > 50,
             "requires_audit": fraud > 70,
@@ -498,6 +544,15 @@ def compute_summary(scored):
     
     current_gini = gini(list(district_amounts_fifo.values()))
     
+    # Triage distribution
+    triage_dist = Counter(s["triage"] for s in scored)
+    
+    # Exception points distribution
+    exception_dist = Counter()
+    for s in scored:
+        for reason in s.get("exception_reasons", []):
+            exception_dist[reason] += 1
+    
     summary = {
         "total_applications": total,
         "total_amount_billion": round(sum(s["amount"] for s in scored) / 1e9, 1),
@@ -543,6 +598,8 @@ def compute_summary(scored):
             "avg_score_first": round(sum(s["score"] for s in scored if not s["is_retry"]) / max(sum(1 for s in scored if not s["is_retry"]), 1), 1),
             "avg_score_retry": round(sum(s["score"] for s in scored if s["is_retry"]) / max(sum(1 for s in scored if s["is_retry"]), 1), 1),
         },
+        "triage_distribution": dict(triage_dist),
+        "exception_points": dict(exception_dist),
     }
     
     return summary
@@ -553,22 +610,116 @@ def save_results(scored, summary):
     
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
-    # Full scored applications (for frontend table)
+    # Full scored applications (for analysis)
     scored_path = os.path.join(OUTPUT_DIR, "scored_applications.json")
     with open(scored_path, "w", encoding="utf-8") as f:
         json.dump(scored, f, ensure_ascii=False, indent=None)
     print(f"\nSaved: {scored_path} ({os.path.getsize(scored_path)/1e6:.1f} MB)")
-    
-    # Top 100 for quick preview
-    top100_path = os.path.join(OUTPUT_DIR, "top100.json")
-    with open(top100_path, "w", encoding="utf-8") as f:
-        json.dump(scored[:100], f, ensure_ascii=False, indent=2)
     
     # Summary for dashboard
     summary_path = os.path.join(OUTPUT_DIR, "scoring_summary.json")
     with open(summary_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
     print(f"Saved: {summary_path}")
+    
+    # === FRONTEND DATA FILES ===
+    frontend_dir = os.path.join(os.path.dirname(OUTPUT_DIR), "..", "agroscore", "public", "data")
+    os.makedirs(frontend_dir, exist_ok=True)
+    
+    # Copy summary
+    import shutil
+    shutil.copy2(summary_path, os.path.join(frontend_dir, "scoring_summary.json"))
+    
+    # Lightweight all-apps JSON for frontend table (compact keys)
+    all_apps = []
+    for s in scored:
+        c = s["components"]
+        all_apps.append({
+            "r": s["rank"],
+            "s": s["score"],
+            "p": s["percentile"],
+            "t": s["triage"],
+            "sc": c["strategic"],
+            "fc": c["fairness"],
+            "nc": c["need"],
+            "ec": c["efficiency"],
+            "fr": c["fraud_risk"],
+            "ex": c.get("exception", 0),
+            "o": s["oblast"],
+            "d": s["district"],
+            "amt": s["amount"],
+            "st": s["status"],
+            "retry": s["retry_count"],
+            "cat": s["category"],
+            "code": s["subsidy_code"],
+            "vol": s["volume"],
+            "date": s["submit_date"][:10] if s["submit_date"] else "",
+        })
+    
+    apps_path = os.path.join(frontend_dir, "all_apps.json")
+    with open(apps_path, "w", encoding="utf-8") as f:
+        json.dump(all_apps, f, ensure_ascii=False, indent=None)
+    print(f"Saved: {apps_path} ({os.path.getsize(apps_path)/1e6:.1f} MB)")
+    
+    # District aggregates for PreCheck (district → {reject_rate, top1_share, avg_score, count})
+    district_agg = {}
+    from collections import defaultdict as dd
+    d_data = dd(lambda: {"scores": [], "amounts": [], "count": 0, "rejected": 0})
+    for s in scored:
+        dk = s["district"]
+        d_data[dk]["scores"].append(s["score"])
+        d_data[dk]["amounts"].append(s["amount"])
+        d_data[dk]["count"] += 1
+        if s["status"] == "Отклонена":
+            d_data[dk]["rejected"] += 1
+    
+    for dk, dd_val in d_data.items():
+        total_amt = sum(dd_val["amounts"])
+        max_amt = max(dd_val["amounts"]) if dd_val["amounts"] else 0
+        district_agg[dk] = {
+            "count": dd_val["count"],
+            "avg_score": round(sum(dd_val["scores"]) / len(dd_val["scores"]), 1),
+            "reject_rate": round(dd_val["rejected"] / dd_val["count"], 3) if dd_val["count"] > 0 else 0,
+            "top1_share": round(max_amt / total_amt, 3) if total_amt > 0 else 0,
+            "median_amount": round(sorted(dd_val["amounts"])[len(dd_val["amounts"]) // 2]),
+        }
+    
+    districts_path = os.path.join(frontend_dir, "districts.json")
+    with open(districts_path, "w", encoding="utf-8") as f:
+        json.dump(district_agg, f, ensure_ascii=False, indent=None)
+    print(f"Saved: {districts_path} ({os.path.getsize(districts_path)/1e3:.0f} KB)")
+    
+    # Oblast→districts mapping for PreCheck form
+    oblast_districts = dd(set)
+    for s in scored:
+        oblast_districts[s["oblast"]].add(s["district"])
+    mapping = {o: sorted(list(ds)) for o, ds in oblast_districts.items()}
+    mapping_path = os.path.join(frontend_dir, "oblast_districts.json")
+    with open(mapping_path, "w", encoding="utf-8") as f:
+        json.dump(mapping, f, ensure_ascii=False, indent=None)
+    print(f"Saved: {mapping_path}")
+    
+    # Subsidy codes for PreCheck form
+    code_data = dd(lambda: {"name": "", "count": 0, "avg_amount": 0, "amounts": []})
+    for s in scored:
+        ck = s["subsidy_code"]
+        code_data[ck]["name"] = s["subsidy_name"][:80] if s["subsidy_name"] else ck
+        code_data[ck]["count"] += 1
+        code_data[ck]["amounts"].append(s["amount"])
+    
+    codes = {}
+    for ck, cv in code_data.items():
+        codes[ck] = {
+            "name": cv["name"],
+            "count": cv["count"],
+            "avg_amount": round(sum(cv["amounts"]) / len(cv["amounts"])),
+            "median_amount": round(sorted(cv["amounts"])[len(cv["amounts"]) // 2]),
+        }
+    
+    codes_path = os.path.join(frontend_dir, "subsidy_codes.json")
+    with open(codes_path, "w", encoding="utf-8") as f:
+        json.dump(codes, f, ensure_ascii=False, indent=2)
+    print(f"Saved: {codes_path}")
     
     return scored_path, summary_path
 

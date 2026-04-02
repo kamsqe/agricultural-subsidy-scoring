@@ -18,6 +18,13 @@ docs/_archive/
 data/processed/enriched_applications.csv
 data/processed/scored_applications.json
 
+# Environment
+.env
+.env.*
+
+# Large frontend data (regenerate with pipeline/score.py)
+agroscore/public/data/all_apps.json
+
 # Node
 node_modules/
 agroscore/node_modules/

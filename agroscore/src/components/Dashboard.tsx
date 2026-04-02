@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Simulator from './Simulator';
 import PreCheck from './PreCheck';
+import AppTable from './AppTable';
+import AiAssistant from './AiAssistant';
 
 interface Summary {
   total_applications: number;
@@ -19,6 +21,8 @@ interface Summary {
   };
   gini: { current_district_gini: number };
   retry_analysis: { total_retries: number; retry_pct: number; avg_score_first: number; avg_score_retry: number };
+  triage_distribution?: Record<string, number>;
+  exception_points?: Record<string, number>;
 }
 
 interface AppRow {
@@ -72,13 +76,15 @@ function ScoreHistogram({ distribution }: { distribution: Record<string, number>
   const entries = Object.entries(distribution).map(([k, v]) => ({ bucket: parseInt(k), count: v })).sort((a, b) => a.bucket - b.bucket);
   const maxCount = Math.max(...entries.map(e => e.count));
 
+  const BAR_MAX_PX = 120;
   return (
-    <div className="flex items-end gap-1 h-32">
+    <div className="flex items-end gap-1" style={{ height: `${BAR_MAX_PX + 20}px` }}>
       {entries.map(({ bucket, count }) => (
-        <div key={bucket} className="flex-1 flex flex-col items-center gap-1">
+        <div key={bucket} className="flex-1 flex flex-col items-end justify-end gap-1">
+          <div className="text-[9px] text-slate-400 font-mono">{count.toLocaleString()}</div>
           <div
             className="w-full bg-emerald-500/80 rounded-t transition-all hover:bg-emerald-400"
-            style={{ height: `${(count / maxCount) * 100}%` }}
+            style={{ height: `${Math.max(2, (count / maxCount) * BAR_MAX_PX)}px` }}
             title={`${bucket}-${bucket + 9}: ${count.toLocaleString()}`}
           />
           <span className="text-[10px] text-slate-500">{bucket}</span>
@@ -212,20 +218,11 @@ function ApplicationTable({ apps, title }: { apps: AppRow[]; title: string }) {
 
 export default function Dashboard() {
   const [summary, setSummary] = useState<Summary | null>(null);
-  const [topApps, setTopApps] = useState<AppRow[]>([]);
-  const [bottomApps, setBottomApps] = useState<AppRow[]>([]);
-  const [tab, setTab] = useState<'top' | 'bottom'>('top');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Promise.all([
-      fetch('/data/scoring_summary.json').then(r => r.json()),
-      fetch('/data/top500.json').then(r => r.json()),
-      fetch('/data/bottom500.json').then(r => r.json()),
-    ]).then(([sum, top, bottom]) => {
+    fetch('/data/scoring_summary.json').then(r => r.json()).then(sum => {
       setSummary(sum);
-      setTopApps(top);
-      setBottomApps(bottom);
       setLoading(false);
     });
   }, []);
@@ -325,33 +322,44 @@ export default function Dashboard() {
         <OblastTable by_oblast={summary.by_oblast} />
       </div>
 
-      {/* Applications Table */}
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
-        <div className="flex items-center gap-4 mb-4">
-          <h3 className="text-lg font-semibold">Заявки</h3>
-          <div className="flex gap-1 bg-slate-800 rounded-lg p-0.5">
-            <button
-              onClick={() => setTab('top')}
-              className={`px-3 py-1 rounded-md text-sm transition ${tab === 'top' ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'}`}
-            >
-              Топ-500
-            </button>
-            <button
-              onClick={() => setTab('bottom')}
-              className={`px-3 py-1 rounded-md text-sm transition ${tab === 'bottom' ? 'bg-red-600 text-white' : 'text-slate-400 hover:text-white'}`}
-            >
-              Низ-500
-            </button>
+      {/* Triage Distribution */}
+      {summary.triage_distribution && (
+        <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
+          <h3 className="text-lg font-semibold mb-4">Triage — Приоритизация заявок</h3>
+          <div className="grid grid-cols-4 gap-4">
+            {[
+              { key: 'A', label: 'Высокий', color: 'text-emerald-400 border-emerald-500/30 bg-emerald-500/5' },
+              { key: 'B', label: 'Стандартный', color: 'text-sky-400 border-sky-500/30 bg-sky-500/5' },
+              { key: 'C', label: 'Низкий', color: 'text-amber-400 border-amber-500/30 bg-amber-500/5' },
+              { key: 'D', label: 'Отклонение', color: 'text-red-400 border-red-500/30 bg-red-500/5' },
+            ].map(t => {
+              const count = summary.triage_distribution?.[t.key] || 0;
+              const pct = ((count / summary.total_applications) * 100).toFixed(1);
+              return (
+                <div key={t.key} className={`border rounded-xl p-4 text-center ${t.color}`}>
+                  <div className="text-3xl font-bold">{t.key}</div>
+                  <div className="text-sm font-medium mt-1">{t.label}</div>
+                  <div className="text-2xl font-bold mt-2">{count.toLocaleString()}</div>
+                  <div className="text-xs opacity-60">{pct}%</div>
+                </div>
+              );
+            })}
           </div>
-          <div className="text-xs text-slate-500 ml-auto">
-            S=Strategic F=Fairness N=Need E=Efficiency FR=Fraud
-          </div>
+          {summary.exception_points && Object.keys(summary.exception_points).length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-3">
+              <span className="text-xs text-slate-500">Exception Points:</span>
+              {Object.entries(summary.exception_points).map(([reason, count]) => (
+                <span key={reason} className="text-xs bg-yellow-500/10 text-yellow-400 px-2 py-1 rounded">
+                  {reason.replace(/_/g, ' ')}: {(count as number).toLocaleString()}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
-        <ApplicationTable
-          apps={tab === 'top' ? topApps : bottomApps}
-          title={tab === 'top' ? 'Топ-500 по баллам' : 'Низшие 500 по баллам'}
-        />
-      </div>
+      )}
+
+      {/* Full Applications Table */}
+      <AppTable />
 
       {/* Pre-Check */}
       <PreCheck />
@@ -359,13 +367,14 @@ export default function Dashboard() {
       {/* Methodology */}
       <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8 mt-8">
         <h3 className="text-lg font-semibold mb-4">Методология Impact Score</h3>
-        <div className="grid md:grid-cols-5 gap-4 text-center">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-4 text-center">
           {[
             { name: 'Strategic', weight: '20%', desc: 'Соответствие приоритетам АПК', color: 'text-sky-400' },
             { name: 'Fairness', weight: '20%', desc: 'Справедливость распределения', color: 'text-violet-400' },
             { name: 'Need', weight: '20%', desc: 'Региональная потребность', color: 'text-amber-400' },
             { name: 'Efficiency', weight: '20%', desc: 'Потенциал эффективности', color: 'text-emerald-400' },
             { name: 'Fraud', weight: '-10%', desc: 'Штраф за аномалии', color: 'text-red-400' },
+            { name: 'Exception', weight: '+0-15', desc: 'Бонус за особые обстоятельства', color: 'text-yellow-400' },
           ].map((c) => (
             <div key={c.name} className="bg-slate-800/50 rounded-lg p-3">
               <div className={`font-bold text-lg ${c.color}`}>{c.weight}</div>
@@ -384,6 +393,9 @@ export default function Dashboard() {
         <p>AgroScore — Decentrathon 5.0 | AI inDrive | Кейс 2</p>
         <p className="mt-1">Данные: subsidy.plem.kz + stat.gov.kz | {summary.total_applications.toLocaleString()} заявок</p>
       </footer>
+
+      {/* AI Assistant (floating) */}
+      <AiAssistant />
     </div>
   );
 }

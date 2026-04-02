@@ -1,9 +1,24 @@
 # Temporary v2 development
 agroscore-v2/
 
+# External data (too large for git)
+data/external/stat_gov_kz/
+data/external/subsidy_plem_kz/registry_*.csv
+data/external/data_egov_kz/
+
 # macOS
 .DS_Store
 
 # IDE
 .idea/
 .vscode/
+docs/_archive/
+
+# Processed data (too large for git, regenerate with pipeline/)
+data/processed/enriched_applications.csv
+data/processed/scored_applications.json
+
+# Node
+node_modules/
+agroscore/node_modules/
+agroscore/dist/

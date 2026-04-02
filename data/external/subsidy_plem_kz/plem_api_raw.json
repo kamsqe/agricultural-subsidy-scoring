@@ -1,0 +1,5134 @@
+{
+  "budget": {
+    "__type": "NIC.ISS.Subsidies._Default+PieWithLabel",
+    "label": "117566\n млн.теңге",
+    "PieDonut": [
+      {
+        "sector": "Абай облысы",
+        "size": 5335000000
+      },
+      {
+        "sector": "Ақмола облысы",
+        "size": 14000000000
+      },
+      {
+        "sector": "Ақтөбе облысы",
+        "size": 4200000000
+      },
+      {
+        "sector": "Алматы облысы",
+        "size": 16259173955
+      },
+      {
+        "sector": "Атырау облысы",
+        "size": 1490000000
+      },
+      {
+        "sector": "Батыс Қазақстан облысы",
+        "size": 7578887000
+      },
+      {
+        "sector": "Жамбыл облысы",
+        "size": 6790622000
+      },
+      {
+        "sector": "Жетісу облысы",
+        "size": 8566074000
+      },
+      {
+        "sector": "Қарағанды облысы",
+        "size": 5477444000
+      },
+      {
+        "sector": "Қостанай облысы",
+        "size": 10775157000
+      },
+      {
+        "sector": "Қызылорда облысы",
+        "size": 4236421000
+      },
+      {
+        "sector": "Маңғыстау облысы",
+        "size": 1323000000
+      },
+      {
+        "sector": "Павлодар облысы",
+        "size": 4595996000
+      },
+      {
+        "sector": "Солтүстік Қазақстан облысы",
+        "size": 8378699000
+      },
+      {
+        "sector": "Түркістан облысы",
+        "size": 6650200000
+      },
+      {
+        "sector": "Ұлытау облысы",
+        "size": 2169772000
+      },
+      {
+        "sector": "Шығыс Қазақстан облысы",
+        "size": 8668266400
+      },
+      {
+        "sector": "Шымкент қ.",
+        "size": 1071773000
+      }
+    ]
+  },
+  "applicants": {
+    "__type": "NIC.ISS.Subsidies._Default+PieWithLabel",
+    "label": "4481\n заявки",
+    "PieDonut": [
+      {
+        "sector": "Абай облысы",
+        "size": 501
+      },
+      {
+        "sector": "Ақмола облысы",
+        "size": 159
+      },
+      {
+        "sector": "Ақтөбе облысы",
+        "size": 320
+      },
+      {
+        "sector": "Алматы облысы",
+        "size": 505
+      },
+      {
+        "sector": "Атырау облысы",
+        "size": 77
+      },
+      {
+        "sector": "Батыс Қазақстан облысы",
+        "size": 658
+      },
+      {
+        "sector": "Жамбыл облысы",
+        "size": 421
+      },
+      {
+        "sector": "Жетісу облысы",
+        "size": 182
+      },
+      {
+        "sector": "Қарағанды облысы",
+        "size": 120
+      },
+      {
+        "sector": "Қостанай облысы",
+        "size": 366
+      },
+      {
+        "sector": "Қызылорда облысы",
+        "size": 173
+      },
+      {
+        "sector": "Маңғыстау облысы",
+        "size": 1
+      },
+      {
+        "sector": "Павлодар облысы",
+        "size": 314
+      },
+      {
+        "sector": "Солтүстік Қазақстан облысы",
+        "size": 251
+      },
+      {
+        "sector": "Түркістан облысы",
+        "size": 132
+      },
+      {
+        "sector": "Ұлытау облысы",
+        "size": 42
+      },
+      {
+        "sector": "Шығыс Қазақстан облысы",
+        "size": 221
+      },
+      {
+        "sector": "Шымкент қ.",
+        "size": 38
+      }
+    ]
+  },
+  "enterprises": {
+    "__type": "NIC.ISS.Subsidies._Default+PieWithLabel",
+    "label": "39193\n қолданушы",
+    "PieDonut": [
+      {
+        "sector": "Абай облысы",
+        "size": 2675
+      },
+      {
+        "sector": "Ақмола облысы",
+        "size": 1202
+      },
+      {
+        "sector": "Ақтөбе облысы",
+        "size": 3064
+      },
+      {
+        "sector": "Алматы қ.",
+        "size": 26
+      },
+      {
+        "sector": "Алматы облысы",
+        "size": 2654
+      },
+      {
+        "sector": "Астана қ.",
+        "size": 32
+      },
+      {
+        "sector": "Атырау облысы",
+        "size": 1118
+      },
+      {
+        "sector": "Батыс Қазақстан облысы",
+        "size": 4242
+      },
+      {
+        "sector": "Жамбыл облысы",
+        "size": 4156
+      },
+      {
+        "sector": "Жетісу облысы",
+        "size": 2462
+      },
+      {
+        "sector": "Қарағанды облысы",
+        "size": 2416
+      },
+      {
+        "sector": "Қостанай облысы",
+        "size": 1499
+      },
+      {
+        "sector": "Қызылорда облысы",
+        "size": 1811
+      },
+      {
+        "sector": "Маңғыстау облысы",
+        "size": 1498
+      },
+      {
+        "sector": "Павлодар облысы",
+        "size": 2127
+      },
+      {
+        "sector": "Солтүстік Қазақстан облысы",
+        "size": 754
+      },
+      {
+        "sector": "Түркістан облысы",
+        "size": 4633
+      },
+      {
+        "sector": "Ұлытау облысы",
+        "size": 1042
+      },
+      {
+        "sector": "Шығыс Қазақстан облысы",
+        "size": 1583
+      },
+      {
+        "sector": "Шымкент қ.",
+        "size": 199
+      }
+    ]
+  },
+  "states": [
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Ақмола облысы",
+      "stateId": 1604
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Ақтөбе облысы",
+      "stateId": 2652
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Атырау облысы",
+      "stateId": 4203
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Батыс Қазақстан облысы",
+      "stateId": 4824
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Павлодар облысы",
+      "stateId": 11528
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Солтүстік Қазақстан облысы",
+      "stateId": 12261
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Түркістан облысы",
+      "stateId": 13161
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Шымкент қ.",
+      "stateId": 16258
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Шығыс Қазақстан облысы",
+      "stateId": 15028
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Қарағанды облысы",
+      "stateId": 7912
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Алматы облысы",
+      "stateId": 3527
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Жамбыл облысы",
+      "stateId": 6845
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Қостанай облысы",
+      "stateId": 9526
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Қызылорда облысы",
+      "stateId": 10492
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Маңғыстау облысы",
+      "stateId": 10946
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Ұлытау облысы",
+      "stateId": 14414
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Жетісу облысы",
+      "stateId": 7422
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+StateRK",
+      "stateName": "Абай облысы",
+      "stateId": 1
+    }
+  ],
+  "statistics": [
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 124,
+      "Sended": 166,
+      "Positived": 143,
+      "Executed": 137
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 44,
+      "Sended": 75,
+      "Positived": 64,
+      "Executed": 61
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 89,
+      "Sended": 190,
+      "Positived": 122,
+      "Executed": 114
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 31,
+      "Sended": 66,
+      "Positived": 42,
+      "Executed": 40
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 3,
+      "Sended": 10,
+      "Positived": 8,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 9,
+      "Positived": 6,
+      "Executed": 5
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 4,
+      "Sended": 35,
+      "Positived": 24,
+      "Executed": 24
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 2,
+      "Sended": 15,
+      "Positived": 12,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 8,
+      "Sended": 29,
+      "Positived": 22,
+      "Executed": 21
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 70,
+      "Sended": 276,
+      "Positived": 210,
+      "Executed": 202
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 7,
+      "Sended": 314,
+      "Positived": 250,
+      "Executed": 233
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 2,
+      "Sended": 43,
+      "Positived": 36,
+      "Executed": 35
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 20,
+      "Sended": 573,
+      "Positived": 435,
+      "Executed": 405
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 8,
+      "Sended": 136,
+      "Positived": 88,
+      "Executed": 73
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 7,
+      "Sended": 42,
+      "Positived": 34,
+      "Executed": 33
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 3,
+      "Sended": 3,
+      "Positived": 3,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 3,
+      "Sended": 3,
+      "Positived": 3,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 6,
+      "Sended": 15,
+      "Positived": 7,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 39,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости мелкого рогатого скота мужских особей, реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 300 голов овец в сутки",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 54,
+      "SubName": "Заявка на получение субсидий за приобретение племенного суточного молодняка родительской/прародительской формы мясного направления птиц ",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 3,
+      "Sended": 58,
+      "Positived": 37,
+      "Executed": 35
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 56,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 15 000 тонн",
+      "Applicant": 2,
+      "Sended": 63,
+      "Positived": 58,
+      "Executed": 44
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 57,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 10 000 тонн",
+      "Applicant": 1,
+      "Sended": 63,
+      "Positived": 48,
+      "Executed": 48
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 3,
+      "Sended": 113,
+      "Positived": 62,
+      "Executed": 60
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1604,
+      "StateName": "Ақмола облысы",
+      "SubId": 11,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья крупного рогатого скота в крестьянских (фермерских) хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 1087,
+      "Sended": 1755,
+      "Positived": 1734,
+      "Executed": 1721
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 257,
+      "Sended": 471,
+      "Positived": 456,
+      "Executed": 455
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 1003,
+      "Sended": 1450,
+      "Positived": 1310,
+      "Executed": 1278
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 243,
+      "Sended": 461,
+      "Positived": 390,
+      "Executed": 362
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 29,
+      "Sended": 49,
+      "Positived": 38,
+      "Executed": 32
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 1,
+      "Sended": 5,
+      "Positived": 4,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 4,
+      "Sended": 5,
+      "Positived": 5,
+      "Executed": 5
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 326,
+      "Sended": 833,
+      "Positived": 774,
+      "Executed": 751
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 1,
+      "Sended": 30,
+      "Positived": 29,
+      "Executed": 28
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 3,
+      "Sended": 25,
+      "Positived": 23,
+      "Executed": 23
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 319,
+      "Sended": 327,
+      "Positived": 324,
+      "Executed": 324
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 47,
+      "Sended": 153,
+      "Positived": 110,
+      "Executed": 96
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 34,
+      "Sended": 97,
+      "Positived": 71,
+      "Executed": 65
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 93,
+      "Sended": 103,
+      "Positived": 99,
+      "Executed": 99
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 304,
+      "Sended": 440,
+      "Positived": 394,
+      "Executed": 392
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 39,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости мелкого рогатого скота мужских особей, реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 300 голов овец в сутки",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 29,
+      "Sended": 37,
+      "Positived": 33,
+      "Executed": 33
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 44,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (кобылье)",
+      "Applicant": 3,
+      "Sended": 21,
+      "Positived": 17,
+      "Executed": 17
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 52,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с маточным поголовьем маралов (оленей)",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 1,
+      "Sended": 11,
+      "Positived": 8,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 2652,
+      "StateName": "Ақтөбе облысы",
+      "SubId": 11,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья крупного рогатого скота в крестьянских (фермерских) хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 360,
+      "Sended": 537,
+      "Positived": 511,
+      "Executed": 511
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 55,
+      "Sended": 98,
+      "Positived": 96,
+      "Executed": 96
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 292,
+      "Sended": 431,
+      "Positived": 364,
+      "Executed": 364
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 54,
+      "Sended": 95,
+      "Positived": 84,
+      "Executed": 83
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 5,
+      "Sended": 7,
+      "Positived": 7,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 23,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма маточному поголовью сельскохозяйственных животных (маточное поголовье крупного рогатого скота молочного и молочно-мясного направления)",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 108,
+      "SubName": "Удешевление стоимости затрат на корма маточному поголовью сельскохозяйственных животных (маточное поголовье крупного рогатого скота молочного и молочно-мясного направления)",
+      "Applicant": 1,
+      "Sended": 3,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 1,
+      "Sended": 41,
+      "Positived": 34,
+      "Executed": 33
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 11,
+      "Sended": 40,
+      "Positived": 30,
+      "Executed": 30
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 3,
+      "Sended": 8,
+      "Positived": 7,
+      "Executed": 6
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 56,
+      "Sended": 60,
+      "Positived": 56,
+      "Executed": 56
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 16,
+      "Sended": 17,
+      "Positived": 16,
+      "Executed": 16
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 34,
+      "Sended": 49,
+      "Positived": 39,
+      "Executed": 39
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 44,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (кобылье)",
+      "Applicant": 1,
+      "Sended": 19,
+      "Positived": 14,
+      "Executed": 14
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4203,
+      "StateName": "Атырау облысы",
+      "SubId": 47,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (верблюжье)",
+      "Applicant": 6,
+      "Sended": 128,
+      "Positived": 90,
+      "Executed": 89
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 2199,
+      "Sended": 3534,
+      "Positived": 3371,
+      "Executed": 3365
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 647,
+      "Sended": 1266,
+      "Positived": 1227,
+      "Executed": 1224
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 1784,
+      "Sended": 3069,
+      "Positived": 2468,
+      "Executed": 2430
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 477,
+      "Sended": 1144,
+      "Positived": 866,
+      "Executed": 774
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 14,
+      "Sended": 31,
+      "Positived": 19,
+      "Executed": 16
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 2,
+      "Sended": 5,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 2,
+      "Sended": 3,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 960,
+      "Sended": 3207,
+      "Positived": 2562,
+      "Executed": 2403
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 24,
+      "SubName": "Удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье крупного рогатого скота)",
+      "Applicant": 1171,
+      "Sended": 1397,
+      "Positived": 1222,
+      "Executed": 1220
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 1,
+      "Sended": 5,
+      "Positived": 3,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 5,
+      "Sended": 81,
+      "Positived": 63,
+      "Executed": 57
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 3,
+      "Sended": 99,
+      "Positived": 53,
+      "Executed": 52
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 155,
+      "Sended": 579,
+      "Positived": 387,
+      "Executed": 333
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 14,
+      "Sended": 58,
+      "Positived": 33,
+      "Executed": 17
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 367,
+      "Sended": 392,
+      "Positived": 381,
+      "Executed": 380
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 80,
+      "Sended": 84,
+      "Positived": 84,
+      "Executed": 84
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 253,
+      "Sended": 351,
+      "Positived": 288,
+      "Executed": 286
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 39,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости мелкого рогатого скота мужских особей, реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 300 голов овец в сутки",
+      "Applicant": 27,
+      "Sended": 47,
+      "Positived": 41,
+      "Executed": 41
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 40,
+      "SubName": "Удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогатого скота)",
+      "Applicant": 595,
+      "Sended": 672,
+      "Positived": 599,
+      "Executed": 597
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 13,
+      "Sended": 17,
+      "Positived": 13,
+      "Executed": 13
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 45,
+      "SubName": "Удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье лошадей)",
+      "Applicant": 766,
+      "Sended": 896,
+      "Positived": 813,
+      "Executed": 812
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 53,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с пчелосемьями",
+      "Applicant": 2,
+      "Sended": 3,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 2,
+      "Sended": 19,
+      "Positived": 13,
+      "Executed": 12
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 57,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 10 000 тонн",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 58,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 5 000 тонн",
+      "Applicant": 2,
+      "Sended": 53,
+      "Positived": 49,
+      "Executed": 47
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 4824,
+      "StateName": "Батыс Қазақстан облысы",
+      "SubId": 11,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья крупного рогатого скота в крестьянских (фермерских) хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 1,
+      "Sended": 15,
+      "Positived": 11,
+      "Executed": 11
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 876,
+      "Sended": 1203,
+      "Positived": 1169,
+      "Executed": 1163
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 197,
+      "Sended": 330,
+      "Positived": 325,
+      "Executed": 324
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 714,
+      "Sended": 1202,
+      "Positived": 986,
+      "Executed": 911
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 145,
+      "Sended": 302,
+      "Positived": 227,
+      "Executed": 174
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 12,
+      "Sended": 28,
+      "Positived": 18,
+      "Executed": 12
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 3,
+      "Positived": 3,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 6,
+      "Sended": 29,
+      "Positived": 22,
+      "Executed": 22
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 10,
+      "Sended": 215,
+      "Positived": 193,
+      "Executed": 104
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 15,
+      "Sended": 134,
+      "Positived": 119,
+      "Executed": 54
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 130,
+      "Sended": 343,
+      "Positived": 251,
+      "Executed": 168
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 15,
+      "Sended": 822,
+      "Positived": 702,
+      "Executed": 470
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 5,
+      "Sended": 146,
+      "Positived": 106,
+      "Executed": 72
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 8,
+      "Sended": 255,
+      "Positived": 213,
+      "Executed": 147
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 114,
+      "SubName": "Заявка на удешевление стоимости производства меда",
+      "Applicant": 2,
+      "Sended": 13,
+      "Positived": 9,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 33,
+      "Sended": 132,
+      "Positived": 110,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 11,
+      "Sended": 33,
+      "Positived": 20,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 123,
+      "Sended": 126,
+      "Positived": 123,
+      "Executed": 123
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 49,
+      "Sended": 52,
+      "Positived": 51,
+      "Executed": 51
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 96,
+      "Sended": 150,
+      "Positived": 128,
+      "Executed": 116
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 32,
+      "SubName": "Заявка на получение субсидий за приобретение импортированных племенных маточных овец",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 33,
+      "SubName": "Заявка на получение субсидий за приобретение импортированных племенных баранов-производителей",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 3,
+      "Sended": 3,
+      "Positived": 3,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 49,
+      "SubName": "Заявка на получение субсидий за приобретение племенного поголовья свиней",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 50,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с маточным и ремонтным поголовьем свиней",
+      "Applicant": 1,
+      "Sended": 22,
+      "Positived": 22,
+      "Executed": 22
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 53,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с пчелосемьями",
+      "Applicant": 2,
+      "Sended": 4,
+      "Positived": 3,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 2,
+      "Sended": 12,
+      "Positived": 10,
+      "Executed": 6
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 56,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 15 000 тонн",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 2,
+      "Sended": 41,
+      "Positived": 26,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 11,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья крупного рогатого скота в крестьянских (фермерских) хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 11528,
+      "StateName": "Павлодар облысы",
+      "SubId": 110,
+      "SubName": "Заявка на удешевление стоимости свиней, реализованных или перемещенных на убой в мясоперерабатывающие предприятия или на убойные пункты",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 55,
+      "Sended": 86,
+      "Positived": 77,
+      "Executed": 77
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 30,
+      "Sended": 46,
+      "Positived": 43,
+      "Executed": 43
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 63,
+      "Sended": 102,
+      "Positived": 86,
+      "Executed": 85
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 16,
+      "Sended": 21,
+      "Positived": 19,
+      "Executed": 18
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 6,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (мясных и мясо-молочных пород)",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 7,
+      "Sended": 9,
+      "Positived": 9,
+      "Executed": 9
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 2,
+      "Sended": 2,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 13,
+      "Sended": 30,
+      "Positived": 27,
+      "Executed": 26
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 10,
+      "Sended": 46,
+      "Positived": 32,
+      "Executed": 32
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 20,
+      "Sended": 65,
+      "Positived": 43,
+      "Executed": 41
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 36,
+      "Sended": 228,
+      "Positived": 183,
+      "Executed": 177
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 12,
+      "Sended": 375,
+      "Positived": 312,
+      "Executed": 302
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 16,
+      "Sended": 447,
+      "Positived": 387,
+      "Executed": 378
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 25,
+      "Sended": 499,
+      "Positived": 416,
+      "Executed": 390
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 19,
+      "Sended": 476,
+      "Positived": 404,
+      "Executed": 373
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 2,
+      "Sended": 3,
+      "Positived": 3,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 3,
+      "Sended": 3,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 7,
+      "Sended": 7,
+      "Positived": 7,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 8,
+      "Sended": 17,
+      "Positived": 12,
+      "Executed": 12
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 44,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (кобылье)",
+      "Applicant": 1,
+      "Sended": 24,
+      "Positived": 21,
+      "Executed": 19
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 49,
+      "SubName": "Заявка на получение субсидий за приобретение племенного поголовья свиней",
+      "Applicant": 1,
+      "Sended": 5,
+      "Positived": 4,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 50,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с маточным и ремонтным поголовьем свиней",
+      "Applicant": 2,
+      "Sended": 5,
+      "Positived": 5,
+      "Executed": 5
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 5,
+      "Sended": 42,
+      "Positived": 36,
+      "Executed": 36
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 3,
+      "Sended": 318,
+      "Positived": 210,
+      "Executed": 204
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 12261,
+      "StateName": "Солтүстік Қазақстан облысы",
+      "SubId": 11,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья крупного рогатого скота в крестьянских (фермерских) хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 1,
+      "Sended": 25,
+      "Positived": 22,
+      "Executed": 22
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 359,
+      "Sended": 472,
+      "Positived": 403,
+      "Executed": 403
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 22,
+      "Sended": 40,
+      "Positived": 36,
+      "Executed": 36
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 148,
+      "Sended": 185,
+      "Positived": 155,
+      "Executed": 153
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 19,
+      "Sended": 34,
+      "Positived": 27,
+      "Executed": 24
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 5,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества независимых государств, Украины (мясных и мясо-молочных пород)",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 5,
+      "Sended": 5,
+      "Positived": 5,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 2,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 3,
+      "Sended": 7,
+      "Positived": 5,
+      "Executed": 5
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 4,
+      "Sended": 8,
+      "Positived": 8,
+      "Executed": 5
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 5,
+      "Sended": 9,
+      "Positived": 9,
+      "Executed": 6
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 110,
+      "Sended": 170,
+      "Positived": 159,
+      "Executed": 148
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 117,
+      "SubName": "Заявка на получение субсидий на Удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье крупного рогатого скота молочного и молочно-мясного направления) по Туркестанской области",
+      "Applicant": 3,
+      "Sended": 5,
+      "Positived": 4,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 1,
+      "Sended": 185,
+      "Positived": 185,
+      "Executed": 152
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 1,
+      "Sended": 13,
+      "Positived": 10,
+      "Executed": 9
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 37,
+      "Sended": 796,
+      "Positived": 757,
+      "Executed": 692
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 23,
+      "Sended": 1115,
+      "Positived": 1058,
+      "Executed": 603
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 111,
+      "SubName": "Заявка на удешевление стоимости тонкой и полутонкой шерсти,  реализованной на переработку  (шерсть от 60 качества)",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 114,
+      "SubName": "Заявка на удешевление стоимости производства меда",
+      "Applicant": 46,
+      "Sended": 111,
+      "Positived": 94,
+      "Executed": 9
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 4,
+      "Sended": 10,
+      "Positived": 6,
+      "Executed": 6
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 82,
+      "Sended": 141,
+      "Positived": 124,
+      "Executed": 79
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 252,
+      "Sended": 265,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 631,
+      "Sended": 741,
+      "Positived": 654,
+      "Executed": 654
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 316,
+      "Sended": 464,
+      "Positived": 394,
+      "Executed": 301
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 39,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости мелкого рогатого скота мужских особей, реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 300 голов овец в сутки",
+      "Applicant": 24,
+      "Sended": 36,
+      "Positived": 33,
+      "Executed": 29
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 47,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (верблюжье)",
+      "Applicant": 31,
+      "Sended": 279,
+      "Positived": 246,
+      "Executed": 202
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 53,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с пчелосемьями",
+      "Applicant": 59,
+      "Sended": 62,
+      "Positived": 62,
+      "Executed": 62
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 3,
+      "Sended": 12,
+      "Positived": 10,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 57,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 10 000 тонн",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 1,
+      "Sended": 42,
+      "Positived": 28,
+      "Executed": 26
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 11,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья крупного рогатого скота в крестьянских (фермерских) хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 2,
+      "Sended": 21,
+      "Positived": 19,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 13161,
+      "StateName": "Түркістан облысы",
+      "SubId": 35,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья овец в хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 3,
+      "Sended": 117,
+      "Positived": 103,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 5,
+      "Sended": 9,
+      "Positived": 6,
+      "Executed": 6
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 5,
+      "Sended": 5,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 3,
+      "Sended": 5,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 4,
+      "Sended": 74,
+      "Positived": 48,
+      "Executed": 46
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 9,
+      "Sended": 624,
+      "Positived": 498,
+      "Executed": 489
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 114,
+      "SubName": "Заявка на удешевление стоимости производства меда",
+      "Applicant": 7,
+      "Sended": 46,
+      "Positived": 23,
+      "Executed": 21
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 2,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 2,
+      "Sended": 3,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 3,
+      "Sended": 3,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 53,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с пчелосемьями",
+      "Applicant": 3,
+      "Sended": 12,
+      "Positived": 5,
+      "Executed": 5
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 16258,
+      "StateName": "Шымкент қ.",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 4,
+      "Sended": 44,
+      "Positived": 19,
+      "Executed": 18
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 565,
+      "Sended": 751,
+      "Positived": 738,
+      "Executed": 732
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 108,
+      "Sended": 184,
+      "Positived": 178,
+      "Executed": 177
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 396,
+      "Sended": 560,
+      "Positived": 463,
+      "Executed": 450
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 84,
+      "Sended": 127,
+      "Positived": 108,
+      "Executed": 95
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 10,
+      "Sended": 24,
+      "Positived": 20,
+      "Executed": 20
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 3,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 3,
+      "Sended": 7,
+      "Positived": 4,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 6,
+      "Sended": 14,
+      "Positived": 12,
+      "Executed": 11
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 10,
+      "Sended": 25,
+      "Positived": 20,
+      "Executed": 16
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 10,
+      "Sended": 15,
+      "Positived": 11,
+      "Executed": 9
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 5,
+      "Sended": 389,
+      "Positived": 344,
+      "Executed": 303
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 9,
+      "Sended": 279,
+      "Positived": 256,
+      "Executed": 232
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 16,
+      "Sended": 568,
+      "Positived": 503,
+      "Executed": 430
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 2,
+      "Sended": 12,
+      "Positived": 6,
+      "Executed": 6
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 114,
+      "SubName": "Заявка на удешевление стоимости производства меда",
+      "Applicant": 7,
+      "Sended": 17,
+      "Positived": 13,
+      "Executed": 9
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 8,
+      "Sended": 15,
+      "Positived": 12,
+      "Executed": 8
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 5,
+      "Sended": 10,
+      "Positived": 7,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 102,
+      "Sended": 106,
+      "Positived": 105,
+      "Executed": 104
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 44,
+      "Sended": 45,
+      "Positived": 45,
+      "Executed": 43
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 79,
+      "Sended": 121,
+      "Positived": 99,
+      "Executed": 92
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 2,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 49,
+      "SubName": "Заявка на получение субсидий за приобретение племенного поголовья свиней",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 50,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с маточным и ремонтным поголовьем свиней",
+      "Applicant": 1,
+      "Sended": 21,
+      "Positived": 15,
+      "Executed": 15
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 52,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с маточным поголовьем маралов (оленей)",
+      "Applicant": 3,
+      "Sended": 3,
+      "Positived": 3,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 53,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с пчелосемьями",
+      "Applicant": 91,
+      "Sended": 121,
+      "Positived": 115,
+      "Executed": 115
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 54,
+      "SubName": "Заявка на получение субсидий за приобретение племенного суточного молодняка родительской/прародительской формы мясного направления птиц ",
+      "Applicant": 1,
+      "Sended": 14,
+      "Positived": 9,
+      "Executed": 8
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 15028,
+      "StateName": "Шығыс Қазақстан облысы",
+      "SubId": 56,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 15 000 тонн",
+      "Applicant": 1,
+      "Sended": 165,
+      "Positived": 153,
+      "Executed": 124
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 922,
+      "Sended": 1162,
+      "Positived": 1127,
+      "Executed": 1127
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 157,
+      "Sended": 254,
+      "Positived": 245,
+      "Executed": 245
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 630,
+      "Sended": 893,
+      "Positived": 731,
+      "Executed": 729
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 151,
+      "Sended": 230,
+      "Positived": 203,
+      "Executed": 202
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 9,
+      "Positived": 6,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 1,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 2,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 49,
+      "Sended": 136,
+      "Positived": 114,
+      "Executed": 110
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 1,
+      "Sended": 16,
+      "Positived": 15,
+      "Executed": 14
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 3,
+      "Sended": 43,
+      "Positived": 30,
+      "Executed": 29
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 3,
+      "Sended": 91,
+      "Positived": 69,
+      "Executed": 66
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 37,
+      "Sended": 86,
+      "Positived": 73,
+      "Executed": 72
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 10,
+      "Sended": 23,
+      "Positived": 23,
+      "Executed": 22
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 225,
+      "Sended": 230,
+      "Positived": 226,
+      "Executed": 226
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 33,
+      "Sended": 34,
+      "Positived": 33,
+      "Executed": 33
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 147,
+      "Sended": 182,
+      "Positived": 159,
+      "Executed": 159
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 39,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости мелкого рогатого скота мужских особей, реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 300 голов овец в сутки",
+      "Applicant": 1,
+      "Sended": 4,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 6,
+      "Sended": 9,
+      "Positived": 5,
+      "Executed": 5
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 49,
+      "SubName": "Заявка на получение субсидий за приобретение племенного поголовья свиней",
+      "Applicant": 5,
+      "Sended": 5,
+      "Positived": 5,
+      "Executed": 5
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 50,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с маточным и ремонтным поголовьем свиней",
+      "Applicant": 6,
+      "Sended": 27,
+      "Positived": 21,
+      "Executed": 21
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 54,
+      "SubName": "Заявка на получение субсидий за приобретение племенного суточного молодняка родительской/прародительской формы мясного направления птиц ",
+      "Applicant": 1,
+      "Sended": 14,
+      "Positived": 9,
+      "Executed": 8
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 4,
+      "Sended": 64,
+      "Positived": 55,
+      "Executed": 51
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 58,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 5 000 тонн",
+      "Applicant": 1,
+      "Sended": 134,
+      "Positived": 130,
+      "Executed": 130
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7912,
+      "StateName": "Қарағанды облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 1,
+      "Sended": 81,
+      "Positived": 64,
+      "Executed": 60
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 605,
+      "Sended": 698,
+      "Positived": 648,
+      "Executed": 608
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 74,
+      "Sended": 114,
+      "Positived": 95,
+      "Executed": 71
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 361,
+      "Sended": 476,
+      "Positived": 363,
+      "Executed": 328
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 43,
+      "Sended": 104,
+      "Positived": 59,
+      "Executed": 41
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 6,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (мясных и мясо-молочных пород)",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 4,
+      "Sended": 7,
+      "Positived": 6,
+      "Executed": 5
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 4,
+      "Sended": 13,
+      "Positived": 8,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 7,
+      "Sended": 24,
+      "Positived": 17,
+      "Executed": 8
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 7,
+      "Sended": 38,
+      "Positived": 32,
+      "Executed": 23
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 7,
+      "Sended": 37,
+      "Positived": 30,
+      "Executed": 19
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 17,
+      "Sended": 40,
+      "Positived": 28,
+      "Executed": 16
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 7,
+      "Sended": 268,
+      "Positived": 231,
+      "Executed": 102
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 2,
+      "Sended": 37,
+      "Positived": 36,
+      "Executed": 22
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 16,
+      "Sended": 346,
+      "Positived": 251,
+      "Executed": 126
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 21,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости  заготовки говядины мясоперерабатывающими предприятиями, занимающиеся забоем и первичной переработкой мяса крупного рогатого скота",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 114,
+      "SubName": "Заявка на удешевление стоимости производства меда",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 5,
+      "Sended": 11,
+      "Positived": 8,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 28,
+      "Sended": 120,
+      "Positived": 84,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 639,
+      "Sended": 663,
+      "Positived": 634,
+      "Executed": 633
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 182,
+      "Sended": 200,
+      "Positived": 184,
+      "Executed": 184
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 430,
+      "Sended": 608,
+      "Positived": 520,
+      "Executed": 442
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 39,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости мелкого рогатого скота мужских особей, реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 300 голов овец в сутки",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 44,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (кобылье)",
+      "Applicant": 3,
+      "Sended": 10,
+      "Positived": 9,
+      "Executed": 6
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 47,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (верблюжье)",
+      "Applicant": 4,
+      "Sended": 36,
+      "Positived": 32,
+      "Executed": 19
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 50,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с маточным и ремонтным поголовьем свиней",
+      "Applicant": 2,
+      "Sended": 14,
+      "Positived": 10,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 53,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с пчелосемьями",
+      "Applicant": 22,
+      "Sended": 25,
+      "Positived": 23,
+      "Executed": 23
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 54,
+      "SubName": "Заявка на получение субсидий за приобретение племенного суточного молодняка родительской/прародительской формы мясного направления птиц ",
+      "Applicant": 3,
+      "Sended": 55,
+      "Positived": 49,
+      "Executed": 22
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 2,
+      "Sended": 31,
+      "Positived": 19,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 56,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 15 000 тонн",
+      "Applicant": 4,
+      "Sended": 2902,
+      "Positived": 2739,
+      "Executed": 1184
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 57,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 10 000 тонн",
+      "Applicant": 1,
+      "Sended": 129,
+      "Positived": 105,
+      "Executed": 20
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 58,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 5 000 тонн",
+      "Applicant": 2,
+      "Sended": 2,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 3527,
+      "StateName": "Алматы облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 1,
+      "Sended": 110,
+      "Positived": 75,
+      "Executed": 17
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 423,
+      "Sended": 631,
+      "Positived": 607,
+      "Executed": 408
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 62,
+      "Sended": 108,
+      "Positived": 105,
+      "Executed": 60
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 332,
+      "Sended": 428,
+      "Positived": 353,
+      "Executed": 271
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 44,
+      "Sended": 108,
+      "Positived": 72,
+      "Executed": 28
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 15,
+      "Sended": 32,
+      "Positived": 15,
+      "Executed": 13
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 2,
+      "Sended": 10,
+      "Positived": 3,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 97,
+      "Sended": 242,
+      "Positived": 210,
+      "Executed": 93
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 109,
+      "SubName": "Заявка на удешевление стоимости мелкого рогатого скота мужской особи, реализованного на откорм в откормочные площадки или на убой в мясоперерабатывающие предприятия (сезонные поставки)",
+      "Applicant": 5,
+      "Sended": 13,
+      "Positived": 13,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 1,
+      "Sended": 41,
+      "Positived": 32,
+      "Executed": 23
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 1,
+      "Sended": 13,
+      "Positived": 11,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 43,
+      "Sended": 831,
+      "Positived": 581,
+      "Executed": 325
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 45,
+      "Sended": 977,
+      "Positived": 623,
+      "Executed": 331
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 114,
+      "SubName": "Заявка на удешевление стоимости производства меда",
+      "Applicant": 3,
+      "Sended": 10,
+      "Positived": 5,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 17,
+      "Sended": 75,
+      "Positived": 59,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 164,
+      "Sended": 363,
+      "Positived": 302,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 929,
+      "Sended": 973,
+      "Positived": 934,
+      "Executed": 862
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 664,
+      "Sended": 732,
+      "Positived": 704,
+      "Executed": 670
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 973,
+      "Sended": 1604,
+      "Positived": 1319,
+      "Executed": 919
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 39,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости мелкого рогатого скота мужских особей, реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 300 голов овец в сутки",
+      "Applicant": 108,
+      "Sended": 201,
+      "Positived": 146,
+      "Executed": 109
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 1,
+      "Sended": 3,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 44,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (кобылье)",
+      "Applicant": 9,
+      "Sended": 113,
+      "Positived": 87,
+      "Executed": 33
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 51,
+      "SubName": "Заявка на получение субсидий за приобретение племенного маточного поголовья коз",
+      "Applicant": 2,
+      "Sended": 3,
+      "Positived": 3,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 53,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с пчелосемьями",
+      "Applicant": 88,
+      "Sended": 139,
+      "Positived": 80,
+      "Executed": 36
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 1,
+      "Sended": 5,
+      "Positived": 4,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 58,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 5 000 тонн",
+      "Applicant": 3,
+      "Sended": 1558,
+      "Positived": 1362,
+      "Executed": 582
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 2,
+      "Sended": 3,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 11,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья крупного рогатого скота в крестьянских (фермерских) хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 1,
+      "Sended": 23,
+      "Positived": 21,
+      "Executed": 17
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 6845,
+      "StateName": "Жамбыл облысы",
+      "SubId": 35,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья овец в хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 1,
+      "Sended": 38,
+      "Positived": 36,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 327,
+      "Sended": 551,
+      "Positived": 524,
+      "Executed": 522
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 52,
+      "Sended": 82,
+      "Positived": 79,
+      "Executed": 77
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 280,
+      "Sended": 412,
+      "Positived": 351,
+      "Executed": 348
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 40,
+      "Sended": 69,
+      "Positived": 48,
+      "Executed": 48
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 4,
+      "Sended": 7,
+      "Positived": 7,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 2,
+      "Sended": 4,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 3,
+      "Sended": 6,
+      "Positived": 4,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 6,
+      "Sended": 41,
+      "Positived": 38,
+      "Executed": 37
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 12,
+      "Sended": 34,
+      "Positived": 26,
+      "Executed": 24
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 201,
+      "Sended": 786,
+      "Positived": 623,
+      "Executed": 619
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 6,
+      "Sended": 487,
+      "Positived": 469,
+      "Executed": 457
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 9,
+      "Sended": 360,
+      "Positived": 320,
+      "Executed": 302
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 13,
+      "Sended": 264,
+      "Positived": 234,
+      "Executed": 233
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 10,
+      "Sended": 489,
+      "Positived": 460,
+      "Executed": 453
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 15,
+      "Sended": 128,
+      "Positived": 96,
+      "Executed": 96
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 2,
+      "Sended": 4,
+      "Positived": 3,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 46,
+      "Sended": 50,
+      "Positived": 46,
+      "Executed": 46
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 10,
+      "Sended": 11,
+      "Positived": 10,
+      "Executed": 10
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 22,
+      "Sended": 38,
+      "Positived": 31,
+      "Executed": 30
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 105,
+      "SubName": "Ведение селекционной и племенной работы с племенным маточным поголовьем отечественных пород лошадей верхового и верхово-упряжного направлений ",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 107,
+      "SubName": "Возмещение затрат на содержание племенного поголовья пород лошадей верхового и верхово-упряжного направлений, выведенных на территории Республики Казахстан",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 49,
+      "SubName": "Заявка на получение субсидий за приобретение племенного поголовья свиней",
+      "Applicant": 6,
+      "Sended": 17,
+      "Positived": 9,
+      "Executed": 9
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 50,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с маточным и ремонтным поголовьем свиней",
+      "Applicant": 9,
+      "Sended": 76,
+      "Positived": 67,
+      "Executed": 67
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 3,
+      "Sended": 30,
+      "Positived": 21,
+      "Executed": 21
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 58,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 5 000 тонн",
+      "Applicant": 3,
+      "Sended": 466,
+      "Positived": 455,
+      "Executed": 420
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 4,
+      "Sended": 1253,
+      "Positived": 1192,
+      "Executed": 1182
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 9526,
+      "StateName": "Қостанай облысы",
+      "SubId": 11,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья крупного рогатого скота в крестьянских (фермерских) хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 1,
+      "Sended": 6,
+      "Positived": 4,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 436,
+      "Sended": 690,
+      "Positived": 654,
+      "Executed": 654
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 55,
+      "Sended": 106,
+      "Positived": 89,
+      "Executed": 89
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 334,
+      "Sended": 646,
+      "Positived": 405,
+      "Executed": 402
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 50,
+      "Sended": 128,
+      "Positived": 73,
+      "Executed": 71
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 10,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 2,
+      "Sended": 11,
+      "Positived": 9,
+      "Executed": 9
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 135,
+      "Sended": 315,
+      "Positived": 220,
+      "Executed": 216
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 108,
+      "SubName": "Удешевление стоимости затрат на корма маточному поголовью сельскохозяйственных животных (маточное поголовье крупного рогатого скота молочного и молочно-мясного направления)",
+      "Applicant": 1,
+      "Sended": 4,
+      "Positived": 4,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 2,
+      "Sended": 36,
+      "Positived": 30,
+      "Executed": 29
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 19,
+      "Sended": 92,
+      "Positived": 52,
+      "Executed": 48
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 93,
+      "Sended": 239,
+      "Positived": 174,
+      "Executed": 173
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 75,
+      "Sended": 80,
+      "Positived": 77,
+      "Executed": 77
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 206,
+      "Sended": 232,
+      "Positived": 212,
+      "Executed": 211
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 218,
+      "Sended": 568,
+      "Positived": 413,
+      "Executed": 409
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 39,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости мелкого рогатого скота мужских особей, реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 300 голов овец в сутки",
+      "Applicant": 16,
+      "Sended": 27,
+      "Positived": 24,
+      "Executed": 23
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 2,
+      "Sended": 4,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 44,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (кобылье)",
+      "Applicant": 1,
+      "Sended": 39,
+      "Positived": 29,
+      "Executed": 28
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10492,
+      "StateName": "Қызылорда облысы",
+      "SubId": 47,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (верблюжье)",
+      "Applicant": 1,
+      "Sended": 48,
+      "Positived": 35,
+      "Executed": 34
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 1,
+      "Sended": 3,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 24,
+      "SubName": "Удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье крупного рогатого скота)",
+      "Applicant": 280,
+      "Sended": 531,
+      "Positived": 467,
+      "Executed": 444
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 2,
+      "Sended": 5,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 3,
+      "Sended": 8,
+      "Positived": 3,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 40,
+      "SubName": "Удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогатого скота)",
+      "Applicant": 568,
+      "Sended": 1210,
+      "Positived": 1001,
+      "Executed": 673
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 2,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 45,
+      "SubName": "Удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье лошадей)",
+      "Applicant": 1034,
+      "Sended": 2222,
+      "Positived": 1877,
+      "Executed": 1451
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 46,
+      "SubName": "Заявка на получение субсидий за приобретение племенного верблюда-производителя",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 47,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (верблюжье)",
+      "Applicant": 4,
+      "Sended": 11,
+      "Positived": 8,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 48,
+      "SubName": "Удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье верблюдов)",
+      "Applicant": 980,
+      "Sended": 2128,
+      "Positived": 1762,
+      "Executed": 1252
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 10946,
+      "StateName": "Маңғыстау облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 1,
+      "Sended": 26,
+      "Positived": 22,
+      "Executed": 22
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 342,
+      "Sended": 451,
+      "Positived": 419,
+      "Executed": 418
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 57,
+      "Sended": 94,
+      "Positived": 85,
+      "Executed": 84
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 222,
+      "Sended": 307,
+      "Positived": 241,
+      "Executed": 239
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 38,
+      "Sended": 89,
+      "Positived": 75,
+      "Executed": 73
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 16,
+      "Sended": 55,
+      "Positived": 33,
+      "Executed": 33
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 5,
+      "Sended": 66,
+      "Positived": 56,
+      "Executed": 56
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 8,
+      "Sended": 21,
+      "Positived": 18,
+      "Executed": 18
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 1,
+      "Sended": 6,
+      "Positived": 6,
+      "Executed": 6
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 50,
+      "Sended": 50,
+      "Positived": 50,
+      "Executed": 49
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 8,
+      "Sended": 8,
+      "Positived": 8,
+      "Executed": 8
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 40,
+      "Sended": 59,
+      "Positived": 56,
+      "Executed": 56
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 2,
+      "Sended": 4,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 1,
+      "Sended": 5,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 14414,
+      "StateName": "Ұлытау облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 1006,
+      "Sended": 1323,
+      "Positived": 1281,
+      "Executed": 1280
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 221,
+      "Sended": 377,
+      "Positived": 358,
+      "Executed": 358
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 665,
+      "Sended": 893,
+      "Positived": 814,
+      "Executed": 811
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 146,
+      "Sended": 275,
+      "Positived": 241,
+      "Executed": 234
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 7,
+      "Sended": 9,
+      "Positived": 7,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 3,
+      "Sended": 11,
+      "Positived": 7,
+      "Executed": 7
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 14,
+      "SubName": "Заявка на получение субсидий за приобретеное однополое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 3,
+      "Sended": 3,
+      "Positived": 3,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 3,
+      "Sended": 6,
+      "Positived": 6,
+      "Executed": 6
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 38,
+      "Sended": 104,
+      "Positived": 97,
+      "Executed": 94
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 3,
+      "Sended": 145,
+      "Positived": 142,
+      "Executed": 138
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 1,
+      "Sended": 45,
+      "Positived": 44,
+      "Executed": 42
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 12,
+      "Sended": 226,
+      "Positived": 209,
+      "Executed": 208
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 5,
+      "Sended": 55,
+      "Positived": 38,
+      "Executed": 37
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 114,
+      "SubName": "Заявка на удешевление стоимости производства меда",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 44,
+      "Sended": 85,
+      "Positived": 48,
+      "Executed": 44
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 20,
+      "Sended": 51,
+      "Positived": 37,
+      "Executed": 35
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 588,
+      "Sended": 611,
+      "Positived": 583,
+      "Executed": 583
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 168,
+      "Sended": 186,
+      "Positived": 167,
+      "Executed": 166
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 426,
+      "Sended": 590,
+      "Positived": 519,
+      "Executed": 517
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 39,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости мелкого рогатого скота мужских особей, реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 300 голов овец в сутки",
+      "Applicant": 4,
+      "Sended": 15,
+      "Positived": 12,
+      "Executed": 12
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 2,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 44,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (кобылье)",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 49,
+      "SubName": "Заявка на получение субсидий за приобретение племенного поголовья свиней",
+      "Applicant": 1,
+      "Sended": 6,
+      "Positived": 3,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 50,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с маточным и ремонтным поголовьем свиней",
+      "Applicant": 2,
+      "Sended": 10,
+      "Positived": 8,
+      "Executed": 8
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 53,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с пчелосемьями",
+      "Applicant": 18,
+      "Sended": 19,
+      "Positived": 18,
+      "Executed": 18
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 1,
+      "Sended": 45,
+      "Positived": 33,
+      "Executed": 33
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 59,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 500 тонн",
+      "Applicant": 1,
+      "Sended": 1,
+      "Positived": 0,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 11,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья крупного рогатого скота в крестьянских (фермерских) хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 4,
+      "Sended": 40,
+      "Positived": 36,
+      "Executed": 30
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 7422,
+      "StateName": "Жетісу облысы",
+      "SubId": 110,
+      "SubName": "Заявка на удешевление стоимости свиней, реализованных или перемещенных на убой в мясоперерабатывающие предприятия или на убойные пункты",
+      "Applicant": 1,
+      "Sended": 15,
+      "Positived": 15,
+      "Executed": 15
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 12,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем крупного рогатого скота",
+      "Applicant": 1146,
+      "Sended": 1695,
+      "Positived": 1641,
+      "Executed": 1634
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 13,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем крупного рогатого скота",
+      "Applicant": 509,
+      "Sended": 934,
+      "Positived": 906,
+      "Executed": 897
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 7,
+      "SubName": "Заявка на получение субсидий за приобретение племенных быков-производителей мясных и мясо-молочных пород",
+      "Applicant": 927,
+      "Sended": 1365,
+      "Positived": 1171,
+      "Executed": 1140
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 4,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (мясных и мясо-молочных пород)",
+      "Applicant": 388,
+      "Sended": 686,
+      "Positived": 614,
+      "Executed": 498
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 1,
+      "SubName": "Заявка на получение субсидий за приобретение отечественного племенного маточного поголовья крупного рогатого скота (молочных, молочно-мясных)",
+      "Applicant": 6,
+      "Sended": 7,
+      "Positived": 7,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 2,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из стран Содружества Независимых Государств, Украины (молочных, молочно-мясных)",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 2,
+      "Executed": 2
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 3,
+      "SubName": "Заявка на получение субсидий за приобретение импортированного племенного маточного поголовья крупного рогатого скота из Австралии, стран Северной и Южной Америки, стран Европы (молочных, молочно-мясных)",
+      "Applicant": 2,
+      "Sended": 9,
+      "Positived": 8,
+      "Executed": 8
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 15,
+      "SubName": "Заявка на получение субсидий за приобретеное двуполое семя племенного быка молочного/ молочно-мясного и мясного/мясо-молочного направлений",
+      "Applicant": 2,
+      "Sended": 7,
+      "Positived": 5,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 22,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости крупного рогатого скота (в том числе племенные мужские особи молочных или молочно-мясных пород), реализованных или перемещенных на откорм в откормочные площадки или мясоперерабатывающие предприятия с убойной мощностью не менее 50 голов крупного рогатого скота в сутки",
+      "Applicant": 162,
+      "Sended": 282,
+      "Positived": 246,
+      "Executed": 156
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 17,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 600 голов",
+      "Applicant": 2,
+      "Sended": 54,
+      "Positived": 48,
+      "Executed": 44
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 18,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 400 голов",
+      "Applicant": 3,
+      "Sended": 108,
+      "Positived": 93,
+      "Executed": 85
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 19,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) с фуражным поголовьем коров от 50 голов",
+      "Applicant": 1,
+      "Sended": 6,
+      "Positived": 3,
+      "Executed": 3
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 20,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства молока (коровье) Сельскохозяйственный кооператив",
+      "Applicant": 2,
+      "Sended": 41,
+      "Positived": 38,
+      "Executed": 34
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 114,
+      "SubName": "Заявка на удешевление стоимости производства меда",
+      "Applicant": 3,
+      "Sended": 5,
+      "Positived": 4,
+      "Executed": 0
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 115,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка крупного рогатого скота мясного направления",
+      "Applicant": 125,
+      "Sended": 258,
+      "Positived": 233,
+      "Executed": 145
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 116,
+      "SubName": "Заявка на удешевление затрат при выращивании племенного молодняка мелкого рогатого скота",
+      "Applicant": 82,
+      "Sended": 188,
+      "Positived": 178,
+      "Executed": 133
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 37,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с товарным маточным поголовьем овец",
+      "Applicant": 268,
+      "Sended": 273,
+      "Positived": 270,
+      "Executed": 270
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 36,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с племенным маточным поголовьем овец",
+      "Applicant": 324,
+      "Sended": 345,
+      "Positived": 343,
+      "Executed": 341
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 31,
+      "SubName": "Заявка на получение субсидий за приобретение отечественных племенных овец",
+      "Applicant": 364,
+      "Sended": 618,
+      "Positived": 542,
+      "Executed": 480
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 43,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости затрат на корма сельскохозяйственным животным (маточное поголовье мелкого рогаvтого скота)",
+      "Applicant": 5,
+      "Sended": 7,
+      "Positived": 5,
+      "Executed": 4
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 53,
+      "SubName": "Заявка на получение субсидий на ведение селекционной и племенной работы с пчелосемьями",
+      "Applicant": 24,
+      "Sended": 27,
+      "Positived": 24,
+      "Executed": 24
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 55,
+      "SubName": "Заявка на получение субсидий за приобретение суточного молодняка финальной формы яичного направления, полученного от племенной птицы",
+      "Applicant": 1,
+      "Sended": 2,
+      "Positived": 1,
+      "Executed": 1
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 58,
+      "SubName": "Заявка на получение субсидий на удешевление стоимости производства мяса птицы (мясо птицы) фактическое производство от 5 000 тонн",
+      "Applicant": 2,
+      "Sended": 1872,
+      "Positived": 1747,
+      "Executed": 1468
+    },
+    {
+      "__type": "NIC.ISS.Subsidies._Default+Statistic",
+      "StateId": 1,
+      "StateName": "Абай облысы",
+      "SubId": 35,
+      "SubName": "Заявка на получение субсидий племенным и дистрибьютерным центрам за услуги по искусственному осеменению маточного поголовья овец в хозяйствах и сельскохозяйственных кооперативах",
+      "Applicant": 2,
+      "Sended": 6,
+      "Positived": 6,
+      "Executed": 0
+    }
+  ]
+}

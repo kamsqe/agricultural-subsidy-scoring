@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Simulator from './Simulator';
+import PreCheck from './PreCheck';
 
 interface Summary {
   total_applications: number;
@@ -352,8 +353,11 @@ export default function Dashboard() {
         />
       </div>
 
+      {/* Pre-Check */}
+      <PreCheck />
+
       {/* Methodology */}
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
+      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8 mt-8">
         <h3 className="text-lg font-semibold mb-4">Методология Impact Score</h3>
         <div className="grid md:grid-cols-5 gap-4 text-center">
           {[

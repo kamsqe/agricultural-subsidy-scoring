@@ -10,9 +10,11 @@ interface DistrictInfo {
 
 interface SubsidyCode {
   name: string;
+  norm: number;
   count: number;
   avg_amount: number;
   median_amount: number;
+  median_volume: number;
 }
 
 interface ScoreResult {
@@ -55,9 +57,12 @@ function calculateScore(
 
   // === FAIRNESS (0-100) ===
   const top1 = dd ? dd.top1_share : 0.3;
-  const monopolyScore = top1 > 0.7 ? 5 : top1 > 0.4 ? 15 : top1 > 0.2 ? 22 : 25;
-  const medianRatio = dd ? amount / Math.max(dd.median_amount, 1) : 1;
-  const medianScore = medianRatio <= 0.5 ? 25 : medianRatio <= 1.5 ? 22 : medianRatio <= 3 ? 15 : 5;
+  // Use volume vs type median (not broken cross-type amount_vs_median)
+  const volRatio = cd && cd.median_volume > 0 ? volume / cd.median_volume : 1;
+  const monopolyScore = top1 > 0.5
+    ? (volRatio < 1.5 ? 35 : 10)
+    : top1 > 0.2 ? 25 : 20;
+  const medianScore = volRatio <= 0.5 ? 25 : volRatio <= 1.5 ? 30 : volRatio <= 3 ? 20 : 10;
   let sizeScore = 30;
   if (amount < 1_000_000) sizeScore = 30;
   else if (amount < 5_000_000) sizeScore = 22;
@@ -79,17 +84,18 @@ function calculateScore(
   else if (retryCount <= 3) historyScore = 22;
   else historyScore = 10;
   const districtReputation = dd ? (1 - Math.min(dd.reject_rate, 1)) * 40 : 32;
-  const amountRatio = cd ? amount / Math.max(cd.median_amount, 1) : 1;
-  const amountReasonableness = (amountRatio >= 0.3 && amountRatio <= 2) ? 25 : (amountRatio >= 0.1 && amountRatio <= 5) ? 15 : 5;
+  const amtTypeRatio = cd ? amount / Math.max(cd.median_amount, 1) : 1;
+  const amountReasonableness = (amtTypeRatio >= 0.3 && amtTypeRatio <= 2) ? 25 : (amtTypeRatio >= 0.1 && amtTypeRatio <= 5) ? 15 : 5;
   const efficiency = historyScore + districtReputation + amountReasonableness;
 
   // === FRAUD RISK (0-100) ===
   let fraud = 0;
   if (amount > 0 && amount % 1_000_000 === 0) fraud += 15;
   else if (amount > 0 && amount % 100_000 === 0) fraud += 5;
-  if (amountRatio > 10) fraud += 25;
-  else if (amountRatio > 5) fraud += 15;
-  else if (amountRatio > 3) fraud += 8;
+  // Use volume vs type median for outlier detection (not cross-type amount)
+  if (volRatio > 10) fraud += 25;
+  else if (volRatio > 5) fraud += 15;
+  else if (volRatio > 3) fraud += 8;
   if (retryCount > 5) fraud += 20;
   else if (retryCount > 3) fraud += 12;
   else if (retryCount > 1) fraud += 5;
@@ -123,6 +129,8 @@ function calculateScore(
   if (amount > 0 && amount % 1_000_000 === 0) tips.push('Круглая сумма (кратна 1 млн) добавляет +15 к Fraud Risk');
   if (fraud === 0) tips.push('Нет fraud-аномалий');
   if (sizeScore >= 22) tips.push('Небольшая сумма даёт бонус к Fairness');
+  if (volRatio > 3) tips.push(`Объём (${volume} голов) в ${(volRatio).toFixed(1)}x выше медианы для этого типа субсидии — повышает Fraud Risk`);
+  else if (volRatio < 0.5 && volRatio > 0) tips.push(`Объём (${volume} голов) ниже половины медианы для этого типа — бонус к Fairness`);
   if (dd && dd.reject_rate > 0.15) tips.push(`Район ${district} имеет высокий % отказов (${(dd.reject_rate * 100).toFixed(0)}%), что увеличивает Regional Need`);
 
   // === COUNTERFACTUALS ===
@@ -232,7 +240,17 @@ export default function PreCheck() {
   const handleCodeChange = (code: string) => {
     setSubsidyCode(code);
     const cd = codeData[code];
-    if (cd) setAmount(cd.median_amount);
+    if (cd) {
+      setVolume(cd.median_volume);
+      setAmount(cd.median_volume * cd.norm);
+    }
+    setResult(null);
+  };
+
+  const handleVolumeChange = (v: number) => {
+    setVolume(v);
+    const cd = codeData[subsidyCode];
+    if (cd && cd.norm > 0) setAmount(v * cd.norm);
     setResult(null);
   };
 
@@ -279,14 +297,19 @@ export default function PreCheck() {
         </div>
         <div>
           <label className="text-xs text-slate-400 block mb-1">Количество голов / объём</label>
-          <input type="number" value={volume} onChange={e => setVolume(Number(e.target.value))} className="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-200" min={1} />
-        </div>
-        <div>
-          <label className="text-xs text-slate-400 block mb-1">Сумма заявки (₸)</label>
-          <input type="number" value={amount} onChange={e => setAmount(Number(e.target.value))} className="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-200" min={0} step={100000} />
+          <input type="number" value={volume} onChange={e => handleVolumeChange(Number(e.target.value))} className="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-200" min={1} />
           {codeData[subsidyCode] && (
             <div className="text-[10px] text-slate-500 mt-1">
-              Медианная сумма по этому типу: {(codeData[subsidyCode].median_amount / 1e6).toFixed(1)} млн ₸
+              Медиана: {codeData[subsidyCode].median_volume} гол. | Ставка: {codeData[subsidyCode].norm.toLocaleString()} ₸/гол.
+            </div>
+          )}
+        </div>
+        <div>
+          <label className="text-xs text-slate-400 block mb-1">Сумма заявки (₸) <span className="text-slate-600">= объём × ставка</span></label>
+          <input type="number" value={amount} readOnly className="w-full bg-slate-800/50 border border-slate-700/50 rounded-lg px-3 py-2 text-sm text-slate-400 cursor-not-allowed" />
+          {codeData[subsidyCode] && (
+            <div className="text-[10px] text-slate-500 mt-1">
+              {volume} × {codeData[subsidyCode].norm.toLocaleString()} ₸ = {(amount / 1e6).toFixed(2)} млн ₸
             </div>
           )}
         </div>

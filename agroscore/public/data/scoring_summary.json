@@ -2,48 +2,48 @@
   "total_applications": 36651,
   "total_amount_billion": 139.3,
   "score_distribution": {
-    "30": 12,
-    "40": 1120,
-    "50": 11632,
-    "60": 21246,
-    "70": 2628,
-    "80": 13
+    "30": 7,
+    "40": 414,
+    "50": 11417,
+    "60": 22335,
+    "70": 2467,
+    "80": 11
   },
   "score_stats": {
-    "min": 35.9,
+    "min": 38.0,
     "max": 84.0,
-    "mean": 61.8,
-    "median": 62.6
+    "mean": 62.3,
+    "median": 62.8
   },
   "by_status": {
     "Сформировано поручение": {
       "count": 2854,
-      "avg_score": 63.1,
+      "avg_score": 63.5,
       "total_amount": 13831491951.0
+    },
+    "Одобрена": {
+      "count": 7615,
+      "avg_score": 61.6,
+      "total_amount": 42337732378.0
     },
     "Отозвано": {
       "count": 2064,
-      "avg_score": 60.8,
+      "avg_score": 61.6,
       "total_amount": 12556726904.0
     },
     "Отклонена": {
       "count": 2909,
-      "avg_score": 60.1,
+      "avg_score": 60.9,
       "total_amount": 10679350846.0
-    },
-    "Одобрена": {
-      "count": 7615,
-      "avg_score": 61.3,
-      "total_amount": 42337732378.0
     },
     "Исполнена": {
       "count": 21012,
-      "avg_score": 62.1,
+      "avg_score": 62.7,
       "total_amount": 57992474923.0
     },
     "Получена": {
       "count": 197,
-      "avg_score": 61.6,
+      "avg_score": 62.4,
       "total_amount": 1927801570.0
     }
   },
@@ -55,114 +55,114 @@
     },
     "Актюбинская область": {
       "count": 2385,
-      "avg_score": 62.6,
+      "avg_score": 63.6,
       "total_amount": 6293981720.0
     },
     "Северо-Казахстанская область": {
       "count": 1554,
-      "avg_score": 59.8,
+      "avg_score": 60.7,
       "total_amount": 10456284236.0
-    },
-    "Костанайская область": {
-      "count": 2509,
-      "avg_score": 62.2,
-      "total_amount": 7067159405.0
-    },
-    "Мангистауская область": {
-      "count": 3423,
-      "avg_score": 62.7,
-      "total_amount": 3603328820.0
     },
     "Карагандинская область": {
       "count": 926,
-      "avg_score": 60.2,
+      "avg_score": 61.0,
       "total_amount": 3333470525.0
     },
     "г.Шымкент": {
       "count": 405,
-      "avg_score": 67.5,
+      "avg_score": 65.3,
       "total_amount": 2593038440.0
-    },
-    "Атырауская область": {
-      "count": 617,
-      "avg_score": 59.9,
-      "total_amount": 1398263025.0
     },
     "Туркестанская область": {
       "count": 2281,
-      "avg_score": 61.0,
+      "avg_score": 58.2,
       "total_amount": 11466383557.5
     },
     "Кызылординская область": {
       "count": 1260,
-      "avg_score": 59.1,
+      "avg_score": 60.2,
       "total_amount": 3719400795.0
     },
     "область Абай": {
       "count": 3683,
-      "avg_score": 65.2,
+      "avg_score": 65.7,
       "total_amount": 7561288823.5
+    },
+    "Костанайская область": {
+      "count": 2509,
+      "avg_score": 63.2,
+      "total_amount": 7067159405.0
+    },
+    "Атырауская область": {
+      "count": 617,
+      "avg_score": 61.2,
+      "total_amount": 1398263025.0
+    },
+    "Мангистауская область": {
+      "count": 3423,
+      "avg_score": 62.9,
+      "total_amount": 3603328820.0
     },
     "Павлодарская область": {
       "count": 2281,
-      "avg_score": 61.5,
+      "avg_score": 62.8,
       "total_amount": 10499968800.0
-    },
-    "Восточно-Казахстанская область": {
-      "count": 1376,
-      "avg_score": 60.2,
-      "total_amount": 10695959705.0
     },
     "Западно-Казахстанская область": {
       "count": 5156,
-      "avg_score": 61.0,
+      "avg_score": 61.8,
       "total_amount": 11081353980.0
+    },
+    "Восточно-Казахстанская область": {
+      "count": 1376,
+      "avg_score": 61.6,
+      "total_amount": 10695959705.0
     },
     "Жамбылская область": {
       "count": 3312,
-      "avg_score": 61.5,
+      "avg_score": 62.0,
       "total_amount": 8324330165.0
     },
     "Алматинская область": {
       "count": 2681,
-      "avg_score": 61.2,
+      "avg_score": 61.6,
       "total_amount": 18152783270.0
     },
     "область Жетісу": {
       "count": 1479,
-      "avg_score": 59.3,
+      "avg_score": 60.2,
       "total_amount": 4578854665.0
     },
     "область Ұлытау": {
       "count": 360,
-      "avg_score": 55.9,
+      "avg_score": 57.3,
       "total_amount": 1907090940.0
     }
   },
   "by_category": {
     "other": {
       "count": 13877,
-      "avg_score": 61.6
+      "avg_score": 62.4
     },
     "acquisition": {
       "count": 6052,
-      "avg_score": 57.0
+      "avg_score": 59.3
     },
     "breeding": {
       "count": 5738,
-      "avg_score": 65.2
+      "avg_score": 65.6
     },
     "production": {
       "count": 7257,
-      "avg_score": 63.4
+      "avg_score": 62.5
     },
     "emergency": {
       "count": 3727,
-      "avg_score": 62.1
+      "avg_score": 61.6
     }
   },
   "fraud_analysis": {
-    "high_risk_count": 7,
+    "high_risk_count": 1,
     "audit_required_count": 0,
     "high_risk_pct": 0.0
   },
@@ -170,18 +170,18 @@
     "pending_count": 2854,
     "simulated_budget_pct": 50,
     "fifo": {
-      "avg_score": 63.5,
+      "avg_score": 63.6,
       "small_farmer_count": 1232,
       "total_amount": 8763539349.0
     },
     "merit": {
-      "avg_score": 67.9,
-      "small_farmer_count": 1340,
-      "total_amount": 3443942455.0
+      "avg_score": 67.8,
+      "small_farmer_count": 1302,
+      "total_amount": 2687500972.0
     },
     "improvement": {
-      "avg_score_delta": 4.4,
-      "small_farmer_delta": 108
+      "avg_score_delta": 4.2,
+      "small_farmer_delta": 70
     }
   },
   "gini": {
@@ -190,14 +190,14 @@
   "retry_analysis": {
     "total_retries": 11002,
     "retry_pct": 30.0,
-    "avg_score_first": 63.4,
-    "avg_score_retry": 58.0
+    "avg_score_first": 63.9,
+    "avg_score_retry": 58.6
   },
   "triage_distribution": {
-    "A": 12268,
-    "B": 18859,
-    "C": 5512,
-    "D": 12
+    "A": 12387,
+    "B": 20802,
+    "C": 3455,
+    "D": 7
   },
   "exception_points": {
     "first_time_applicant": 25649,

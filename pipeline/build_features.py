@@ -265,15 +265,35 @@ def compute_dataset_features(rows):
         r["oblast_execution_rate"] = os_["executed"] / max(os_["total"], 1)
     
     # ── Subsidy-type aggregates ────────────────────────────────────────
-    type_stats = defaultdict(lambda: {"total": 0, "rejected": 0})
+    type_stats = defaultdict(lambda: {"total": 0, "rejected": 0, "amounts": [], "volumes": []})
     for r in rows:
-        type_stats[r["subsidy_code"]]["total"] += 1
+        code = r["subsidy_code"]
+        type_stats[code]["total"] += 1
+        type_stats[code]["amounts"].append(r["amount"])
+        type_stats[code]["volumes"].append(r["volume"])
         if r["status"] == "Отклонена":
-            type_stats[r["subsidy_code"]]["rejected"] += 1
+            type_stats[code]["rejected"] += 1
+    
+    # Compute per-type medians
+    type_medians = {}
+    for code, ts in type_stats.items():
+        sa = sorted(ts["amounts"])
+        sv = sorted(ts["volumes"])
+        mid = len(sa) // 2
+        type_medians[code] = {
+            "median_amount": sa[mid] if sa else 0,
+            "median_volume": sv[mid] if sv else 0,
+        }
     
     for r in rows:
-        ts = type_stats[r["subsidy_code"]]
+        code = r["subsidy_code"]
+        ts = type_stats[code]
+        tm = type_medians[code]
         r["type_reject_rate"] = ts["rejected"] / max(ts["total"], 1)
+        r["type_median_amount"] = tm["median_amount"]
+        r["type_median_volume"] = tm["median_volume"]
+        r["amount_vs_type_median"] = r["amount"] / max(tm["median_amount"], 1)
+        r["volume_vs_type_median"] = r["volume"] / max(tm["median_volume"], 1) if tm["median_volume"] > 0 else 1.0
     
     # ── Amount features ────────────────────────────────────────────────
     for r in rows:
@@ -388,7 +408,8 @@ def save_output(rows):
         "district_reject_rate", "district_app_count", "district_top1_share",
         "district_median_amount", "amount_vs_median",
         "oblast_reject_rate", "oblast_backlog_ratio", "oblast_execution_rate",
-        "type_reject_rate",
+        "type_reject_rate", "type_median_amount", "type_median_volume",
+        "amount_vs_type_median", "volume_vs_type_median",
         "amount_log", "is_round_million", "is_round_100k", "is_weekend",
         "oblast_budget", "oblast_applicants", "oblast_enterprises", "budget_per_applicant",
         "oblast_approval_rate", "oblast_execution_rate_ext",

@@ -92,19 +92,18 @@ def score_fairness(app: dict) -> float:
     
     Factors:
     1. District monopolization (top-1 share)
-    2. Amount relative to district median
-    3. Small farmer bonus
+    2. Volume relative to type median (normalized by subsidy type)
+    3. Small farmer bonus (by volume percentile within type)
     """
     # Factor 1: Monopolization (max 40 pts)
     top1_share = float(app.get("district_top1_share", 0))
     
-    # High monopolization + this is NOT the top recipient = bonus
-    # We don't have recipient ID, but can use amount_vs_median as proxy
-    amount_ratio = float(app.get("amount_vs_median", 1))
+    # Use per-type volume ratio (not broken cross-type amount_vs_median)
+    vol_ratio = float(app.get("volume_vs_type_median", 1))
     
     if top1_share > 0.5:
         # District is monopolized
-        if amount_ratio < 1.5:
+        if vol_ratio < 1.5:
             # Smaller applicant in monopolized district = fairness bonus
             monopoly_score = 35
         else:
@@ -115,12 +114,13 @@ def score_fairness(app: dict) -> float:
     else:
         monopoly_score = 20  # well-distributed district
     
-    # Factor 2: Size relative to median (max 30 pts)
-    if amount_ratio < 0.5:
-        size_score = 25  # small = fairness bonus
-    elif amount_ratio < 1.5:
+    # Factor 2: Volume relative to type median (max 30 pts)
+    # Comparing within same subsidy type — apples to apples
+    if vol_ratio < 0.5:
+        size_score = 25  # small herd = fairness bonus
+    elif vol_ratio < 1.5:
         size_score = 30  # around median = good
-    elif amount_ratio < 3.0:
+    elif vol_ratio < 3.0:
         size_score = 20  # above median
     else:
         size_score = 10  # far above median = less fair
@@ -221,14 +221,14 @@ def score_efficiency(app: dict) -> float:
     # Lower reject rate = better reputation
     reputation_score = (1 - min(district_rr, 1.0)) * 40
     
-    # Factor 3: Amount reasonableness (max 25 pts)
-    ratio = float(app.get("amount_vs_median", 1))
+    # Factor 3: Amount reasonableness vs type median (max 25 pts)
+    ratio = float(app.get("amount_vs_type_median", 1))
     if 0.3 <= ratio <= 2.0:
-        amount_score = 25  # reasonable range
+        amount_score = 25  # reasonable range for this subsidy type
     elif 0.1 <= ratio <= 5.0:
         amount_score = 15
     else:
-        amount_score = 5  # extreme outlier
+        amount_score = 5  # extreme outlier within type
     
     return round(history_score + reputation_score + amount_score, 1)
 
@@ -256,8 +256,8 @@ def score_fraud_risk(app: dict) -> float:
     elif int(app.get("is_round_100k", 0)):
         risk += 5
     
-    # Extreme volume outlier (max 25)
-    ratio = float(app.get("amount_vs_median", 1))
+    # Extreme volume outlier vs type median (max 25)
+    ratio = float(app.get("volume_vs_type_median", 1))
     if ratio > 10:
         risk += 25
     elif ratio > 5:
@@ -700,20 +700,25 @@ def save_results(scored, summary):
     print(f"Saved: {mapping_path}")
     
     # Subsidy codes for PreCheck form
-    code_data = dd(lambda: {"name": "", "count": 0, "avg_amount": 0, "amounts": []})
+    code_data = dd(lambda: {"name": "", "norm": 0, "count": 0, "amounts": [], "volumes": []})
     for s in scored:
         ck = s["subsidy_code"]
         code_data[ck]["name"] = s["subsidy_name"][:80] if s["subsidy_name"] else ck
+        code_data[ck]["norm"] = s["norm"]
         code_data[ck]["count"] += 1
         code_data[ck]["amounts"].append(s["amount"])
+        code_data[ck]["volumes"].append(s["volume"])
     
     codes = {}
     for ck, cv in code_data.items():
+        sorted_vols = sorted(cv["volumes"])
         codes[ck] = {
             "name": cv["name"],
+            "norm": cv["norm"],
             "count": cv["count"],
             "avg_amount": round(sum(cv["amounts"]) / len(cv["amounts"])),
             "median_amount": round(sorted(cv["amounts"])[len(cv["amounts"]) // 2]),
+            "median_volume": sorted_vols[len(sorted_vols) // 2],
         }
     
     codes_path = os.path.join(frontend_dir, "subsidy_codes.json")

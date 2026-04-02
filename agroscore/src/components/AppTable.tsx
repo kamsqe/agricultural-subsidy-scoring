@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 
-interface App {
+export interface App {
   r: number; s: number; p: number; t: string;
-  sc: number; fc: number; nc: number; ec: number; fr: number; ex: number;
+  sc: number; fc: number; nc: number; ec: number; fr: number; ex: number; ano: number;
   o: string; d: string; amt: number; st: string;
   retry: number; cat: string; code: string; vol: number; date: string;
 }
@@ -24,7 +24,12 @@ const STATUS_SHORT: Record<string, string> = {
 
 const PAGE_SIZE = 100;
 
-export default function AppTable() {
+interface AppTableProps {
+  onRowClick?: (app: App) => void;
+  selectedAppId?: number;
+}
+
+export default function AppTable({ onRowClick, selectedAppId }: AppTableProps = {}) {
   const [apps, setApps] = useState<App[]>([]);
   const [codes, setCodes] = useState<Record<string, SubsidyCode>>({});
   const [loading, setLoading] = useState(true);
@@ -92,6 +97,23 @@ export default function AppTable() {
     setScoreMin(0); setScoreMax(100); setPage(0);
   };
 
+  const exportCSV = () => {
+    const headers = ['ID', 'Балл', 'Приоритет', 'Процент', 'Стратегия(S)', 'Справедливость(F)', 'Нужда(N)', 'Эффективность(E)', 'Риск Фрода(FR)', 'Аномалия(ML)', 'Область', 'Район', 'Сумма(KZT)', 'Статус', 'ОКЭД', 'Попыток(Retry)', 'Дата'];
+    const rows = filtered.map(a => [
+      a.r, a.s.toFixed(2), a.t, a.p, a.sc, a.fc, a.nc, a.ec, a.fr, a.ano,
+      `"${a.o}"`, `"${a.d}"`, a.amt, `"${a.st}"`, `"${a.code}"`, a.retry, `"${a.date}"`
+    ]);
+    const csvContent = [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', `agroscore_registry_${new Date().toISOString().slice(0,10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   if (loading) return <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-slate-400">Загрузка 36,651 заявок...</div>;
   if (error) return <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-red-400">Ошибка: {error}</div>;
 
@@ -99,10 +121,15 @@ export default function AppTable() {
     <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h3 className="text-lg font-semibold">Все заявки</h3>
+          <h3 className="text-lg font-semibold cursor-pointer">Все заявки</h3>
           <p className="text-slate-400 text-sm">{filtered.length.toLocaleString()} из {apps.length.toLocaleString()} заявок</p>
         </div>
-        <button onClick={resetFilters} className="text-xs text-slate-500 hover:text-slate-300 transition">Сбросить фильтры</button>
+        <div className="flex gap-4 items-center">
+          <button onClick={exportCSV} className="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-1.5 px-3 rounded shadow transition-colors flex items-center gap-2">
+            <span>📥</span> Экспорт (CSV)
+          </button>
+          <button onClick={resetFilters} className="text-xs text-slate-500 hover:text-slate-300 transition">Сбросить фильтры</button>
+        </div>
       </div>
 
       {/* Filters */}
@@ -155,6 +182,7 @@ export default function AppTable() {
               <th className="py-2 px-1 text-left">N</th>
               <th className="py-2 px-1 text-left">E</th>
               <th className="py-2 px-1 text-left">FR</th>
+              <th className="py-2 px-1 text-left">ML-Аномалия</th>
               <th className="py-2 px-1 text-left">Область</th>
               <th className="py-2 px-1 text-left">Район</th>
               <th className="py-2 px-1 text-right cursor-pointer hover:text-slate-300" onClick={() => handleSort('amt')}>Сумма {sortField === 'amt' ? (sortAsc ? '▲' : '▼') : ''}</th>
@@ -166,7 +194,15 @@ export default function AppTable() {
           </thead>
           <tbody>
             {pageApps.map((a) => (
-              <tr key={a.r} className="border-b border-slate-800/50 hover:bg-slate-800/30 transition-colors">
+              <tr 
+                key={a.r} 
+                onClick={() => onRowClick?.(a)}
+                className={`border-b border-slate-800/50 transition-colors cursor-pointer ${
+                  selectedAppId === a.r 
+                    ? 'bg-indigo-900/40 hover:bg-indigo-900/60 border-indigo-500/50' 
+                    : 'hover:bg-slate-800/50'
+                }`}
+              >
                 <td className="py-1.5 px-1 text-slate-500 font-mono">{a.r}</td>
                 <td className="py-1.5 px-1 font-mono font-bold">
                   <span className={a.s >= 65 ? 'text-emerald-400' : a.s >= 55 ? 'text-sky-400' : a.s >= 40 ? 'text-amber-400' : 'text-red-400'}>
@@ -180,6 +216,17 @@ export default function AppTable() {
                 <td className="py-1.5 px-1 text-amber-400/60 font-mono">{a.nc}</td>
                 <td className="py-1.5 px-1 text-emerald-400/60 font-mono">{a.ec}</td>
                 <td className="py-1.5 px-1 text-red-400/60 font-mono">{a.fr}</td>
+                <td className="py-1.5 px-1 font-mono">
+                  {a.ano > 70 ? (
+                    <span className="bg-red-500/20 text-red-400 px-1 py-0.5 rounded text-xs animate-pulse ring-1 ring-red-500/50">
+                      {a.ano}%
+                    </span>
+                  ) : a.ano > 40 ? (
+                    <span className="text-amber-400/80 text-xs">{a.ano}%</span>
+                  ) : (
+                    <span className="text-slate-600 text-xs">{a.ano}%</span>
+                  )}
+                </td>
                 <td className="py-1.5 px-1 text-slate-300 truncate max-w-[120px]" title={a.o}>{a.o}</td>
                 <td className="py-1.5 px-1 text-slate-400 truncate max-w-[100px]" title={a.d}>{a.d}</td>
                 <td className="py-1.5 px-1 text-right text-slate-300 font-mono">{(a.amt / 1e6).toFixed(1)}M</td>

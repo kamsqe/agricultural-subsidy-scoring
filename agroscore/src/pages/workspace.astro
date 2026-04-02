@@ -1,6 +1,6 @@
 ---
-import '../styles/global.css'
-import Dashboard from '../components/Dashboard.tsx'
+import WorkspaceComponent from '../components/Workspace';
+import '../styles/global.css';
 ---
 
 <html lang="ru">
@@ -8,11 +8,9 @@ import Dashboard from '../components/Dashboard.tsx'
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="generator" content={Astro.generator} />
-		<title>AgroScore — AI-скоринг сельхозсубсидий</title>
-		<meta name="description" content="Merit-based система ранжирования для оптимального распределения субсидий в животноводстве Казахстана" />
+		<title>AgroScore B2G Workspace</title>
 	</head>
-	<body class="bg-slate-950 text-slate-100 min-h-screen relative">
+	<body class="bg-slate-950 text-slate-100 min-h-screen m-0 p-0 overflow-x-hidden">
 		<!-- Mobile blocker -->
 		<div class="fixed inset-0 z-[9999] bg-slate-950 flex items-center justify-center p-8 lg:hidden">
 			<div class="text-center max-w-sm">
@@ -22,6 +20,6 @@ import Dashboard from '../components/Dashboard.tsx'
 				<div class="mt-6 px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-xs text-slate-500 inline-block">min-width: 1024px</div>
 			</div>
 		</div>
-		<Dashboard client:load />
+		<WorkspaceComponent client:load />
 	</body>
 </html>

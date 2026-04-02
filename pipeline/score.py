@@ -244,17 +244,29 @@ def score_fraud_risk(app: dict) -> float:
     3. High retry velocity
     4. District monopolization
     5. Late-night submission
+    6. Machine Learning Anomaly Score
     
     NOTE: Weekend submission removed — data shows +0.2pp reject rate
     delta (8.1% weekend vs 7.9% weekday), which is noise.
     """
     risk = 0
     
-    # Round million amounts (max 15)
-    if int(app.get("is_round_million", 0)):
-        risk += 15
-    elif int(app.get("is_round_100k", 0)):
-        risk += 5
+    # ML Anomaly Factor (max 40)
+    anomaly_score = float(app.get("anomaly_score", 0))
+    if anomaly_score > 70:
+        risk += 40
+    elif anomaly_score > 50:
+        risk += 20
+    elif anomaly_score > 30:
+        risk += 10
+    
+    # Round million amounts (max 15) — skip if amount is norm-derived (volume × norm)
+    is_norm = int(app.get("is_norm_amount", 0))
+    if not is_norm:
+        if int(app.get("is_round_million", 0)):
+            risk += 15
+        elif int(app.get("is_round_100k", 0)):
+            risk += 5
     
     # Extreme volume outlier vs type median (max 25)
     ratio = float(app.get("volume_vs_type_median", 1))
@@ -315,10 +327,12 @@ def score_exception_points(app: dict):
     points = 0
     reasons = []
     
-    # First-time applicant bonus (+5)
+    # First-time applicant in high-retry district (+3)
+    # Only meaningful when district has high retry rate (>40%), making first-timers exceptional
     retry = int(app.get("retry_count", 0))
-    if retry == 0:
-        points += 5
+    district_reject_rate = float(app.get("district_reject_rate", 0))
+    if retry == 0 and district_reject_rate > 0.15:
+        points += 3
         reasons.append("first_time_applicant")
     
     # High-need oblast bonus (+5) — oblast with budget backlog > 30%
@@ -383,8 +397,9 @@ def calculate_impact_score(app: dict) -> dict:
         "exception_reasons": exception_reasons,
         "flags": {
             "high_fraud_risk": fraud > 50,
-            "requires_audit": fraud > 70,
+            "requires_audit": fraud > 70 or float(app.get("anomaly_score", 0)) > 80,
             "low_efficiency": efficiency < 30,
+            "is_ml_anomalous": float(app.get("anomaly_score", 0)) > 70,
         },
     }
 
@@ -398,10 +413,25 @@ def run_scoring():
         apps = list(reader)
     print(f"  {len(apps):,} applications loaded")
     
+    # Load ML outputs
+    anomaly_csv = os.path.join(BASE, "data/ml_outputs/anomaly_scores.csv")
+    anomaly_dict = {}
+    if os.path.exists(anomaly_csv):
+        print("Loading Isolation Forest anomaly scores...")
+        with open(anomaly_csv, "r", encoding="utf-8") as f:
+            next(f) # skip header
+            for line in f:
+                parts = line.strip().split(',')
+                if len(parts) == 2:
+                    k = parts[0].lstrip('0')
+                    anomaly_dict[k] = float(parts[1])
+    
     # Score all
     print("Scoring...")
     scored = []
     for app in apps:
+        app_key = app["app_number"].lstrip('0')
+        app['anomaly_score'] = anomaly_dict.get(app_key, 0)
         result = calculate_impact_score(app)
         scored.append({
             "app_number": app["app_number"],
@@ -420,6 +450,7 @@ def run_scoring():
             "retry_count": int(app["retry_count"]),
             "is_retry": app["is_retry"] == "True",
             "month": int(app["month"]),
+            "anomaly_score": app.get("anomaly_score", 0),
             **result,
         })
     
@@ -488,6 +519,7 @@ def compute_summary(scored):
     # Fraud flags
     high_risk = sum(1 for s in scored if s["flags"]["high_fraud_risk"])
     audit_required = sum(1 for s in scored if s["flags"]["requires_audit"])
+    anomalous_count = sum(1 for s in scored if s["flags"].get("is_ml_anomalous"))
     
     # FIFO vs Merit simulation
     # Take applications with status "Сформировано поручение" (waiting for budget)
@@ -543,6 +575,7 @@ def compute_summary(scored):
         district_amounts_merit[s["district"]] += s["amount"]
     
     current_gini = gini(list(district_amounts_fifo.values()))
+    merit_gini = gini(list(district_amounts_merit.values()))
     
     # Triage distribution
     triage_dist = Counter(s["triage"] for s in scored)
@@ -570,6 +603,7 @@ def compute_summary(scored):
             "high_risk_count": high_risk,
             "audit_required_count": audit_required,
             "high_risk_pct": round(high_risk / total * 100, 1),
+            "ml_anomalies_detected": anomalous_count,
         },
         "fifo_vs_merit": {
             "pending_count": len(pending),
@@ -591,6 +625,8 @@ def compute_summary(scored):
         },
         "gini": {
             "current_district_gini": current_gini,
+            "merit_district_gini": merit_gini,
+            "gini_delta": round(merit_gini - current_gini, 4),
         },
         "retry_analysis": {
             "total_retries": sum(1 for s in scored if s["is_retry"]),
@@ -645,6 +681,7 @@ def save_results(scored, summary):
             "ec": c["efficiency"],
             "fr": c["fraud_risk"],
             "ex": c.get("exception", 0),
+            "ano": round(float(s.get("anomaly_score", 0)), 1),
             "o": s["oblast"],
             "d": s["district"],
             "amt": s["amount"],
@@ -729,6 +766,131 @@ def save_results(scored, summary):
     return scored_path, summary_path
 
 
+def run_sensitivity_analysis(apps):
+    """
+    Sensitivity analysis: perturb each weight by ±0.05 (±25% relative)
+    and measure impact on score distribution.
+    """
+    import copy
+    
+    print("\nRunning sensitivity analysis...")
+    
+    base_weights = dict(WEIGHTS)
+    results = {}
+    
+    # Get baseline scores
+    baseline_scores = []
+    for app in apps:
+        r = calculate_impact_score(app)
+        baseline_scores.append(r["score"])
+    baseline_mean = sum(baseline_scores) / len(baseline_scores)
+    
+    for weight_name in ["strategic", "fairness", "need", "efficiency", "fraud_penalty"]:
+        deltas = {}
+        for direction, delta in [("up", +0.05), ("down", -0.05)]:
+            # Temporarily change weight
+            original = WEIGHTS[weight_name]
+            WEIGHTS[weight_name] = max(0, original + delta)
+            
+            perturbed_scores = []
+            for app in apps:
+                r = calculate_impact_score(app)
+                perturbed_scores.append(r["score"])
+            
+            perturbed_mean = sum(perturbed_scores) / len(perturbed_scores)
+            
+            # Rank changes
+            base_ranked = sorted(range(len(baseline_scores)), key=lambda i: baseline_scores[i], reverse=True)
+            pert_ranked = sorted(range(len(perturbed_scores)), key=lambda i: perturbed_scores[i], reverse=True)
+            base_rank = {idx: rank for rank, idx in enumerate(base_ranked)}
+            pert_rank = {idx: rank for rank, idx in enumerate(pert_ranked)}
+            rank_changes = [abs(base_rank[i] - pert_rank[i]) for i in range(len(apps))]
+            avg_rank_change = sum(rank_changes) / len(rank_changes)
+            
+            deltas[direction] = {
+                "weight_delta": round(delta, 3),
+                "new_weight": round(WEIGHTS[weight_name], 3),
+                "mean_score_delta": round(perturbed_mean - baseline_mean, 2),
+                "avg_rank_change": round(avg_rank_change, 1),
+                "max_rank_change": max(rank_changes),
+            }
+            
+            # Restore
+            WEIGHTS[weight_name] = original
+        
+        results[weight_name] = deltas
+        print(f"  {weight_name}: up→mean {deltas['up']['mean_score_delta']:+.2f}, "
+              f"down→mean {deltas['down']['mean_score_delta']:+.2f}, "
+              f"avg rank Δ: {deltas['up']['avg_rank_change']:.0f}/{deltas['down']['avg_rank_change']:.0f}")
+    
+    return results
+
+
+def run_backtesting(scored):
+    """
+    Basic backtesting: correlate scores with actual execution status.
+    If the model has any signal, executed apps should score higher than rejected.
+    """
+    print("\nRunning backtesting...")
+    
+    status_groups = {
+        "executed": [s for s in scored if s["status"] == "Исполнена"],
+        "approved": [s for s in scored if s["status"] == "Одобрена"],
+        "pending": [s for s in scored if s["status"] == "Сформировано поручение"],
+        "rejected": [s for s in scored if s["status"] == "Отклонена"],
+        "withdrawn": [s for s in scored if s["status"] == "Отозвано"],
+    }
+    
+    group_stats = {}
+    for name, group in status_groups.items():
+        if not group:
+            continue
+        scores = [s["score"] for s in group]
+        group_stats[name] = {
+            "count": len(group),
+            "mean_score": round(sum(scores) / len(scores), 2),
+            "median_score": round(sorted(scores)[len(scores) // 2], 2),
+            "min_score": round(min(scores), 2),
+            "max_score": round(max(scores), 2),
+        }
+    
+    # Point-biserial: executed (1) vs rejected (0)
+    exec_scores = [s["score"] for s in status_groups.get("executed", [])]
+    rej_scores = [s["score"] for s in status_groups.get("rejected", [])]
+    
+    correlation = None
+    if exec_scores and rej_scores:
+        all_scores = exec_scores + rej_scores
+        all_labels = [1] * len(exec_scores) + [0] * len(rej_scores)
+        n = len(all_scores)
+        mean_score = sum(all_scores) / n
+        mean_label = sum(all_labels) / n
+        
+        cov = sum((s - mean_score) * (l - mean_label) for s, l in zip(all_scores, all_labels)) / n
+        std_score = (sum((s - mean_score) ** 2 for s in all_scores) / n) ** 0.5
+        std_label = (sum((l - mean_label) ** 2 for l in all_labels) / n) ** 0.5
+        
+        if std_score > 0 and std_label > 0:
+            correlation = round(cov / (std_score * std_label), 4)
+    
+    exec_mean = group_stats.get("executed", {}).get("mean_score", 0)
+    rej_mean = group_stats.get("rejected", {}).get("mean_score", 0)
+    delta = round(exec_mean - rej_mean, 2) if exec_mean and rej_mean else None
+    
+    print(f"  Executed mean: {exec_mean}, Rejected mean: {rej_mean}, Delta: {delta}")
+    if correlation is not None:
+        print(f"  Point-biserial correlation (exec vs rej): {correlation}")
+    
+    return {
+        "by_status": group_stats,
+        "executed_vs_rejected": {
+            "delta": delta,
+            "point_biserial_correlation": correlation,
+            "note": "Positive delta means executed apps score higher than rejected (model has signal)"
+        }
+    }
+
+
 def print_results(scored, summary):
     """Print key results to console."""
     
@@ -796,5 +958,28 @@ def print_results(scored, summary):
 if __name__ == "__main__":
     scored = run_scoring()
     summary = compute_summary(scored)
+    
+    # Load raw apps for sensitivity analysis (need original features)
+    apps = []
+    with open(INPUT_CSV, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            apps.append(row)
+    # Restore anomaly scores
+    anomaly_csv = os.path.join(OUTPUT_DIR, "..", "ml_outputs", "anomaly_scores.csv")
+    anomaly_dict = {}
+    if os.path.exists(anomaly_csv):
+        with open(anomaly_csv, "r", encoding="utf-8") as f:
+            next(f)
+            for line in f:
+                parts = line.strip().split(',')
+                if len(parts) == 2:
+                    anomaly_dict[parts[0].lstrip('0')] = float(parts[1])
+    for app in apps:
+        app['anomaly_score'] = anomaly_dict.get(app.get("app_number", "").lstrip('0'), 0)
+    
+    summary["sensitivity"] = run_sensitivity_analysis(apps)
+    summary["backtesting"] = run_backtesting(scored)
+    
     save_results(scored, summary)
     print_results(scored, summary)

@@ -2,206 +2,334 @@
   "total_applications": 36651,
   "total_amount_billion": 139.3,
   "score_distribution": {
-    "30": 7,
-    "40": 414,
-    "50": 11417,
-    "60": 22335,
-    "70": 2467,
-    "80": 11
+    "30": 42,
+    "40": 1674,
+    "50": 17939,
+    "60": 16909,
+    "70": 87
   },
   "score_stats": {
-    "min": 38.0,
-    "max": 84.0,
-    "mean": 62.3,
-    "median": 62.8
+    "min": 33.6,
+    "max": 78.0,
+    "mean": 59.0,
+    "median": 59.5
   },
   "by_status": {
     "Сформировано поручение": {
       "count": 2854,
-      "avg_score": 63.5,
+      "avg_score": 60.6,
       "total_amount": 13831491951.0
     },
     "Одобрена": {
       "count": 7615,
-      "avg_score": 61.6,
+      "avg_score": 58.2,
       "total_amount": 42337732378.0
     },
     "Отозвано": {
       "count": 2064,
-      "avg_score": 61.6,
+      "avg_score": 58.3,
       "total_amount": 12556726904.0
     },
     "Отклонена": {
       "count": 2909,
-      "avg_score": 60.9,
+      "avg_score": 58.2,
       "total_amount": 10679350846.0
     },
     "Исполнена": {
       "count": 21012,
-      "avg_score": 62.7,
+      "avg_score": 59.3,
       "total_amount": 57992474923.0
     },
     "Получена": {
       "count": 197,
-      "avg_score": 62.4,
+      "avg_score": 58.4,
       "total_amount": 1927801570.0
     }
   },
   "by_oblast": {
     "Акмолинская область": {
       "count": 963,
-      "avg_score": 68.5,
+      "avg_score": 64.6,
       "total_amount": 16592637700.0
     },
     "Актюбинская область": {
       "count": 2385,
-      "avg_score": 63.6,
+      "avg_score": 60.4,
       "total_amount": 6293981720.0
     },
     "Северо-Казахстанская область": {
       "count": 1554,
-      "avg_score": 60.7,
+      "avg_score": 56.8,
       "total_amount": 10456284236.0
+    },
+    "область Абай": {
+      "count": 3683,
+      "avg_score": 62.1,
+      "total_amount": 7561288823.5
     },
     "Карагандинская область": {
       "count": 926,
-      "avg_score": 61.0,
+      "avg_score": 57.5,
       "total_amount": 3333470525.0
+    },
+    "Жамбылская область": {
+      "count": 3312,
+      "avg_score": 59.8,
+      "total_amount": 8324330165.0
+    },
+    "Западно-Казахстанская область": {
+      "count": 5156,
+      "avg_score": 59.3,
+      "total_amount": 11081353980.0
     },
     "г.Шымкент": {
       "count": 405,
-      "avg_score": 65.3,
+      "avg_score": 60.0,
       "total_amount": 2593038440.0
+    },
+    "Мангистауская область": {
+      "count": 3423,
+      "avg_score": 60.7,
+      "total_amount": 3603328820.0
     },
     "Туркестанская область": {
       "count": 2281,
-      "avg_score": 58.2,
+      "avg_score": 54.0,
       "total_amount": 11466383557.5
     },
     "Кызылординская область": {
       "count": 1260,
-      "avg_score": 60.2,
+      "avg_score": 58.1,
       "total_amount": 3719400795.0
-    },
-    "область Абай": {
-      "count": 3683,
-      "avg_score": 65.7,
-      "total_amount": 7561288823.5
-    },
-    "Костанайская область": {
-      "count": 2509,
-      "avg_score": 63.2,
-      "total_amount": 7067159405.0
-    },
-    "Атырауская область": {
-      "count": 617,
-      "avg_score": 61.2,
-      "total_amount": 1398263025.0
-    },
-    "Мангистауская область": {
-      "count": 3423,
-      "avg_score": 62.9,
-      "total_amount": 3603328820.0
     },
     "Павлодарская область": {
       "count": 2281,
-      "avg_score": 62.8,
+      "avg_score": 59.4,
       "total_amount": 10499968800.0
     },
-    "Западно-Казахстанская область": {
-      "count": 5156,
-      "avg_score": 61.8,
-      "total_amount": 11081353980.0
+    "Атырауская область": {
+      "count": 617,
+      "avg_score": 58.0,
+      "total_amount": 1398263025.0
+    },
+    "Костанайская область": {
+      "count": 2509,
+      "avg_score": 58.9,
+      "total_amount": 7067159405.0
     },
     "Восточно-Казахстанская область": {
       "count": 1376,
-      "avg_score": 61.6,
+      "avg_score": 57.5,
       "total_amount": 10695959705.0
-    },
-    "Жамбылская область": {
-      "count": 3312,
-      "avg_score": 62.0,
-      "total_amount": 8324330165.0
     },
     "Алматинская область": {
       "count": 2681,
-      "avg_score": 61.6,
+      "avg_score": 57.5,
       "total_amount": 18152783270.0
     },
     "область Жетісу": {
       "count": 1479,
-      "avg_score": 60.2,
+      "avg_score": 56.7,
       "total_amount": 4578854665.0
     },
     "область Ұлытау": {
       "count": 360,
-      "avg_score": 57.3,
+      "avg_score": 53.8,
       "total_amount": 1907090940.0
     }
   },
   "by_category": {
     "other": {
       "count": 13877,
-      "avg_score": 62.4
-    },
-    "acquisition": {
-      "count": 6052,
-      "avg_score": 59.3
-    },
-    "breeding": {
-      "count": 5738,
-      "avg_score": 65.6
+      "avg_score": 58.4
     },
     "production": {
       "count": 7257,
-      "avg_score": 62.5
+      "avg_score": 59.3
+    },
+    "acquisition": {
+      "count": 6052,
+      "avg_score": 57.3
+    },
+    "breeding": {
+      "count": 5738,
+      "avg_score": 62.4
     },
     "emergency": {
       "count": 3727,
-      "avg_score": 61.6
+      "avg_score": 58.6
     }
   },
   "fraud_analysis": {
-    "high_risk_count": 1,
-    "audit_required_count": 0,
-    "high_risk_pct": 0.0
+    "high_risk_count": 249,
+    "audit_required_count": 104,
+    "high_risk_pct": 0.7,
+    "ml_anomalies_detected": 304
   },
   "fifo_vs_merit": {
     "pending_count": 2854,
     "simulated_budget_pct": 50,
     "fifo": {
-      "avg_score": 63.6,
+      "avg_score": 61.0,
       "small_farmer_count": 1232,
       "total_amount": 8763539349.0
     },
     "merit": {
-      "avg_score": 67.8,
-      "small_farmer_count": 1302,
-      "total_amount": 2687500972.0
+      "avg_score": 64.5,
+      "small_farmer_count": 1325,
+      "total_amount": 2221336670.0
     },
     "improvement": {
-      "avg_score_delta": 4.2,
-      "small_farmer_delta": 70
+      "avg_score_delta": 3.5,
+      "small_farmer_delta": 93
     }
   },
   "gini": {
-    "current_district_gini": 0.648
+    "current_district_gini": 0.648,
+    "merit_district_gini": 0.648,
+    "gini_delta": 0.0
   },
   "retry_analysis": {
     "total_retries": 11002,
     "retry_pct": 30.0,
-    "avg_score_first": 63.9,
-    "avg_score_retry": 58.6
+    "avg_score_first": 59.3,
+    "avg_score_retry": 58.5
   },
   "triage_distribution": {
-    "A": 12387,
-    "B": 20802,
-    "C": 3455,
-    "D": 7
+    "A": 3966,
+    "B": 25476,
+    "C": 7167,
+    "D": 42
   },
   "exception_points": {
-    "first_time_applicant": 25649,
     "high_need_oblast": 4386,
-    "small_farmer_monopoly_district": 456
+    "small_farmer_monopoly_district": 456,
+    "first_time_applicant": 4136
+  },
+  "sensitivity": {
+    "strategic": {
+      "up": {
+        "weight_delta": 0.05,
+        "new_weight": 0.25,
+        "mean_score_delta": 3.46,
+        "avg_rank_change": 779.8,
+        "max_rank_change": 4688
+      },
+      "down": {
+        "weight_delta": -0.05,
+        "new_weight": 0.15,
+        "mean_score_delta": -3.45,
+        "avg_rank_change": 854.9,
+        "max_rank_change": 5062
+      }
+    },
+    "fairness": {
+      "up": {
+        "weight_delta": 0.05,
+        "new_weight": 0.25,
+        "mean_score_delta": 3.41,
+        "avg_rank_change": 649.3,
+        "max_rank_change": 5841
+      },
+      "down": {
+        "weight_delta": -0.05,
+        "new_weight": 0.15,
+        "mean_score_delta": -3.4,
+        "avg_rank_change": 754.9,
+        "max_rank_change": 5844
+      }
+    },
+    "need": {
+      "up": {
+        "weight_delta": 0.05,
+        "new_weight": 0.25,
+        "mean_score_delta": 2.33,
+        "avg_rank_change": 608.2,
+        "max_rank_change": 2989
+      },
+      "down": {
+        "weight_delta": -0.05,
+        "new_weight": 0.15,
+        "mean_score_delta": -2.32,
+        "avg_rank_change": 647.0,
+        "max_rank_change": 3244
+      }
+    },
+    "efficiency": {
+      "up": {
+        "weight_delta": 0.05,
+        "new_weight": 0.25,
+        "mean_score_delta": 4.25,
+        "avg_rank_change": 612.6,
+        "max_rank_change": 3820
+      },
+      "down": {
+        "weight_delta": -0.05,
+        "new_weight": 0.15,
+        "mean_score_delta": -4.24,
+        "avg_rank_change": 696.0,
+        "max_rank_change": 4684
+      }
+    },
+    "fraud_penalty": {
+      "up": {
+        "weight_delta": 0.05,
+        "new_weight": 0.15,
+        "mean_score_delta": -0.33,
+        "avg_rank_change": 511.6,
+        "max_rank_change": 6935
+      },
+      "down": {
+        "weight_delta": -0.05,
+        "new_weight": 0.05,
+        "mean_score_delta": 0.33,
+        "avg_rank_change": 613.5,
+        "max_rank_change": 7870
+      }
+    }
+  },
+  "backtesting": {
+    "by_status": {
+      "executed": {
+        "count": 21012,
+        "mean_score": 59.34,
+        "median_score": 59.7,
+        "min_score": 33.6,
+        "max_score": 74.1
+      },
+      "approved": {
+        "count": 7615,
+        "mean_score": 58.19,
+        "median_score": 59.1,
+        "min_score": 34.1,
+        "max_score": 77.2
+      },
+      "pending": {
+        "count": 2854,
+        "mean_score": 60.62,
+        "median_score": 60.8,
+        "min_score": 41.6,
+        "max_score": 78.0
+      },
+      "rejected": {
+        "count": 2909,
+        "mean_score": 58.18,
+        "median_score": 58.7,
+        "min_score": 34.2,
+        "max_score": 76.4
+      },
+      "withdrawn": {
+        "count": 2064,
+        "mean_score": 58.33,
+        "median_score": 58.8,
+        "min_score": 37.1,
+        "max_score": 76.8
+      }
+    },
+    "executed_vs_rejected": {
+      "delta": 1.16,
+      "point_biserial_correlation": 0.0782,
+      "note": "Positive delta means executed apps score higher than rejected (model has signal)"
+    }
   }
 }

@@ -1,0 +1,19 @@
+{
+  "title": "Historical Rejection Bias (SHAP Values)",
+  "description": "What the previous heuristic system implicitly penalized. Notice geographical/budget factors dominate over legitimate application metrics.",
+  "importances": {
+    "district_reject_rate": 1.046387791633606,
+    "subsidy_type_code": 0.39318224787712097,
+    "oblast_reject_rate": 0.1687442660331726,
+    "month": 0.11915110796689987,
+    "hour": 0.061234764754772186,
+    "oblast_code": 0.048934947699308395,
+    "volume_vs_type_median": 0.043472081422805786,
+    "oblast_backlog_ratio": 0.04332146421074867,
+    "amount_log": 0.03965853154659271,
+    "retry_count": 0.01696435734629631,
+    "district_top1_share": 0.016022851690649986,
+    "budget_per_applicant": 0.010292811319231987,
+    "is_weekend": 0.004216264933347702
+  }
+}

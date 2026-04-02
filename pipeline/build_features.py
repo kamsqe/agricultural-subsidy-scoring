@@ -301,6 +301,9 @@ def compute_dataset_features(rows):
         r["is_round_million"] = 1 if r["amount"] > 0 and r["amount"] % 1_000_000 == 0 else 0
         r["is_round_100k"] = 1 if r["amount"] > 0 and r["amount"] % 100_000 == 0 else 0
         r["is_weekend"] = 1 if r["day_of_week"] >= 5 else 0
+        # Norm-derived amount: if amount == volume × norm, roundness is expected (not fraud)
+        expected = r["volume"] * r["norm"] if r["norm"] > 0 else 0
+        r["is_norm_amount"] = 1 if expected > 0 and abs(r["amount"] - expected) < 1.0 else 0
     
     print(f"  Computed aggregates for {len(district_stats)} districts, {len(oblast_stats)} oblasts, {len(type_stats)} subsidy types")
     return rows

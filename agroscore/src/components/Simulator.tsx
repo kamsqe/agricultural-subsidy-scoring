@@ -55,9 +55,9 @@ export default function Simulator() {
     <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h3 className="text-lg font-semibold">What-If Симулятор</h3>
-          <p className="text-slate-400 text-sm mt-1">
-            {data.pending_count.toLocaleString()} заявок в очереди • Общая сумма: {formatTenge(data.total_pending_amount)}
+          <h3 className="text-lg font-semibold text-white">What-If Симулятор (Бюджетный дефицит)</h3>
+          <p className="text-xs text-slate-500 mt-2 max-w-sm h-12">
+            <span className="font-bold text-amber-500">Сценарий:</span> Бюджет сократили. Кто получит деньги? При FIFO всё заберут <i>быстрые</i> монополисты. В AgroScore алгоритм отсечет аутсайдеров, сохранив дотации для <i>эффективных</i> мелких фермеров.
           </p>
         </div>
         <div className="bg-slate-800 rounded-lg px-3 py-1.5 text-sm">
@@ -125,20 +125,22 @@ export default function Simulator() {
       {/* Budget levels chart */}
       <div className="mt-6">
         <div className="text-xs text-slate-500 mb-2">Средний балл при разном бюджете</div>
-        <div className="flex items-end gap-1 h-24">
+        <div className="flex items-end gap-1 h-24 overflow-hidden">
           {data.budget_levels.map((bl, i) => {
             const isActive = i === levelIdx;
+            const fifoH = Math.min(96, Math.max(4, ((bl.fifo.avg_score - 50) / 20) * 96));
+            const meritH = Math.min(96, Math.max(4, ((bl.merit.avg_score - 50) / 20) * 96));
             return (
               <div key={bl.pct} className="flex-1 flex flex-col items-center gap-0.5">
                 <div className="w-full flex gap-0.5">
                   <div
                     className={`flex-1 rounded-t transition-all ${isActive ? 'bg-red-400' : 'bg-red-500/30'}`}
-                    style={{ height: `${((bl.fifo.avg_score - 50) / 20) * 96}px` }}
+                    style={{ height: `${fifoH}px` }}
                     title={`FIFO ${bl.pct}%: ${bl.fifo.avg_score}`}
                   />
                   <div
                     className={`flex-1 rounded-t transition-all ${isActive ? 'bg-emerald-400' : 'bg-emerald-500/30'}`}
-                    style={{ height: `${((bl.merit.avg_score - 50) / 20) * 96}px` }}
+                    style={{ height: `${meritH}px` }}
                     title={`Merit ${bl.pct}%: ${bl.merit.avg_score}`}
                   />
                 </div>

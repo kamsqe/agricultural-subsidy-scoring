@@ -17,6 +17,34 @@ interface SubsidyCode {
   median_volume: number;
 }
 
+interface RejectionCategory {
+  count: number;
+  pct: number;
+  examples: string[];
+}
+
+interface RejectionCodeData {
+  name: string;
+  total_applications: number;
+  rejected: number;
+  approved: number;
+  rejection_rate_pct: number;
+  reasons_analyzed: number;
+  categories: Record<string, RejectionCategory>;
+  top_risk_oblasts: Record<string, { total: number; rejected: number; rejection_rate: number }>;
+  advice: string[];
+}
+
+interface RejectionData {
+  meta: {
+    total_records: number;
+    total_rejected: number;
+    total_with_reasons: number;
+    categories: Record<string, { label_ru: string; label_en: string; advice_ru: string }>;
+  };
+  by_subsidy_code: Record<string, RejectionCodeData>;
+}
+
 interface ScoreResult {
   score: number;
   triage: string;
@@ -106,7 +134,7 @@ function calculateScore(
   // === EXCEPTION POINTS (0-15) ===
   let exception = 0;
   const exceptionReasons: string[] = [];
-  if (retryCount === 0) { exception += 5; exceptionReasons.push('Первая подача (+5)'); }
+  if (retryCount === 0 && rejectRate > 0.15) { exception += 3; exceptionReasons.push('Первая подача в районе с высоким % отказов (+3)'); }
   if (amount < 5_000_000 && top1 > 0.4) { exception += 5; exceptionReasons.push('Мелкий фермер в монополизированном районе (+5)'); }
   exception = Math.min(exception, 15);
 
@@ -185,6 +213,7 @@ export default function PreCheck() {
   const [districtData, setDistrictData] = useState<Record<string, DistrictInfo>>({});
   const [codeData, setCodeData] = useState<Record<string, SubsidyCode>>({});
   const [allScores, setAllScores] = useState<number[]>([]);
+  const [rejectionData, setRejectionData] = useState<RejectionData | null>(null);
   const [loading, setLoading] = useState(true);
 
   const [oblast, setOblast] = useState('');
@@ -201,10 +230,12 @@ export default function PreCheck() {
       fetch('/data/districts.json').then(r => r.json()),
       fetch('/data/subsidy_codes.json').then(r => r.json()),
       fetch('/data/scoring_summary.json').then(r => r.json()),
-    ]).then(([oblasts, districts, codes, summary]) => {
+      fetch('/data/rejection_reasons.json').then(r => r.json()).catch(() => null),
+    ]).then(([oblasts, districts, codes, summary, rejections]) => {
       setOblastMap(oblasts);
       setDistrictData(districts);
       setCodeData(codes);
+      if (rejections) setRejectionData(rejections);
       // Build approximate score CDF from histogram
       const hist = summary.score_distribution as Record<string, number>;
       const approxScores: number[] = [];
@@ -318,6 +349,61 @@ export default function PreCheck() {
           <input type="number" value={retryCount} onChange={e => setRetryCount(Number(e.target.value))} className="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-200" min={0} max={20} />
         </div>
       </div>
+
+      {/* Rejection Risk Panel — shown when subsidy type is selected */}
+      {rejectionData && subsidyCode && rejectionData.by_subsidy_code[subsidyCode] && (() => {
+        const rd = rejectionData.by_subsidy_code[subsidyCode];
+        const catMeta = rejectionData.meta.categories;
+        const sortedCats = Object.entries(rd.categories)
+          .filter(([id]) => id !== 'other')
+          .sort((a, b) => b[1].count - a[1].count)
+          .slice(0, 5);
+        return rd.reasons_analyzed > 0 ? (
+          <div className="bg-red-500/5 border border-red-500/20 rounded-xl p-4 mb-5">
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <span className="text-red-400 text-sm">⚠</span>
+                <span className="text-sm font-medium text-red-300">Риск отказа по данным 2021-2024</span>
+              </div>
+              <span className="text-xs text-slate-500 font-mono">
+                {rd.rejection_rate_pct}% отказов | {rd.reasons_analyzed} причин проанализировано
+              </span>
+            </div>
+            {/* Category bars */}
+            <div className="space-y-2 mb-3">
+              {sortedCats.map(([catId, cat]) => {
+                const label = catMeta[catId]?.label_ru || catId;
+                return (
+                  <div key={catId} className="flex items-center gap-2">
+                    <span className="text-xs text-slate-400 w-48 text-right truncate" title={label}>{label}</span>
+                    <div className="flex-1 bg-slate-800 rounded-full h-2.5 relative">
+                      <div className="bg-red-500/60 h-2.5 rounded-full" style={{ width: `${cat.pct}%` }} />
+                    </div>
+                    <span className="text-xs font-mono text-slate-400 w-12 text-right">{cat.pct}%</span>
+                  </div>
+                );
+              })}
+            </div>
+            {/* Checklist */}
+            {rd.advice.length > 0 && (
+              <div className="border-t border-red-500/10 pt-3 mt-3">
+                <div className="text-xs text-slate-400 mb-2 font-medium">Чеклист перед подачей:</div>
+                <div className="space-y-1">
+                  {rd.advice.map((a, i) => (
+                    <div key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                      <span className="text-slate-600 mt-0.5">☐</span>
+                      <span>{a}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            <div className="text-[10px] text-slate-600 mt-3">
+              Источник: subsidy.plem.kz — {rd.total_applications.toLocaleString()} заявок за 2021-2024
+            </div>
+          </div>
+        ) : null;
+      })()}
 
       <button onClick={handleCalculate} className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2.5 rounded-lg transition mb-5">
         Рассчитать Impact Score

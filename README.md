@@ -2,6 +2,8 @@
 
 **Decentrathon 5.0 | Трек: AI inDrive Gov | Кейс 2: Скоринг при подаче на субсидии**
 
+> **Live Demo:** [agroscore.pages.dev](https://agroscore.pages.dev)
+
 ---
 
 ## Что это

@@ -140,3 +140,84 @@
 | `oblast_execution_rate_ext` | Доля исполненных (из внешней воронки) |
 
 **Сравнивать production_volume между разными нормативами нельзя!** Единицы: головы (150K-260K ₸/голова), кг (20-300 ₸/кг), дозы (10K ₸/доза).
+
+---
+
+## 4. Синтетические данные (сгенерированы)
+
+Используются **только** в Проактивном модуле (`ProactiveFinder.tsx`). Остальные модули работают на реальных данных.
+
+### Профили фермеров
+
+**Файл:** `agroscore/public/data/farmer_profiles.json` — 200 записей
+**Генератор:** `generate_profiles.py`
+
+| Поле | Тип | Откуда распределения |
+|------|-----|---------------------|
+| `id`, `name` | str | Рандомизированы |
+| `oblast`, `district` | str | Реальные названия из основного датасета |
+| `cattle`, `sheep`, `goats`, `horses`, `poultry` | int | Распределения из stat.gov.kz (поголовье по регионам) |
+| `land_ha`, `pasture_ha` | float | Распределения из stat.gov.kz (земельный фонд) |
+| `milking_cows`, `daily_milk_liters` | int/float | Оценка из stat.gov.kz (молоко по регионам) |
+| `has_milking_equipment`, `has_feed_storage` | bool | Случайные, по оценке распространённости |
+| `feed_tons`, `housing_capacity` | float | Пропорционально поголовью |
+| `mortality_rate` | float | 1-8% (норма КЗ: 3% КРС, 5% МРС) |
+| `credit_history` | str | good/fair/poor (рандом) |
+| `subsidy_history_count` | int | 0-5 (рандом) |
+
+**Важно:** Это не реальные фермеры. Профили сгенерированы программно. Распределения приближены к реальным, но конкретные комбинации — случайные.
+
+### Агронормы
+
+**Файл:** `agroscore/public/data/agro_norms.json`
+
+| Норма | Значение | Источник |
+|-------|---------|---------|
+| Пастбищная нагрузка КРС | 3.0 га/голова (степь 4.0, орошаемые 1.8) | Нормативы МСХ РК |
+| Пастбищная нагрузка МРС | 0.5 га/голова | Нормативы МСХ РК |
+| Падёж КРС (норма) | ≤3% | Ветеринарные нормативы |
+| Падёж МРС (норма) | ≤5% | Ветеринарные нормативы |
+| Обеспеченность помещениями | ≥80% | Зоотехнические нормативы |
+| Корма на зиму (КРС) | 3.0 т/голову | Кормовые нормативы |
+
+**Значения реальные** (из нормативных документов), структура JSON — наша.
+
+### Коды субсидий
+
+**Файл:** `agroscore/public/data/subsidy_codes.json`
+
+Статистика по 46 типам субсидий — **вычислена из реального основного датасета** (средние, медианы, count).
+
+### Районы
+
+**Файл:** `agroscore/public/data/districts.json`
+
+Агрегаты по 192 районам — **вычислены из реального основного датасета** (reject rate, top1 share, median amount, avg score).
+
+---
+
+## 5. ML-выходы
+
+| Файл | Модель | Данные | Что содержит |
+|------|--------|--------|-------------|
+| `data/ml_outputs/anomaly_scores.csv` | Isolation Forest (200 деревьев, contamination=2%) | 8 поведенческих признаков из enriched dataset | anomaly_score (0-100) для 36,651 заявок |
+| `pipeline/models/iso_forest_pipeline.pkl` | Isolation Forest | Сериализованный pipeline (imputer + scaler + model) | Для инференса на новых данных |
+| `pipeline/models/xgb_bias_discovery.json` | XGBoost (150 деревьев, depth=5) | 13 признаков, target=Отклонена | Модель bias discovery (**не для скоринга**) |
+| `data/processed/shap_importance.json` | SHAP (TreeExplainer) | Sample 5,000 из XGBoost | Mean |SHAP| по 13 признакам |
+
+**XGBoost + SHAP используется только для визуализации.** Он доказывает, что исторические отказы определяются geography/budget, а не качеством заявки. Это аргумент в пользу Impact Scoring вместо prediction.
+
+---
+
+## 6. Сводная карта данных
+
+| Компонент системы | Какие данные использует | Тип данных |
+|-------------------|------------------------|-----------|
+| Impact Score (36K заявок) | Основной датасет + stat.gov.kz + plem.kz | **Реальные** |
+| Anomaly Radar | anomaly_scores.csv (Isolation Forest) | **ML на реальных данных** |
+| FIFO vs Merit | 2,854 заявки в очереди | **Реальные** (порядок моделируемый) |
+| SHAP Bias | XGBoost на исторических отказах | **ML на реальных данных** |
+| Pre-Check (UI) | scoringEngine.ts + districts + codes | **Реальные агрегаты** (ввод пользователя) |
+| Rejection Reasons | plem.kz 2021/2024, поле Solution | **Реальные** |
+| Proactive Finder | farmer_profiles.json + agro_norms.json | **Синтетические профили + реальные нормативы** |
+| AI Assistant (Gemini) | scoring_summary.json + user query | **Реальные агрегаты + генеративный AI** |

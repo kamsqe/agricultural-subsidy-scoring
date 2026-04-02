@@ -1,0 +1,145 @@
+{
+  "pasture_load": {
+    "cattle":  { "steppe": 4.0, "irrigated": 1.8, "default": 3.0, "unit": "ha/head" },
+    "sheep":   { "steppe": 0.8, "irrigated": 0.3, "default": 0.5, "unit": "ha/head" },
+    "goats":   { "default": 0.6, "unit": "ha/head" },
+    "horses":  { "steppe": 5.0, "irrigated": 2.5, "default": 4.0, "unit": "ha/head" },
+    "camels":  { "default": 6.0, "unit": "ha/head" },
+    "poultry": { "default": 0.005, "unit": "ha/head" },
+    "pigs":    { "default": 0.02, "unit": "ha/head" }
+  },
+  "mortality_norms_pct": {
+    "cattle": 3.0,
+    "sheep": 5.0,
+    "goats": 5.0,
+    "horses": 2.0,
+    "camels": 2.0,
+    "poultry": 10.0,
+    "pigs": 4.0
+  },
+  "milk_yield_liters_per_day": {
+    "local_cow": 14,
+    "improved_cow": 22,
+    "imported_cow": 30,
+    "mare": 6,
+    "camel": 4
+  },
+  "infrastructure": {
+    "min_housing_ratio": 0.8,
+    "feed_per_cattle_winter_tons": 3.0,
+    "feed_per_sheep_winter_tons": 0.5,
+    "feed_per_horse_winter_tons": 2.5
+  },
+  "subsidy_eligibility": {
+    "cattle_acquisition": {
+      "codes": ["00100", "00200", "00300", "00400", "02200"],
+      "requires": { "min_cattle": 1, "min_land_per_head": 3.0 },
+      "description": "Приобретение маточного поголовья КРС"
+    },
+    "breeding_bulls": {
+      "codes": ["00700"],
+      "requires": { "min_cattle": 10, "min_dairy_cows": 0 },
+      "description": "Приобретение племенных быков-производителей"
+    },
+    "breeding_selection": {
+      "codes": ["01200", "01300"],
+      "requires": { "min_livestock_total": 50, "credit_not": "poor" },
+      "description": "Ведение селекционной и племенной работы"
+    },
+    "dairy_production": {
+      "codes": ["01700", "01800", "01900", "02000"],
+      "requires": { "min_dairy_cows": 5, "min_daily_milk": 20, "milking_equipment": true },
+      "description": "Удешевление стоимости производства молока"
+    },
+    "semen_purchase": {
+      "codes": ["01400", "01500"],
+      "requires": { "min_dairy_cows": 10 },
+      "description": "Приобретение семени племенных быков"
+    },
+    "feed_subsidies": {
+      "codes": ["02300", "02400", "04000", "04500", "04800"],
+      "requires": { "min_livestock_total": 10, "min_feed_storage": 1.0 },
+      "description": "Удешевление стоимости затрат на корма"
+    },
+    "sheep_acquisition": {
+      "codes": ["03100", "03900"],
+      "requires": { "min_sheep": 1, "min_land_per_sheep": 0.5 },
+      "description": "Приобретение племенных овец / баранов"
+    },
+    "sheep_breeding_center": {
+      "codes": ["03501"],
+      "requires": { "min_sheep": 200 },
+      "description": "Услуги племенных центров (МРС)"
+    },
+    "cattle_breeding_center": {
+      "codes": ["01101"],
+      "requires": { "min_cattle": 50 },
+      "description": "Услуги племенных центров (КРС)"
+    },
+    "youth_rearing_cattle": {
+      "codes": ["11500"],
+      "requires": { "min_cattle": 20 },
+      "description": "Выращивание племенного молодняка КРС"
+    },
+    "youth_rearing_sheep": {
+      "codes": ["11600"],
+      "requires": { "min_sheep": 50 },
+      "description": "Выращивание племенного молодняка МРС"
+    },
+    "poultry_chicks": {
+      "codes": ["05401", "05501"],
+      "requires": { "min_poultry": 100 },
+      "description": "Приобретение суточного молодняка птицы"
+    },
+    "poultry_meat": {
+      "codes": ["05601", "05701", "05801", "05901"],
+      "requires": { "min_poultry": 500 },
+      "description": "Удешевление производства мяса птицы"
+    },
+    "horse_stallion": {
+      "codes": ["04300"],
+      "requires": { "min_horses": 10 },
+      "description": "Приобретение племенного жеребца-производителя"
+    },
+    "mare_milk": {
+      "codes": ["04400"],
+      "requires": { "min_horses": 5, "min_daily_milk": 5 },
+      "description": "Удешевление производства молока кобылиц"
+    },
+    "camel_milk": {
+      "codes": ["04700"],
+      "requires": { "min_camels": 5 },
+      "description": "Удешевление производства молока верблюдиц"
+    },
+    "pig_acquisition": {
+      "codes": ["04900"],
+      "requires": { "min_pigs": 10 },
+      "description": "Приобретение племенного поголовья свиней"
+    },
+    "pig_breeding": {
+      "codes": ["05000"],
+      "requires": { "min_pigs": 50 },
+      "description": "Ведение селекционной работы с маточным поголовьем свиней"
+    },
+    "pig_sale": {
+      "codes": ["11000"],
+      "requires": { "min_pigs": 20 },
+      "description": "Удешевление стоимости свиней на убой"
+    },
+    "honey": {
+      "codes": ["11400"],
+      "requires": { "min_land_hectares": 1 },
+      "description": "Удешевление производства меда"
+    },
+    "wool": {
+      "codes": ["11100"],
+      "requires": { "min_sheep": 100 },
+      "description": "Удешевление стоимости шерсти"
+    },
+    "sheep_sale": {
+      "codes": ["10900"],
+      "requires": { "min_sheep": 50 },
+      "description": "Удешевление стоимости МРС на убой"
+    }
+  }
+}

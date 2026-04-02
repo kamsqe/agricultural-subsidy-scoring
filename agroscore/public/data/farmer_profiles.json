@@ -1,0 +1,6807 @@
+[
+  {
+    "id": "F-001",
+    "bin": "10034382215",
+    "name": "ТОО «Қоңыр»",
+    "oblast": "область Абай",
+    "district": "Абайский район",
+    "farm_type": "dairy",
+    "land_hectares": 385,
+    "pasture_hectares": 305,
+    "livestock": {
+      "cattle": 74,
+      "dairy_cows": 74,
+      "sheep": 13,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 632.0,
+    "annual_meat_kg": 2229,
+    "mortality_rate_pct": 8.8,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 89,
+      "milking_equipment": true,
+      "feed_storage_tons": 177.8
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "00700",
+      "04500"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-002",
+    "bin": "10066374604",
+    "name": "СПК «Көкше»",
+    "oblast": "область Абай",
+    "district": "Кокпектинский район",
+    "farm_type": "mixed",
+    "land_hectares": 188,
+    "pasture_hectares": 148,
+    "livestock": {
+      "cattle": 157,
+      "dairy_cows": 20,
+      "sheep": 106,
+      "goats": 5,
+      "horses": 9,
+      "camels": 0,
+      "poultry": 160,
+      "pigs": 0
+    },
+    "daily_milk_liters": 370.3,
+    "annual_meat_kg": 19862,
+    "mortality_rate_pct": 3.1,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 77,
+      "milking_equipment": false,
+      "feed_storage_tons": 749.5
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "11500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-003",
+    "bin": "15126512453",
+    "name": "СПК «Ақ Бидай»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Район Шал акына",
+    "farm_type": "poultry",
+    "land_hectares": 15,
+    "pasture_hectares": 10,
+    "livestock": {
+      "cattle": 5,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 18191,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 306,
+    "mortality_rate_pct": 6.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 19.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-004",
+    "bin": "05116803814",
+    "name": "ТОО «Жаңарту»",
+    "oblast": "Восточно-Казахстанская область",
+    "district": "Катон-Карагайский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 638,
+    "pasture_hectares": 509,
+    "livestock": {
+      "cattle": 269,
+      "dairy_cows": 112,
+      "sheep": 46,
+      "goats": 0,
+      "horses": 7,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2794.9,
+    "annual_meat_kg": 9113,
+    "mortality_rate_pct": 3.3,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 253,
+      "milking_equipment": true,
+      "feed_storage_tons": 477.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02200",
+      "01300",
+      "11500",
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-005",
+    "bin": "20054413850",
+    "name": "КХ «Көкше»",
+    "oblast": "Туркестанская область",
+    "district": "Тюлькубасский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 74,
+    "pasture_hectares": 59,
+    "livestock": {
+      "cattle": 37,
+      "dairy_cows": 3,
+      "sheep": 27,
+      "goats": 0,
+      "horses": 5,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 39.2,
+    "annual_meat_kg": 4025,
+    "mortality_rate_pct": 1.5,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 53,
+      "milking_equipment": false,
+      "feed_storage_tons": 194.3
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "00400"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-006",
+    "bin": "08104388640",
+    "name": "КХ «Бұлақ»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Акжарский район",
+    "farm_type": "dairy",
+    "land_hectares": 454,
+    "pasture_hectares": 333,
+    "livestock": {
+      "cattle": 273,
+      "dairy_cows": 178,
+      "sheep": 8,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 3020.7,
+    "annual_meat_kg": 15847,
+    "mortality_rate_pct": 3.8,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 314,
+      "milking_equipment": true,
+      "feed_storage_tons": 718.8
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01200"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-007",
+    "bin": "05014627725",
+    "name": "КХ «Отандастар»",
+    "oblast": "Актюбинская область",
+    "district": "Байганинский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 19,
+    "pasture_hectares": 13,
+    "livestock": {
+      "cattle": 22,
+      "dairy_cows": 15,
+      "sheep": 6,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 153.7,
+    "annual_meat_kg": 2436,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 32,
+      "milking_equipment": true,
+      "feed_storage_tons": 67.5
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00100",
+      "04000",
+      "05801"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-008",
+    "bin": "20086473886",
+    "name": "КФХ «Арай»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Таскалинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 582,
+    "pasture_hectares": 506,
+    "livestock": {
+      "cattle": 14,
+      "dairy_cows": 8,
+      "sheep": 1840,
+      "goats": 77,
+      "horses": 1,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 70.9,
+    "annual_meat_kg": 154477,
+    "mortality_rate_pct": 3.9,
+    "infrastructure": {
+      "barns": 17,
+      "barn_capacity": 722,
+      "milking_equipment": false,
+      "feed_storage_tons": 902.2
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00100",
+      "00700",
+      "01900"
+    ],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-009",
+    "bin": "12026846683",
+    "name": "ИП «Сарыарқа»",
+    "oblast": "область Ұлытау",
+    "district": "Сатпаев Г.А.",
+    "farm_type": "small_cattle",
+    "land_hectares": 17,
+    "pasture_hectares": 12,
+    "livestock": {
+      "cattle": 39,
+      "dairy_cows": 1,
+      "sheep": 23,
+      "goats": 0,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 9.0,
+    "annual_meat_kg": 3523,
+    "mortality_rate_pct": 3.6,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 60,
+      "milking_equipment": false,
+      "feed_storage_tons": 180.4
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-010",
+    "bin": "08065473532",
+    "name": "СПК «Сайрам»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Мамлютский район",
+    "farm_type": "dairy",
+    "land_hectares": 332,
+    "pasture_hectares": 282,
+    "livestock": {
+      "cattle": 134,
+      "dairy_cows": 107,
+      "sheep": 7,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1339.2,
+    "annual_meat_kg": 3927,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 8,
+      "barn_capacity": 172,
+      "milking_equipment": true,
+      "feed_storage_tons": 606.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-011",
+    "bin": "10014104645",
+    "name": "СПК «Достық»",
+    "oblast": "Туркестанская область",
+    "district": "район Сауран",
+    "farm_type": "small_cattle",
+    "land_hectares": 94,
+    "pasture_hectares": 50,
+    "livestock": {
+      "cattle": 13,
+      "dairy_cows": 4,
+      "sheep": 3,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 82.5,
+    "annual_meat_kg": 469,
+    "mortality_rate_pct": 5.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 14,
+      "milking_equipment": false,
+      "feed_storage_tons": 40.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00100",
+      "00400",
+      "04000"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-012",
+    "bin": "18034410292",
+    "name": "СПК «Ертіс»",
+    "oblast": "Мангистауская область",
+    "district": "Бейнеуский район",
+    "farm_type": "dairy",
+    "land_hectares": 119,
+    "pasture_hectares": 64,
+    "livestock": {
+      "cattle": 106,
+      "dairy_cows": 87,
+      "sheep": 1,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1930.4,
+    "annual_meat_kg": 5880,
+    "mortality_rate_pct": 5.0,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 132,
+      "milking_equipment": false,
+      "feed_storage_tons": 238.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "11500",
+      "01900"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-013",
+    "bin": "10116767686",
+    "name": "ИП «Тобыл»",
+    "oblast": "Акмолинская область",
+    "district": "Буландынский район",
+    "farm_type": "dairy",
+    "land_hectares": 608,
+    "pasture_hectares": 368,
+    "livestock": {
+      "cattle": 85,
+      "dairy_cows": 66,
+      "sheep": 1,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1491.3,
+    "annual_meat_kg": 2868,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 101,
+      "milking_equipment": true,
+      "feed_storage_tons": 229.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-014",
+    "bin": "15115979003",
+    "name": "КХ «Көкше»",
+    "oblast": "область Ұлытау",
+    "district": "Каражал Г.А.",
+    "farm_type": "camel",
+    "land_hectares": 1031,
+    "pasture_hectares": 754,
+    "livestock": {
+      "cattle": 0,
+      "dairy_cows": 0,
+      "sheep": 4,
+      "goats": 0,
+      "horses": 3,
+      "camels": 77,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 142.1,
+    "annual_meat_kg": 5644,
+    "mortality_rate_pct": 4.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 53,
+      "milking_equipment": false,
+      "feed_storage_tons": 7.2
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-015",
+    "bin": "15105958135",
+    "name": "КХ «Достық»",
+    "oblast": "Кызылординская область",
+    "district": "Кызылорда Г.А.",
+    "farm_type": "dairy",
+    "land_hectares": 1138,
+    "pasture_hectares": 709,
+    "livestock": {
+      "cattle": 239,
+      "dairy_cows": 160,
+      "sheep": 12,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 3176.4,
+    "annual_meat_kg": 13369,
+    "mortality_rate_pct": 9.3,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 284,
+      "milking_equipment": true,
+      "feed_storage_tons": 757.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-016",
+    "bin": "12076419792",
+    "name": "ТОО «Бейбарыс»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Таскалинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 631,
+    "pasture_hectares": 445,
+    "livestock": {
+      "cattle": 10,
+      "dairy_cows": 1,
+      "sheep": 1346,
+      "goats": 317,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 19.4,
+    "annual_meat_kg": 56110,
+    "mortality_rate_pct": 4.2,
+    "infrastructure": {
+      "barns": 18,
+      "barn_capacity": 530,
+      "milking_equipment": false,
+      "feed_storage_tons": 800.0
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "04500"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-017",
+    "bin": "12086439723",
+    "name": "СПК «Қаратау»",
+    "oblast": "область Абай",
+    "district": "Семей Г.А.",
+    "farm_type": "medium_cattle",
+    "land_hectares": 202,
+    "pasture_hectares": 146,
+    "livestock": {
+      "cattle": 484,
+      "dairy_cows": 41,
+      "sheep": 58,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 886.6,
+    "annual_meat_kg": 32790,
+    "mortality_rate_pct": 2.8,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 629,
+      "milking_equipment": true,
+      "feed_storage_tons": 1381.8
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "00700"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-018",
+    "bin": "05046650696",
+    "name": "ИП «Сыр-Дария»",
+    "oblast": "область Жетісу",
+    "district": "Сарканский район",
+    "farm_type": "poultry",
+    "land_hectares": 9,
+    "pasture_hectares": 7,
+    "livestock": {
+      "cattle": 2,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 15867,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 80,
+    "mortality_rate_pct": 1.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 7.2
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02200"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-019",
+    "bin": "15104969000",
+    "name": "ИП «Достық»",
+    "oblast": "Акмолинская область",
+    "district": "Кокшетау Г.А.",
+    "farm_type": "sheep_focus",
+    "land_hectares": 1593,
+    "pasture_hectares": 1044,
+    "livestock": {
+      "cattle": 17,
+      "dairy_cows": 8,
+      "sheep": 1876,
+      "goats": 429,
+      "horses": 9,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 186.1,
+    "annual_meat_kg": 114904,
+    "mortality_rate_pct": 7.9,
+    "infrastructure": {
+      "barns": 11,
+      "barn_capacity": 813,
+      "milking_equipment": false,
+      "feed_storage_tons": 1448.3
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "03100",
+      "02200",
+      "00100"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-020",
+    "bin": "08014914392",
+    "name": "ИП «Жаңа Күн»",
+    "oblast": "Карагандинская область",
+    "district": "Приозерск Г.А.",
+    "farm_type": "small_cattle",
+    "land_hectares": 51,
+    "pasture_hectares": 29,
+    "livestock": {
+      "cattle": 25,
+      "dairy_cows": 10,
+      "sheep": 24,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 127.3,
+    "annual_meat_kg": 4008,
+    "mortality_rate_pct": 3.5,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 41,
+      "milking_equipment": false,
+      "feed_storage_tons": 108.7
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "05801",
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-021",
+    "bin": "08024495299",
+    "name": "КФХ «Көкше»",
+    "oblast": "область Абай",
+    "district": "район Жаңасемей",
+    "farm_type": "pig",
+    "land_hectares": 6,
+    "pasture_hectares": 4,
+    "livestock": {
+      "cattle": 1,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 330
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 22067,
+    "mortality_rate_pct": 6.5,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 3.5
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "04500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-022",
+    "bin": "20125876564",
+    "name": "ИП «Алтын Дала»",
+    "oblast": "Актюбинская область",
+    "district": "Каргалинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 1086,
+    "pasture_hectares": 824,
+    "livestock": {
+      "cattle": 26,
+      "dairy_cows": 7,
+      "sheep": 75,
+      "goats": 13,
+      "horses": 1,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 107.6,
+    "annual_meat_kg": 4799,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 47,
+      "milking_equipment": false,
+      "feed_storage_tons": 180.5
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02200",
+      "05801",
+      "02000"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-023",
+    "bin": "08125724027",
+    "name": "ТОО «Қаратау»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Жамбылский район",
+    "farm_type": "horse",
+    "land_hectares": 516,
+    "pasture_hectares": 372,
+    "livestock": {
+      "cattle": 10,
+      "dairy_cows": 0,
+      "sheep": 1,
+      "goats": 0,
+      "horses": 214,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 603.7,
+    "annual_meat_kg": 6955,
+    "mortality_rate_pct": 10.4,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 277,
+      "milking_equipment": false,
+      "feed_storage_tons": 597.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-024",
+    "bin": "20094882224",
+    "name": "ТОО «Достық»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Жамбылский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 855,
+    "pasture_hectares": 589,
+    "livestock": {
+      "cattle": 321,
+      "dairy_cows": 98,
+      "sheep": 54,
+      "goats": 0,
+      "horses": 17,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1335.1,
+    "annual_meat_kg": 24371,
+    "mortality_rate_pct": 6.0,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 133,
+      "milking_equipment": true,
+      "feed_storage_tons": 1228.8
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01300",
+      "04500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-025",
+    "bin": "18016298872",
+    "name": "ИП «Абай-Агро»",
+    "oblast": "Туркестанская область",
+    "district": "Ордабасынский район",
+    "farm_type": "large_cattle",
+    "land_hectares": 1492,
+    "pasture_hectares": 1090,
+    "livestock": {
+      "cattle": 723,
+      "dairy_cows": 616,
+      "sheep": 74,
+      "goats": 0,
+      "horses": 49,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 14814.5,
+    "annual_meat_kg": 49298,
+    "mortality_rate_pct": 1.3,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 328,
+      "milking_equipment": true,
+      "feed_storage_tons": 1283.9
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "11500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-026",
+    "bin": "12125878327",
+    "name": "КФХ «Маңғыстау Фарм»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Есильский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 32,
+    "pasture_hectares": 16,
+    "livestock": {
+      "cattle": 19,
+      "dairy_cows": 16,
+      "sheep": 12,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 375.1,
+    "annual_meat_kg": 1287,
+    "mortality_rate_pct": 2.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 20,
+      "milking_equipment": false,
+      "feed_storage_tons": 50.1
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-027",
+    "bin": "10095807767",
+    "name": "КФХ «Алтын Дала»",
+    "oblast": "Туркестанская область",
+    "district": "Сайрамский район",
+    "farm_type": "dairy",
+    "land_hectares": 578,
+    "pasture_hectares": 502,
+    "livestock": {
+      "cattle": 131,
+      "dairy_cows": 119,
+      "sheep": 3,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2053.6,
+    "annual_meat_kg": 7887,
+    "mortality_rate_pct": 3.5,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 47,
+      "milking_equipment": true,
+      "feed_storage_tons": 560.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01300"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-028",
+    "bin": "20036532286",
+    "name": "СПК «Көкше»",
+    "oblast": "Актюбинская область",
+    "district": "Мартукский район",
+    "farm_type": "dairy",
+    "land_hectares": 152,
+    "pasture_hectares": 81,
+    "livestock": {
+      "cattle": 40,
+      "dairy_cows": 28,
+      "sheep": 18,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 243.2,
+    "annual_meat_kg": 3792,
+    "mortality_rate_pct": 3.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 40,
+      "milking_equipment": true,
+      "feed_storage_tons": 189.5
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-029",
+    "bin": "10084735321",
+    "name": "КХ «Қаратау»",
+    "oblast": "Атырауская область",
+    "district": "Махамбетский район",
+    "farm_type": "dairy",
+    "land_hectares": 280,
+    "pasture_hectares": 175,
+    "livestock": {
+      "cattle": 195,
+      "dairy_cows": 111,
+      "sheep": 12,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2520.1,
+    "annual_meat_kg": 14386,
+    "mortality_rate_pct": 11.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 163,
+      "milking_equipment": true,
+      "feed_storage_tons": 665.1
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-030",
+    "bin": "10075545488",
+    "name": "КХ «Жаңарту»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "medium_cattle",
+    "land_hectares": 935,
+    "pasture_hectares": 502,
+    "livestock": {
+      "cattle": 480,
+      "dairy_cows": 39,
+      "sheep": 59,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 741.4,
+    "annual_meat_kg": 15847,
+    "mortality_rate_pct": 1.9,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 503,
+      "milking_equipment": false,
+      "feed_storage_tons": 1552.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02200",
+      "04500",
+      "00700"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-031",
+    "bin": "18034749230",
+    "name": "СПК «Ақжар»",
+    "oblast": "Туркестанская область",
+    "district": "Сайрамский район",
+    "farm_type": "mixed",
+    "land_hectares": 404,
+    "pasture_hectares": 274,
+    "livestock": {
+      "cattle": 143,
+      "dairy_cows": 49,
+      "sheep": 95,
+      "goats": 35,
+      "horses": 12,
+      "camels": 0,
+      "poultry": 116,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1169.1,
+    "annual_meat_kg": 20570,
+    "mortality_rate_pct": 1.7,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 238,
+      "milking_equipment": true,
+      "feed_storage_tons": 627.3
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "04000"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-032",
+    "bin": "18124739568",
+    "name": "КФХ «Шаңырақ»",
+    "oblast": "Кызылординская область",
+    "district": "Жалагашский район",
+    "farm_type": "horse",
+    "land_hectares": 2354,
+    "pasture_hectares": 2034,
+    "livestock": {
+      "cattle": 23,
+      "dairy_cows": 0,
+      "sheep": 9,
+      "goats": 0,
+      "horses": 27,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 76.8,
+    "annual_meat_kg": 4614,
+    "mortality_rate_pct": 10.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 57,
+      "milking_equipment": false,
+      "feed_storage_tons": 162.1
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "11500",
+      "02200",
+      "01900"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-033",
+    "bin": "18034322802",
+    "name": "КХ «Ертіс»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "honey",
+    "land_hectares": 22,
+    "pasture_hectares": 17,
+    "livestock": {
+      "cattle": 5,
+      "dairy_cows": 0,
+      "sheep": 1,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 280,
+    "mortality_rate_pct": 3.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 13.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-034",
+    "bin": "08076849635",
+    "name": "КФХ «Қарлығаш»",
+    "oblast": "Атырауская область",
+    "district": "Кзылкогинский район",
+    "farm_type": "dairy",
+    "land_hectares": 277,
+    "pasture_hectares": 192,
+    "livestock": {
+      "cattle": 160,
+      "dairy_cows": 138,
+      "sheep": 8,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2668.4,
+    "annual_meat_kg": 12421,
+    "mortality_rate_pct": 1.9,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 135,
+      "milking_equipment": false,
+      "feed_storage_tons": 707.6
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "01300"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-035",
+    "bin": "18116992412",
+    "name": "КФХ «Жетісу Фарм»",
+    "oblast": "Туркестанская область",
+    "district": "",
+    "farm_type": "honey",
+    "land_hectares": 11,
+    "pasture_hectares": 7,
+    "livestock": {
+      "cattle": 5,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 373,
+    "mortality_rate_pct": 3.5,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 16.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "03100",
+      "01300"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-036",
+    "bin": "08116983956",
+    "name": "КХ «Қарлығаш»",
+    "oblast": "Актюбинская область",
+    "district": "Иргизский район",
+    "farm_type": "mixed",
+    "land_hectares": 213,
+    "pasture_hectares": 118,
+    "livestock": {
+      "cattle": 43,
+      "dairy_cows": 23,
+      "sheep": 93,
+      "goats": 47,
+      "horses": 13,
+      "camels": 0,
+      "poultry": 44,
+      "pigs": 0
+    },
+    "daily_milk_liters": 262.5,
+    "annual_meat_kg": 13169,
+    "mortality_rate_pct": 2.1,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 91,
+      "milking_equipment": true,
+      "feed_storage_tons": 222.7
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "01700",
+      "05801"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-037",
+    "bin": "12024283200",
+    "name": "КХ «Қаратау»",
+    "oblast": "Атырауская область",
+    "district": "Атырау Г.А.",
+    "farm_type": "medium_cattle",
+    "land_hectares": 854,
+    "pasture_hectares": 656,
+    "livestock": {
+      "cattle": 394,
+      "dairy_cows": 77,
+      "sheep": 74,
+      "goats": 0,
+      "horses": 12,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1692.5,
+    "annual_meat_kg": 36680,
+    "mortality_rate_pct": 5.9,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 279,
+      "milking_equipment": true,
+      "feed_storage_tons": 1433.4
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "04500"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-038",
+    "bin": "18065179366",
+    "name": "СПК «Қазына»",
+    "oblast": "Алматинская область",
+    "district": "Енбекшиказахский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 59,
+    "pasture_hectares": 40,
+    "livestock": {
+      "cattle": 47,
+      "dairy_cows": 17,
+      "sheep": 13,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 350.5,
+    "annual_meat_kg": 1873,
+    "mortality_rate_pct": 1.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 54,
+      "milking_equipment": true,
+      "feed_storage_tons": 148.6
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "00400",
+      "04000",
+      "01700"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-039",
+    "bin": "08094428532",
+    "name": "ТОО «Маңғыстау Фарм»",
+    "oblast": "область Абай",
+    "district": "Урджарский",
+    "farm_type": "small_cattle",
+    "land_hectares": 12,
+    "pasture_hectares": 6,
+    "livestock": {
+      "cattle": 26,
+      "dairy_cows": 7,
+      "sheep": 4,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 80.4,
+    "annual_meat_kg": 2373,
+    "mortality_rate_pct": 2.8,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 28,
+      "milking_equipment": false,
+      "feed_storage_tons": 116.0
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-040",
+    "bin": "20115783474",
+    "name": "ТОО «Қарлығаш»",
+    "oblast": "Акмолинская область",
+    "district": "Атбасарский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 51,
+    "pasture_hectares": 25,
+    "livestock": {
+      "cattle": 21,
+      "dairy_cows": 1,
+      "sheep": 4,
+      "goats": 0,
+      "horses": 5,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 15.2,
+    "annual_meat_kg": 805,
+    "mortality_rate_pct": 7.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 29,
+      "milking_equipment": false,
+      "feed_storage_tons": 77.8
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-041",
+    "bin": "05126249968",
+    "name": "КФХ «Ертіс»",
+    "oblast": "Акмолинская область",
+    "district": "Аккольский район",
+    "farm_type": "honey",
+    "land_hectares": 97,
+    "pasture_hectares": 52,
+    "livestock": {
+      "cattle": 5,
+      "dairy_cows": 0,
+      "sheep": 7,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 293,
+    "mortality_rate_pct": 8.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 19.4
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02200",
+      "01300",
+      "02000",
+      "11500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-042",
+    "bin": "15096836205",
+    "name": "КФХ «Отандастар»",
+    "oblast": "Костанайская область",
+    "district": "Рудный Г.А.",
+    "farm_type": "horse",
+    "land_hectares": 2057,
+    "pasture_hectares": 1356,
+    "livestock": {
+      "cattle": 10,
+      "dairy_cows": 0,
+      "sheep": 27,
+      "goats": 0,
+      "horses": 68,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 147.2,
+    "annual_meat_kg": 4458,
+    "mortality_rate_pct": 11.4,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 54,
+      "milking_equipment": false,
+      "feed_storage_tons": 199.0
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "00700"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-043",
+    "bin": "15104904228",
+    "name": "КФХ «Степной»",
+    "oblast": "Павлодарская область",
+    "district": "Экибастуз Г.А.",
+    "farm_type": "pig",
+    "land_hectares": 46,
+    "pasture_hectares": 34,
+    "livestock": {
+      "cattle": 1,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 200
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 10990,
+    "mortality_rate_pct": 9.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 2.6
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "05801"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-044",
+    "bin": "05034306329",
+    "name": "ИП «Отандастар»",
+    "oblast": "Мангистауская область",
+    "district": "Актау Г.А.",
+    "farm_type": "small_cattle",
+    "land_hectares": 54,
+    "pasture_hectares": 27,
+    "livestock": {
+      "cattle": 14,
+      "dairy_cows": 9,
+      "sheep": 21,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 82.6,
+    "annual_meat_kg": 2449,
+    "mortality_rate_pct": 1.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 22,
+      "milking_equipment": false,
+      "feed_storage_tons": 50.5
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "05801",
+      "03100"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-045",
+    "bin": "05084664462",
+    "name": "КФХ «Маңғыстау Фарм»",
+    "oblast": "Мангистауская область",
+    "district": "Каракиянский район",
+    "farm_type": "dairy",
+    "land_hectares": 217,
+    "pasture_hectares": 136,
+    "livestock": {
+      "cattle": 140,
+      "dairy_cows": 135,
+      "sheep": 3,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1872.2,
+    "annual_meat_kg": 3811,
+    "mortality_rate_pct": 2.8,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 133,
+      "milking_equipment": true,
+      "feed_storage_tons": 214.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-046",
+    "bin": "08076871846",
+    "name": "КХ «Ертіс»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "small_cattle",
+    "land_hectares": 12,
+    "pasture_hectares": 8,
+    "livestock": {
+      "cattle": 9,
+      "dairy_cows": 5,
+      "sheep": 18,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 88.7,
+    "annual_meat_kg": 1877,
+    "mortality_rate_pct": 1.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 7,
+      "milking_equipment": false,
+      "feed_storage_tons": 41.8
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "01900"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-047",
+    "bin": "20106688389",
+    "name": "ТОО «Алтын Дала»",
+    "oblast": "Туркестанская область",
+    "district": "Сарыагашский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 1145,
+    "pasture_hectares": 862,
+    "livestock": {
+      "cattle": 321,
+      "dairy_cows": 140,
+      "sheep": 24,
+      "goats": 0,
+      "horses": 11,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1955.6,
+    "annual_meat_kg": 27588,
+    "mortality_rate_pct": 1.4,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 136,
+      "milking_equipment": true,
+      "feed_storage_tons": 1158.4
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02000",
+      "11500"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-048",
+    "bin": "15116346725",
+    "name": "КХ «Шұбар»",
+    "oblast": "Кызылординская область",
+    "district": "Кызылорда Г.А.",
+    "farm_type": "small_cattle",
+    "land_hectares": 66,
+    "pasture_hectares": 49,
+    "livestock": {
+      "cattle": 22,
+      "dairy_cows": 18,
+      "sheep": 1,
+      "goats": 0,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 299.2,
+    "annual_meat_kg": 966,
+    "mortality_rate_pct": 1.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 20,
+      "milking_equipment": true,
+      "feed_storage_tons": 68.8
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "00100",
+      "02000"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-049",
+    "bin": "18115889972",
+    "name": "ИП «Бейбарыс»",
+    "oblast": "Карагандинская область",
+    "district": "Абайский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 118,
+    "pasture_hectares": 72,
+    "livestock": {
+      "cattle": 22,
+      "dairy_cows": 7,
+      "sheep": 130,
+      "goats": 15,
+      "horses": 7,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 118.4,
+    "annual_meat_kg": 9846,
+    "mortality_rate_pct": 3.8,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 85,
+      "milking_equipment": false,
+      "feed_storage_tons": 85.3
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "01700"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-050",
+    "bin": "05094807488",
+    "name": "КФХ «Қазына»",
+    "oblast": "Карагандинская область",
+    "district": "Нуринский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 273,
+    "pasture_hectares": 170,
+    "livestock": {
+      "cattle": 242,
+      "dairy_cows": 94,
+      "sheep": 16,
+      "goats": 0,
+      "horses": 16,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 901.3,
+    "annual_meat_kg": 16502,
+    "mortality_rate_pct": 1.1,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 334,
+      "milking_equipment": false,
+      "feed_storage_tons": 562.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-051",
+    "bin": "12056600528",
+    "name": "ТОО «Арай»",
+    "oblast": "Карагандинская область",
+    "district": "Шетский район",
+    "farm_type": "large_cattle",
+    "land_hectares": 2156,
+    "pasture_hectares": 1699,
+    "livestock": {
+      "cattle": 678,
+      "dairy_cows": 470,
+      "sheep": 93,
+      "goats": 0,
+      "horses": 48,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 9509.5,
+    "annual_meat_kg": 64026,
+    "mortality_rate_pct": 3.3,
+    "infrastructure": {
+      "barns": 13,
+      "barn_capacity": 690,
+      "milking_equipment": true,
+      "feed_storage_tons": 2132.3
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "03100"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-052",
+    "bin": "05064229875",
+    "name": "ТОО «Көкше»",
+    "oblast": "Жамбылская область",
+    "district": "Кордайский район",
+    "farm_type": "mixed",
+    "land_hectares": 341,
+    "pasture_hectares": 221,
+    "livestock": {
+      "cattle": 115,
+      "dairy_cows": 75,
+      "sheep": 36,
+      "goats": 45,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 72,
+      "pigs": 0
+    },
+    "daily_milk_liters": 706.9,
+    "annual_meat_kg": 5894,
+    "mortality_rate_pct": 2.5,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 120,
+      "milking_equipment": true,
+      "feed_storage_tons": 555.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-053",
+    "bin": "12106802610",
+    "name": "ТОО «Шұбар»",
+    "oblast": "Туркестанская область",
+    "district": "район Байдибека",
+    "farm_type": "dairy",
+    "land_hectares": 1018,
+    "pasture_hectares": 759,
+    "livestock": {
+      "cattle": 70,
+      "dairy_cows": 36,
+      "sheep": 8,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 420.0,
+    "annual_meat_kg": 2260,
+    "mortality_rate_pct": 2.8,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 85,
+      "milking_equipment": false,
+      "feed_storage_tons": 196.8
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "00400"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-054",
+    "bin": "18116923461",
+    "name": "КХ «Арал»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "medium_cattle",
+    "land_hectares": 633,
+    "pasture_hectares": 403,
+    "livestock": {
+      "cattle": 263,
+      "dairy_cows": 57,
+      "sheep": 85,
+      "goats": 0,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 963.3,
+    "annual_meat_kg": 14573,
+    "mortality_rate_pct": 2.6,
+    "infrastructure": {
+      "barns": 13,
+      "barn_capacity": 305,
+      "milking_equipment": true,
+      "feed_storage_tons": 950.0
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-055",
+    "bin": "10015947903",
+    "name": "СПК «Отандастар»",
+    "oblast": "Кызылординская область",
+    "district": "Жанакорганский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 114,
+    "pasture_hectares": 86,
+    "livestock": {
+      "cattle": 48,
+      "dairy_cows": 14,
+      "sheep": 22,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 262.4,
+    "annual_meat_kg": 5014,
+    "mortality_rate_pct": 10.2,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 53,
+      "milking_equipment": true,
+      "feed_storage_tons": 132.5
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "11500"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-056",
+    "bin": "10056684479",
+    "name": "КХ «Қайнар»",
+    "oblast": "Актюбинская область",
+    "district": "Хобдинский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 994,
+    "pasture_hectares": 850,
+    "livestock": {
+      "cattle": 430,
+      "dairy_cows": 122,
+      "sheep": 49,
+      "goats": 0,
+      "horses": 10,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2995.5,
+    "annual_meat_kg": 24339,
+    "mortality_rate_pct": 3.8,
+    "infrastructure": {
+      "barns": 7,
+      "barn_capacity": 545,
+      "milking_equipment": true,
+      "feed_storage_tons": 1771.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00400"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-057",
+    "bin": "12104142449",
+    "name": "ИП «Арал»",
+    "oblast": "Восточно-Казахстанская область",
+    "district": "Тарбагатайский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 877,
+    "pasture_hectares": 567,
+    "livestock": {
+      "cattle": 1,
+      "dairy_cows": 0,
+      "sheep": 1670,
+      "goats": 485,
+      "horses": 10,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 126171,
+    "mortality_rate_pct": 3.4,
+    "infrastructure": {
+      "barns": 22,
+      "barn_capacity": 838,
+      "milking_equipment": false,
+      "feed_storage_tons": 1425.5
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "00700"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-058",
+    "bin": "08126683411",
+    "name": "КХ «Мерей»",
+    "oblast": "Павлодарская область",
+    "district": "Майский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 276,
+    "pasture_hectares": 146,
+    "livestock": {
+      "cattle": 20,
+      "dairy_cows": 4,
+      "sheep": 865,
+      "goats": 160,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 97.3,
+    "annual_meat_kg": 22589,
+    "mortality_rate_pct": 8.1,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 283,
+      "milking_equipment": false,
+      "feed_storage_tons": 679.1
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04500",
+      "02000"
+    ],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-059",
+    "bin": "05056621877",
+    "name": "СПК «Бұлақ»",
+    "oblast": "Кызылординская область",
+    "district": "Кызылорда Г.А.",
+    "farm_type": "dairy",
+    "land_hectares": 694,
+    "pasture_hectares": 594,
+    "livestock": {
+      "cattle": 110,
+      "dairy_cows": 100,
+      "sheep": 20,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1096.0,
+    "annual_meat_kg": 5420,
+    "mortality_rate_pct": 11.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 106,
+      "milking_equipment": true,
+      "feed_storage_tons": 295.4
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "03100"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-060",
+    "bin": "15054203364",
+    "name": "ИП «Алтын Дала»",
+    "oblast": "Костанайская область",
+    "district": "район Беимбета Майлина",
+    "farm_type": "small_cattle",
+    "land_hectares": 67,
+    "pasture_hectares": 45,
+    "livestock": {
+      "cattle": 38,
+      "dairy_cows": 11,
+      "sheep": 4,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 207.6,
+    "annual_meat_kg": 1422,
+    "mortality_rate_pct": 2.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 35,
+      "milking_equipment": true,
+      "feed_storage_tons": 83.4
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-061",
+    "bin": "05085922038",
+    "name": "ИП «Арал»",
+    "oblast": "область Ұлытау",
+    "district": "Каражал Г.А.",
+    "farm_type": "small_cattle",
+    "land_hectares": 107,
+    "pasture_hectares": 79,
+    "livestock": {
+      "cattle": 46,
+      "dairy_cows": 5,
+      "sheep": 18,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 53.1,
+    "annual_meat_kg": 4048,
+    "mortality_rate_pct": 2.8,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 59,
+      "milking_equipment": false,
+      "feed_storage_tons": 91.3
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01300",
+      "04000"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-062",
+    "bin": "05055603519",
+    "name": "КФХ «Достық»",
+    "oblast": "Туркестанская область",
+    "district": "район Байдибека",
+    "farm_type": "medium_cattle",
+    "land_hectares": 192,
+    "pasture_hectares": 106,
+    "livestock": {
+      "cattle": 80,
+      "dairy_cows": 30,
+      "sheep": 56,
+      "goats": 0,
+      "horses": 13,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 487.0,
+    "annual_meat_kg": 4804,
+    "mortality_rate_pct": 1.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 127,
+      "milking_equipment": false,
+      "feed_storage_tons": 261.6
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "02000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-063",
+    "bin": "08055579436",
+    "name": "ИП «Мәңгілік»",
+    "oblast": "Жамбылская область",
+    "district": "Мойынкумский район",
+    "farm_type": "camel",
+    "land_hectares": 377,
+    "pasture_hectares": 204,
+    "livestock": {
+      "cattle": 0,
+      "dairy_cows": 0,
+      "sheep": 59,
+      "goats": 0,
+      "horses": 15,
+      "camels": 141,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 225.3,
+    "annual_meat_kg": 5462,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 7,
+      "barn_capacity": 188,
+      "milking_equipment": false,
+      "feed_storage_tons": 36.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04000",
+      "11500",
+      "02000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-064",
+    "bin": "12094152760",
+    "name": "ИП «Жаңарту»",
+    "oblast": "Актюбинская область",
+    "district": "Уилский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 641,
+    "pasture_hectares": 339,
+    "livestock": {
+      "cattle": 24,
+      "dairy_cows": 8,
+      "sheep": 1082,
+      "goats": 230,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 176.2,
+    "annual_meat_kg": 76909,
+    "mortality_rate_pct": 1.4,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 189,
+      "milking_equipment": false,
+      "feed_storage_tons": 756.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-065",
+    "bin": "18126924780",
+    "name": "ТОО «Маңғыстау Фарм»",
+    "oblast": "Кызылординская область",
+    "district": "Шиелийский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 298,
+    "pasture_hectares": 185,
+    "livestock": {
+      "cattle": 10,
+      "dairy_cows": 2,
+      "sheep": 721,
+      "goats": 156,
+      "horses": 6,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 49.7,
+    "annual_meat_kg": 57473,
+    "mortality_rate_pct": 6.7,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 297,
+      "milking_equipment": false,
+      "feed_storage_tons": 374.2
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "04000"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-066",
+    "bin": "12126181632",
+    "name": "ТОО «Сайрам»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "poultry",
+    "land_hectares": 45,
+    "pasture_hectares": 35,
+    "livestock": {
+      "cattle": 1,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 25416,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 69,
+    "mortality_rate_pct": 8.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 2.4
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01900",
+      "02200"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-067",
+    "bin": "15124458424",
+    "name": "ИП «Арай»",
+    "oblast": "Кызылординская область",
+    "district": "Шиелийский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 991,
+    "pasture_hectares": 857,
+    "livestock": {
+      "cattle": 11,
+      "dairy_cows": 10,
+      "sheep": 751,
+      "goats": 139,
+      "horses": 10,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 189.4,
+    "annual_meat_kg": 56117,
+    "mortality_rate_pct": 1.6,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 310,
+      "milking_equipment": false,
+      "feed_storage_tons": 621.7
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "02000",
+      "01700"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-068",
+    "bin": "18045168801",
+    "name": "КФХ «Байтерек»",
+    "oblast": "область Ұлытау",
+    "district": "Сатпаев Г.А.",
+    "farm_type": "horse",
+    "land_hectares": 547,
+    "pasture_hectares": 389,
+    "livestock": {
+      "cattle": 30,
+      "dairy_cows": 0,
+      "sheep": 45,
+      "goats": 0,
+      "horses": 167,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 185.0,
+    "annual_meat_kg": 11263,
+    "mortality_rate_pct": 7.8,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 224,
+      "milking_equipment": false,
+      "feed_storage_tons": 634.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "03100",
+      "01200"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-069",
+    "bin": "12084344204",
+    "name": "ТОО «Абай-Агро»",
+    "oblast": "Алматинская область",
+    "district": "Енбекшиказахский район",
+    "farm_type": "dairy",
+    "land_hectares": 423,
+    "pasture_hectares": 280,
+    "livestock": {
+      "cattle": 273,
+      "dairy_cows": 258,
+      "sheep": 20,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2938.8,
+    "annual_meat_kg": 22806,
+    "mortality_rate_pct": 2.9,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 235,
+      "milking_equipment": true,
+      "feed_storage_tons": 1119.4
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01900",
+      "00700",
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-070",
+    "bin": "12074775385",
+    "name": "СПК «Сайрам»",
+    "oblast": "область Абай",
+    "district": "Кокпектинский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 1111,
+    "pasture_hectares": 950,
+    "livestock": {
+      "cattle": 118,
+      "dairy_cows": 118,
+      "sheep": 64,
+      "goats": 0,
+      "horses": 14,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1491.3,
+    "annual_meat_kg": 13432,
+    "mortality_rate_pct": 3.2,
+    "infrastructure": {
+      "barns": 8,
+      "barn_capacity": 175,
+      "milking_equipment": true,
+      "feed_storage_tons": 449.5
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-071",
+    "bin": "10036631388",
+    "name": "КФХ «Еңбек»",
+    "oblast": "область Абай",
+    "district": "Бескарагайский район",
+    "farm_type": "honey",
+    "land_hectares": 41,
+    "pasture_hectares": 20,
+    "livestock": {
+      "cattle": 3,
+      "dairy_cows": 0,
+      "sheep": 3,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 281,
+    "mortality_rate_pct": 6.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 12.1
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-072",
+    "bin": "05106247070",
+    "name": "ИП «Қайнар»",
+    "oblast": "область Абай",
+    "district": "район Мақаншы",
+    "farm_type": "camel",
+    "land_hectares": 186,
+    "pasture_hectares": 145,
+    "livestock": {
+      "cattle": 0,
+      "dairy_cows": 0,
+      "sheep": 61,
+      "goats": 0,
+      "horses": 4,
+      "camels": 44,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 98.9,
+    "annual_meat_kg": 6142,
+    "mortality_rate_pct": 2.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 70,
+      "milking_equipment": false,
+      "feed_storage_tons": 51.1
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "05801"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-073",
+    "bin": "20014385609",
+    "name": "ТОО «Еңбек»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Теректинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 1799,
+    "pasture_hectares": 1273,
+    "livestock": {
+      "cattle": 22,
+      "dairy_cows": 9,
+      "sheep": 288,
+      "goats": 26,
+      "horses": 7,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 85.9,
+    "annual_meat_kg": 17364,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 126,
+      "milking_equipment": false,
+      "feed_storage_tons": 251.9
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-074",
+    "bin": "10025333928",
+    "name": "КХ «Алтын Дала»",
+    "oblast": "Павлодарская область",
+    "district": "район Аққулы",
+    "farm_type": "small_cattle",
+    "land_hectares": 70,
+    "pasture_hectares": 35,
+    "livestock": {
+      "cattle": 31,
+      "dairy_cows": 5,
+      "sheep": 24,
+      "goats": 0,
+      "horses": 1,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 105.1,
+    "annual_meat_kg": 4407,
+    "mortality_rate_pct": 2.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 38,
+      "milking_equipment": false,
+      "feed_storage_tons": 94.1
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "02200",
+      "00700"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-075",
+    "bin": "12104980830",
+    "name": "ИП «Қаратау»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "dairy",
+    "land_hectares": 968,
+    "pasture_hectares": 689,
+    "livestock": {
+      "cattle": 147,
+      "dairy_cows": 104,
+      "sheep": 14,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1444.0,
+    "annual_meat_kg": 5883,
+    "mortality_rate_pct": 3.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 94,
+      "milking_equipment": true,
+      "feed_storage_tons": 622.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-076",
+    "bin": "12016551436",
+    "name": "ТОО «Степной»",
+    "oblast": "Атырауская область",
+    "district": "Исатайский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 386,
+    "pasture_hectares": 270,
+    "livestock": {
+      "cattle": 198,
+      "dairy_cows": 69,
+      "sheep": 93,
+      "goats": 0,
+      "horses": 18,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 926.1,
+    "annual_meat_kg": 17265,
+    "mortality_rate_pct": 2.0,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 211,
+      "milking_equipment": true,
+      "feed_storage_tons": 384.5
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "00700",
+      "04000",
+      "05801"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-077",
+    "bin": "10076982999",
+    "name": "КФХ «Арай»",
+    "oblast": "Костанайская область",
+    "district": "Наурзумский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 61,
+    "pasture_hectares": 35,
+    "livestock": {
+      "cattle": 20,
+      "dairy_cows": 7,
+      "sheep": 9,
+      "goats": 0,
+      "horses": 5,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 73.2,
+    "annual_meat_kg": 1625,
+    "mortality_rate_pct": 7.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 28,
+      "milking_equipment": false,
+      "feed_storage_tons": 57.2
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02000",
+      "01700"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-078",
+    "bin": "12085229247",
+    "name": "СПК «Жаңарту»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Есильский район",
+    "farm_type": "mixed",
+    "land_hectares": 544,
+    "pasture_hectares": 376,
+    "livestock": {
+      "cattle": 105,
+      "dairy_cows": 43,
+      "sheep": 13,
+      "goats": 13,
+      "horses": 6,
+      "camels": 0,
+      "poultry": 189,
+      "pigs": 0
+    },
+    "daily_milk_liters": 429.8,
+    "annual_meat_kg": 10956,
+    "mortality_rate_pct": 1.7,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 106,
+      "milking_equipment": true,
+      "feed_storage_tons": 300.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01300"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-079",
+    "bin": "10035283448",
+    "name": "СПК «Қоңыр»",
+    "oblast": "Павлодарская область",
+    "district": "Майский район",
+    "farm_type": "large_cattle",
+    "land_hectares": 1995,
+    "pasture_hectares": 1010,
+    "livestock": {
+      "cattle": 2766,
+      "dairy_cows": 648,
+      "sheep": 148,
+      "goats": 0,
+      "horses": 31,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 8435.8,
+    "annual_meat_kg": 93567,
+    "mortality_rate_pct": 8.6,
+    "infrastructure": {
+      "barns": 48,
+      "barn_capacity": 3054,
+      "milking_equipment": true,
+      "feed_storage_tons": 12391.3
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "00700"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-080",
+    "bin": "10014758266",
+    "name": "КХ «Степной»",
+    "oblast": "область Ұлытау",
+    "district": "Жанааркинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 154,
+    "pasture_hectares": 93,
+    "livestock": {
+      "cattle": 7,
+      "dairy_cows": 1,
+      "sheep": 331,
+      "goats": 80,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 8.2,
+    "annual_meat_kg": 21144,
+    "mortality_rate_pct": 2.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 146,
+      "milking_equipment": false,
+      "feed_storage_tons": 259.1
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01900"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-081",
+    "bin": "15086173550",
+    "name": "ТОО «Арал»",
+    "oblast": "область Абай",
+    "district": "район Ақсуат",
+    "farm_type": "small_cattle",
+    "land_hectares": 77,
+    "pasture_hectares": 46,
+    "livestock": {
+      "cattle": 27,
+      "dairy_cows": 8,
+      "sheep": 25,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 74.7,
+    "annual_meat_kg": 4266,
+    "mortality_rate_pct": 1.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 35,
+      "milking_equipment": false,
+      "feed_storage_tons": 116.5
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "00400",
+      "01900"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-082",
+    "bin": "20066120523",
+    "name": "ИП «Мерей»",
+    "oblast": "Алматинская область",
+    "district": "Райымбекский район",
+    "farm_type": "poultry",
+    "land_hectares": 11,
+    "pasture_hectares": 9,
+    "livestock": {
+      "cattle": 1,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 3288,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 33,
+    "mortality_rate_pct": 3.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 3.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-083",
+    "bin": "18054690547",
+    "name": "СПК «Ақ Бидай»",
+    "oblast": "Атырауская область",
+    "district": "Атырау Г.А.",
+    "farm_type": "medium_cattle",
+    "land_hectares": 896,
+    "pasture_hectares": 690,
+    "livestock": {
+      "cattle": 326,
+      "dairy_cows": 94,
+      "sheep": 49,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2015.2,
+    "annual_meat_kg": 23255,
+    "mortality_rate_pct": 10.0,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 292,
+      "milking_equipment": true,
+      "feed_storage_tons": 1284.9
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "05801"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-084",
+    "bin": "12095827108",
+    "name": "СПК «Жаңа Күн»",
+    "oblast": "Атырауская область",
+    "district": "Исатайский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 36,
+    "pasture_hectares": 20,
+    "livestock": {
+      "cattle": 23,
+      "dairy_cows": 7,
+      "sheep": 22,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 65.8,
+    "annual_meat_kg": 1316,
+    "mortality_rate_pct": 2.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 27,
+      "milking_equipment": false,
+      "feed_storage_tons": 47.3
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "05801"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-085",
+    "bin": "10085200825",
+    "name": "СПК «Маңғыстау Фарм»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Кызылжарский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 224,
+    "pasture_hectares": 136,
+    "livestock": {
+      "cattle": 9,
+      "dairy_cows": 6,
+      "sheep": 838,
+      "goats": 3,
+      "horses": 6,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 127.5,
+    "annual_meat_kg": 54348,
+    "mortality_rate_pct": 4.0,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 283,
+      "milking_equipment": false,
+      "feed_storage_tons": 309.4
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-086",
+    "bin": "12066482007",
+    "name": "КФХ «Шаңырақ»",
+    "oblast": "Алматинская область",
+    "district": "Қонаев Г.А.",
+    "farm_type": "poultry",
+    "land_hectares": 13,
+    "pasture_hectares": 8,
+    "livestock": {
+      "cattle": 2,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 26432,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 141,
+    "mortality_rate_pct": 3.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 3.8
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01200",
+      "02000",
+      "01700"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-087",
+    "bin": "18075594121",
+    "name": "КФХ «Қайнар»",
+    "oblast": "Кызылординская область",
+    "district": "Сырдарьинский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 333,
+    "pasture_hectares": 290,
+    "livestock": {
+      "cattle": 152,
+      "dairy_cows": 149,
+      "sheep": 23,
+      "goats": 0,
+      "horses": 17,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1260.2,
+    "annual_meat_kg": 12217,
+    "mortality_rate_pct": 1.6,
+    "infrastructure": {
+      "barns": 7,
+      "barn_capacity": 212,
+      "milking_equipment": true,
+      "feed_storage_tons": 463.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01200",
+      "01300"
+    ],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-088",
+    "bin": "05026439133",
+    "name": "СПК «Тобыл»",
+    "oblast": "Алматинская область",
+    "district": "Қонаев Г.А.",
+    "farm_type": "large_cattle",
+    "land_hectares": 1101,
+    "pasture_hectares": 898,
+    "livestock": {
+      "cattle": 1972,
+      "dairy_cows": 768,
+      "sheep": 137,
+      "goats": 0,
+      "horses": 43,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 14476.1,
+    "annual_meat_kg": 54013,
+    "mortality_rate_pct": 3.0,
+    "infrastructure": {
+      "barns": 92,
+      "barn_capacity": 2309,
+      "milking_equipment": true,
+      "feed_storage_tons": 6986.0
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "05801"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-089",
+    "bin": "18085518001",
+    "name": "ТОО «Сыр-Дария»",
+    "oblast": "область Ұлытау",
+    "district": "Улытауский район",
+    "farm_type": "dairy",
+    "land_hectares": 866,
+    "pasture_hectares": 568,
+    "livestock": {
+      "cattle": 286,
+      "dairy_cows": 181,
+      "sheep": 11,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 4517.9,
+    "annual_meat_kg": 14543,
+    "mortality_rate_pct": 11.4,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 182,
+      "milking_equipment": true,
+      "feed_storage_tons": 1109.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00400"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-090",
+    "bin": "15025803712",
+    "name": "КХ «Тұлпар»",
+    "oblast": "область Абай",
+    "district": "Абайский район",
+    "farm_type": "mixed",
+    "land_hectares": 432,
+    "pasture_hectares": 353,
+    "livestock": {
+      "cattle": 161,
+      "dairy_cows": 25,
+      "sheep": 94,
+      "goats": 35,
+      "horses": 13,
+      "camels": 0,
+      "poultry": 118,
+      "pigs": 0
+    },
+    "daily_milk_liters": 298.5,
+    "annual_meat_kg": 13424,
+    "mortality_rate_pct": 9.1,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 172,
+      "milking_equipment": false,
+      "feed_storage_tons": 535.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-091",
+    "bin": "08096609166",
+    "name": "КФХ «Сайрам»",
+    "oblast": "Восточно-Казахстанская область",
+    "district": "Зайсанский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 741,
+    "pasture_hectares": 547,
+    "livestock": {
+      "cattle": 362,
+      "dairy_cows": 110,
+      "sheep": 75,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1530.6,
+    "annual_meat_kg": 31122,
+    "mortality_rate_pct": 3.4,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 367,
+      "milking_equipment": true,
+      "feed_storage_tons": 919.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-092",
+    "bin": "18084740542",
+    "name": "СПК «Арай»",
+    "oblast": "Атырауская область",
+    "district": "Исатайский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 81,
+    "pasture_hectares": 45,
+    "livestock": {
+      "cattle": 23,
+      "dairy_cows": 4,
+      "sheep": 5,
+      "goats": 0,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 89.3,
+    "annual_meat_kg": 1715,
+    "mortality_rate_pct": 3.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 23,
+      "milking_equipment": false,
+      "feed_storage_tons": 112.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04000"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-093",
+    "bin": "10064214017",
+    "name": "ТОО «Бұлақ»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "small_cattle",
+    "land_hectares": 99,
+    "pasture_hectares": 50,
+    "livestock": {
+      "cattle": 34,
+      "dairy_cows": 18,
+      "sheep": 23,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 312.2,
+    "annual_meat_kg": 1608,
+    "mortality_rate_pct": 10.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 42,
+      "milking_equipment": true,
+      "feed_storage_tons": 86.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04000",
+      "05801"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-094",
+    "bin": "12016463492",
+    "name": "СПК «Байтерек»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "mixed",
+    "land_hectares": 976,
+    "pasture_hectares": 552,
+    "livestock": {
+      "cattle": 55,
+      "dairy_cows": 55,
+      "sheep": 62,
+      "goats": 13,
+      "horses": 1,
+      "camels": 0,
+      "poultry": 145,
+      "pigs": 0
+    },
+    "daily_milk_liters": 768.0,
+    "annual_meat_kg": 4829,
+    "mortality_rate_pct": 2.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 73,
+      "milking_equipment": false,
+      "feed_storage_tons": 285.2
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-095",
+    "bin": "18065183008",
+    "name": "ТОО «Алтай-Агро»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "dairy",
+    "land_hectares": 1102,
+    "pasture_hectares": 613,
+    "livestock": {
+      "cattle": 167,
+      "dairy_cows": 163,
+      "sheep": 13,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2343.6,
+    "annual_meat_kg": 4416,
+    "mortality_rate_pct": 3.3,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 199,
+      "milking_equipment": true,
+      "feed_storage_tons": 549.1
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "00400",
+      "04500",
+      "02000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-096",
+    "bin": "20055222345",
+    "name": "ИП «Мұрагер»",
+    "oblast": "Костанайская область",
+    "district": "Житикаринский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 741,
+    "pasture_hectares": 532,
+    "livestock": {
+      "cattle": 27,
+      "dairy_cows": 7,
+      "sheep": 317,
+      "goats": 72,
+      "horses": 5,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 162.4,
+    "annual_meat_kg": 27675,
+    "mortality_rate_pct": 9.0,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 119,
+      "milking_equipment": false,
+      "feed_storage_tons": 264.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01200",
+      "04500",
+      "00700",
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-097",
+    "bin": "05064581774",
+    "name": "ИП «Қоңыр»",
+    "oblast": "Жамбылская область",
+    "district": "Байзакский район",
+    "farm_type": "large_cattle",
+    "land_hectares": 4316,
+    "pasture_hectares": 3289,
+    "livestock": {
+      "cattle": 889,
+      "dairy_cows": 51,
+      "sheep": 54,
+      "goats": 0,
+      "horses": 35,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 475.6,
+    "annual_meat_kg": 54397,
+    "mortality_rate_pct": 2.3,
+    "infrastructure": {
+      "barns": 11,
+      "barn_capacity": 411,
+      "milking_equipment": false,
+      "feed_storage_tons": 1758.4
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04500"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-098",
+    "bin": "15105886449",
+    "name": "СПК «Абай-Агро»",
+    "oblast": "Карагандинская область",
+    "district": "Бухар-Жырауский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 60,
+    "pasture_hectares": 32,
+    "livestock": {
+      "cattle": 33,
+      "dairy_cows": 11,
+      "sheep": 23,
+      "goats": 0,
+      "horses": 1,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 205.5,
+    "annual_meat_kg": 1658,
+    "mortality_rate_pct": 3.1,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 33,
+      "milking_equipment": false,
+      "feed_storage_tons": 139.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "05801"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-099",
+    "bin": "05014869861",
+    "name": "СПК «Көкөзек»",
+    "oblast": "Акмолинская область",
+    "district": "Жаксынский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 416,
+    "pasture_hectares": 372,
+    "livestock": {
+      "cattle": 201,
+      "dairy_cows": 23,
+      "sheep": 100,
+      "goats": 0,
+      "horses": 7,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 377.5,
+    "annual_meat_kg": 8244,
+    "mortality_rate_pct": 2.8,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 306,
+      "milking_equipment": false,
+      "feed_storage_tons": 912.4
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-100",
+    "bin": "15066612139",
+    "name": "КФХ «Көкөзек»",
+    "oblast": "Актюбинская область",
+    "district": "Айтекебийский район",
+    "farm_type": "pig",
+    "land_hectares": 46,
+    "pasture_hectares": 34,
+    "livestock": {
+      "cattle": 6,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 276
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 12807,
+    "mortality_rate_pct": 2.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 14.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-101",
+    "bin": "10125254730",
+    "name": "ТОО «Степной»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Жамбылский район",
+    "farm_type": "dairy",
+    "land_hectares": 348,
+    "pasture_hectares": 282,
+    "livestock": {
+      "cattle": 252,
+      "dairy_cows": 140,
+      "sheep": 14,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2577.3,
+    "annual_meat_kg": 6198,
+    "mortality_rate_pct": 3.0,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 206,
+      "milking_equipment": true,
+      "feed_storage_tons": 1108.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04500",
+      "01300"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-102",
+    "bin": "08014824656",
+    "name": "СПК «Алтын Дала»",
+    "oblast": "Мангистауская область",
+    "district": "Мангистауский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 60,
+    "pasture_hectares": 52,
+    "livestock": {
+      "cattle": 28,
+      "dairy_cows": 1,
+      "sheep": 15,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 10.8,
+    "annual_meat_kg": 1384,
+    "mortality_rate_pct": 3.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 30,
+      "milking_equipment": false,
+      "feed_storage_tons": 51.0
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-103",
+    "bin": "08085582709",
+    "name": "КХ «Мерей»",
+    "oblast": "Костанайская область",
+    "district": "Костанай Г.А.",
+    "farm_type": "medium_cattle",
+    "land_hectares": 863,
+    "pasture_hectares": 472,
+    "livestock": {
+      "cattle": 394,
+      "dairy_cows": 23,
+      "sheep": 22,
+      "goats": 0,
+      "horses": 7,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 498.5,
+    "annual_meat_kg": 33368,
+    "mortality_rate_pct": 1.2,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 383,
+      "milking_equipment": true,
+      "feed_storage_tons": 614.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01300"
+    ],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-104",
+    "bin": "05034466771",
+    "name": "ТОО «Береке»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Чингирлауский район",
+    "farm_type": "horse",
+    "land_hectares": 226,
+    "pasture_hectares": 197,
+    "livestock": {
+      "cattle": 7,
+      "dairy_cows": 0,
+      "sheep": 34,
+      "goats": 0,
+      "horses": 32,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 68.4,
+    "annual_meat_kg": 4497,
+    "mortality_rate_pct": 6.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 48,
+      "milking_equipment": false,
+      "feed_storage_tons": 71.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-105",
+    "bin": "20104242832",
+    "name": "ИП «Қаратау»",
+    "oblast": "область Жетісу",
+    "district": "Панфиловский район",
+    "farm_type": "dairy",
+    "land_hectares": 378,
+    "pasture_hectares": 219,
+    "livestock": {
+      "cattle": 288,
+      "dairy_cows": 178,
+      "sheep": 20,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 3905.2,
+    "annual_meat_kg": 7543,
+    "mortality_rate_pct": 2.3,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 270,
+      "milking_equipment": false,
+      "feed_storage_tons": 780.4
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "02000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-106",
+    "bin": "12084828698",
+    "name": "СПК «Байтерек»",
+    "oblast": "Восточно-Казахстанская область",
+    "district": "Тарбагатайский район",
+    "farm_type": "large_cattle",
+    "land_hectares": 5572,
+    "pasture_hectares": 3173,
+    "livestock": {
+      "cattle": 2397,
+      "dairy_cows": 321,
+      "sheep": 30,
+      "goats": 0,
+      "horses": 10,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 3428.1,
+    "annual_meat_kg": 149055,
+    "mortality_rate_pct": 3.1,
+    "infrastructure": {
+      "barns": 25,
+      "barn_capacity": 1532,
+      "milking_equipment": true,
+      "feed_storage_tons": 10618.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-107",
+    "bin": "05036852206",
+    "name": "КХ «Қоңыр»",
+    "oblast": "область Абай",
+    "district": "Бескарагайский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 26,
+    "pasture_hectares": 15,
+    "livestock": {
+      "cattle": 30,
+      "dairy_cows": 11,
+      "sheep": 21,
+      "goats": 0,
+      "horses": 5,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 263.3,
+    "annual_meat_kg": 1402,
+    "mortality_rate_pct": 3.8,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 28,
+      "milking_equipment": false,
+      "feed_storage_tons": 71.1
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01700",
+      "00400",
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-108",
+    "bin": "05076570697",
+    "name": "ТОО «Байтерек»",
+    "oblast": "Акмолинская область",
+    "district": "Кокшетау Г.А.",
+    "farm_type": "dairy",
+    "land_hectares": 438,
+    "pasture_hectares": 314,
+    "livestock": {
+      "cattle": 170,
+      "dairy_cows": 120,
+      "sheep": 14,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2762.2,
+    "annual_meat_kg": 4063,
+    "mortality_rate_pct": 1.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 175,
+      "milking_equipment": false,
+      "feed_storage_tons": 456.5
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "05801",
+      "02200"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-109",
+    "bin": "18015387589",
+    "name": "КФХ «Жетісу Фарм»",
+    "oblast": "Павлодарская область",
+    "district": "Щербактинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 418,
+    "pasture_hectares": 213,
+    "livestock": {
+      "cattle": 0,
+      "dairy_cows": 0,
+      "sheep": 1272,
+      "goats": 112,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 94831,
+    "mortality_rate_pct": 2.1,
+    "infrastructure": {
+      "barns": 9,
+      "barn_capacity": 380,
+      "milking_equipment": false,
+      "feed_storage_tons": 408.6
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-110",
+    "bin": "08064178060",
+    "name": "ИП «Байтерек»",
+    "oblast": "Жамбылская область",
+    "district": "Жуалынский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 157,
+    "pasture_hectares": 122,
+    "livestock": {
+      "cattle": 230,
+      "dairy_cows": 46,
+      "sheep": 72,
+      "goats": 0,
+      "horses": 6,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1022.3,
+    "annual_meat_kg": 21136,
+    "mortality_rate_pct": 2.6,
+    "infrastructure": {
+      "barns": 7,
+      "barn_capacity": 210,
+      "milking_equipment": true,
+      "feed_storage_tons": 760.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01200",
+      "05801",
+      "00700"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-111",
+    "bin": "08074502154",
+    "name": "ИП «Алтын Дала»",
+    "oblast": "Карагандинская область",
+    "district": "Актогайский район",
+    "farm_type": "mixed",
+    "land_hectares": 865,
+    "pasture_hectares": 676,
+    "livestock": {
+      "cattle": 189,
+      "dairy_cows": 55,
+      "sheep": 160,
+      "goats": 6,
+      "horses": 10,
+      "camels": 0,
+      "poultry": 77,
+      "pigs": 0
+    },
+    "daily_milk_liters": 741.6,
+    "annual_meat_kg": 28671,
+    "mortality_rate_pct": 2.3,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 258,
+      "milking_equipment": true,
+      "feed_storage_tons": 804.9
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01200",
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-112",
+    "bin": "20025101670",
+    "name": "СПК «Нұр-Фарм»",
+    "oblast": "Акмолинская область",
+    "district": "Кокшетау Г.А.",
+    "farm_type": "mixed",
+    "land_hectares": 461,
+    "pasture_hectares": 295,
+    "livestock": {
+      "cattle": 176,
+      "dairy_cows": 33,
+      "sheep": 173,
+      "goats": 36,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 127,
+      "pigs": 0
+    },
+    "daily_milk_liters": 342.9,
+    "annual_meat_kg": 25112,
+    "mortality_rate_pct": 11.9,
+    "infrastructure": {
+      "barns": 9,
+      "barn_capacity": 299,
+      "milking_equipment": true,
+      "feed_storage_tons": 782.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-113",
+    "bin": "05065878609",
+    "name": "КФХ «Жаңа Күн»",
+    "oblast": "Костанайская область",
+    "district": "Жангельдинский район",
+    "farm_type": "horse",
+    "land_hectares": 163,
+    "pasture_hectares": 142,
+    "livestock": {
+      "cattle": 26,
+      "dairy_cows": 0,
+      "sheep": 30,
+      "goats": 0,
+      "horses": 71,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 213.8,
+    "annual_meat_kg": 7776,
+    "mortality_rate_pct": 4.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 100,
+      "milking_equipment": false,
+      "feed_storage_tons": 205.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01900"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-114",
+    "bin": "05064105006",
+    "name": "КФХ «Тұлпар»",
+    "oblast": "Костанайская область",
+    "district": "Жангельдинский район",
+    "farm_type": "poultry",
+    "land_hectares": 8,
+    "pasture_hectares": 4,
+    "livestock": {
+      "cattle": 1,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 13970,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 45,
+    "mortality_rate_pct": 3.8,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 2.2
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "11500"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-115",
+    "bin": "20054839560",
+    "name": "ТОО «Тұлпар»",
+    "oblast": "Алматинская область",
+    "district": "Илийский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 26,
+    "pasture_hectares": 15,
+    "livestock": {
+      "cattle": 10,
+      "dairy_cows": 7,
+      "sheep": 27,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 92.7,
+    "annual_meat_kg": 1622,
+    "mortality_rate_pct": 3.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 9,
+      "milking_equipment": false,
+      "feed_storage_tons": 37.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-116",
+    "bin": "15034257657",
+    "name": "СПК «Тобыл»",
+    "oblast": "область Абай",
+    "district": "Аягозский район",
+    "farm_type": "dairy",
+    "land_hectares": 565,
+    "pasture_hectares": 407,
+    "livestock": {
+      "cattle": 228,
+      "dairy_cows": 218,
+      "sheep": 16,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 3295.5,
+    "annual_meat_kg": 12720,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 8,
+      "barn_capacity": 240,
+      "milking_equipment": true,
+      "feed_storage_tons": 370.0
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "03100"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-117",
+    "bin": "05076296132",
+    "name": "ТОО «Нұр-Фарм»",
+    "oblast": "Жамбылская область",
+    "district": "Кордайский район",
+    "farm_type": "mixed",
+    "land_hectares": 967,
+    "pasture_hectares": 513,
+    "livestock": {
+      "cattle": 194,
+      "dairy_cows": 60,
+      "sheep": 61,
+      "goats": 40,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 152,
+      "pigs": 0
+    },
+    "daily_milk_liters": 743.0,
+    "annual_meat_kg": 22320,
+    "mortality_rate_pct": 1.2,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 227,
+      "milking_equipment": false,
+      "feed_storage_tons": 904.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "03100",
+      "02200"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-118",
+    "bin": "10015542844",
+    "name": "КХ «Мұрагер»",
+    "oblast": "область Абай",
+    "district": "Аягозский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 352,
+    "pasture_hectares": 213,
+    "livestock": {
+      "cattle": 13,
+      "dairy_cows": 4,
+      "sheep": 754,
+      "goats": 224,
+      "horses": 6,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 76.5,
+    "annual_meat_kg": 54158,
+    "mortality_rate_pct": 1.5,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 346,
+      "milking_equipment": false,
+      "feed_storage_tons": 280.5
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01200"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-119",
+    "bin": "05054764266",
+    "name": "ТОО «Қазына»",
+    "oblast": "Алматинская область",
+    "district": "Енбекшиказахский район",
+    "farm_type": "honey",
+    "land_hectares": 48,
+    "pasture_hectares": 42,
+    "livestock": {
+      "cattle": 3,
+      "dairy_cows": 0,
+      "sheep": 5,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 289,
+    "mortality_rate_pct": 2.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 14.3
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "11500",
+      "00100",
+      "02200"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-120",
+    "bin": "15065551212",
+    "name": "ТОО «Мәңгілік»",
+    "oblast": "область Жетісу",
+    "district": "Текели Г.А.",
+    "farm_type": "small_cattle",
+    "land_hectares": 117,
+    "pasture_hectares": 61,
+    "livestock": {
+      "cattle": 7,
+      "dairy_cows": 7,
+      "sheep": 1,
+      "goats": 0,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 139.9,
+    "annual_meat_kg": 364,
+    "mortality_rate_pct": 2.5,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 7,
+      "milking_equipment": false,
+      "feed_storage_tons": 19.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "11500"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-121",
+    "bin": "08056897364",
+    "name": "КХ «Тұлпар»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Жамбылский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 119,
+    "pasture_hectares": 86,
+    "livestock": {
+      "cattle": 18,
+      "dairy_cows": 7,
+      "sheep": 20,
+      "goats": 0,
+      "horses": 1,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 136.6,
+    "annual_meat_kg": 1410,
+    "mortality_rate_pct": 1.1,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 29,
+      "milking_equipment": false,
+      "feed_storage_tons": 64.8
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-122",
+    "bin": "20054442294",
+    "name": "ИП «Қаратау»",
+    "oblast": "Мангистауская область",
+    "district": "Каракиянский район",
+    "farm_type": "horse",
+    "land_hectares": 655,
+    "pasture_hectares": 495,
+    "livestock": {
+      "cattle": 21,
+      "dairy_cows": 0,
+      "sheep": 33,
+      "goats": 0,
+      "horses": 174,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 462.1,
+    "annual_meat_kg": 5960,
+    "mortality_rate_pct": 3.0,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 201,
+      "milking_equipment": false,
+      "feed_storage_tons": 570.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-123",
+    "bin": "20115831702",
+    "name": "СПК «Алтай-Агро»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "mixed",
+    "land_hectares": 754,
+    "pasture_hectares": 582,
+    "livestock": {
+      "cattle": 26,
+      "dairy_cows": 25,
+      "sheep": 137,
+      "goats": 18,
+      "horses": 8,
+      "camels": 0,
+      "poultry": 107,
+      "pigs": 0
+    },
+    "daily_milk_liters": 372.0,
+    "annual_meat_kg": 12135,
+    "mortality_rate_pct": 4.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 77,
+      "milking_equipment": true,
+      "feed_storage_tons": 169.5
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01300"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-124",
+    "bin": "15026992206",
+    "name": "СПК «Арай»",
+    "oblast": "Карагандинская область",
+    "district": "Каркаралинский район",
+    "farm_type": "dairy",
+    "land_hectares": 787,
+    "pasture_hectares": 599,
+    "livestock": {
+      "cattle": 143,
+      "dairy_cows": 116,
+      "sheep": 7,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2395.6,
+    "annual_meat_kg": 5764,
+    "mortality_rate_pct": 2.0,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 137,
+      "milking_equipment": true,
+      "feed_storage_tons": 468.6
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-125",
+    "bin": "12025269619",
+    "name": "ТОО «Отандастар»",
+    "oblast": "Актюбинская область",
+    "district": "Алгинский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 62,
+    "pasture_hectares": 55,
+    "livestock": {
+      "cattle": 34,
+      "dairy_cows": 4,
+      "sheep": 10,
+      "goats": 0,
+      "horses": 5,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 44.3,
+    "annual_meat_kg": 1218,
+    "mortality_rate_pct": 4.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 34,
+      "milking_equipment": false,
+      "feed_storage_tons": 92.4
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-126",
+    "bin": "08025159924",
+    "name": "КФХ «Абай-Агро»",
+    "oblast": "Атырауская область",
+    "district": "Исатайский район",
+    "farm_type": "pig",
+    "land_hectares": 13,
+    "pasture_hectares": 9,
+    "livestock": {
+      "cattle": 5,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 394
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 30725,
+    "mortality_rate_pct": 3.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 16.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700",
+      "01300"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-127",
+    "bin": "12116435268",
+    "name": "КФХ «Қазына»",
+    "oblast": "область Жетісу",
+    "district": "Текели Г.А.",
+    "farm_type": "sheep_focus",
+    "land_hectares": 751,
+    "pasture_hectares": 674,
+    "livestock": {
+      "cattle": 24,
+      "dairy_cows": 3,
+      "sheep": 1053,
+      "goats": 183,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 72.4,
+    "annual_meat_kg": 94767,
+    "mortality_rate_pct": 1.7,
+    "infrastructure": {
+      "barns": 15,
+      "barn_capacity": 342,
+      "milking_equipment": false,
+      "feed_storage_tons": 737.4
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-128",
+    "bin": "10024239287",
+    "name": "КХ «Степной»",
+    "oblast": "Актюбинская область",
+    "district": "Хобдинский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 98,
+    "pasture_hectares": 53,
+    "livestock": {
+      "cattle": 33,
+      "dairy_cows": 12,
+      "sheep": 3,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 147.6,
+    "annual_meat_kg": 2484,
+    "mortality_rate_pct": 9.5,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 17,
+      "milking_equipment": true,
+      "feed_storage_tons": 122.2
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00400",
+      "02200",
+      "04500"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-129",
+    "bin": "18126232764",
+    "name": "ТОО «Байтерек»",
+    "oblast": "Мангистауская область",
+    "district": "Тупкараганский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 1490,
+    "pasture_hectares": 989,
+    "livestock": {
+      "cattle": 17,
+      "dairy_cows": 7,
+      "sheep": 378,
+      "goats": 5,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 137.9,
+    "annual_meat_kg": 19682,
+    "mortality_rate_pct": 4.1,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 46,
+      "milking_equipment": false,
+      "feed_storage_tons": 291.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-130",
+    "bin": "10076726846",
+    "name": "КХ «Арай»",
+    "oblast": "Туркестанская область",
+    "district": "Отрарский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 274,
+    "pasture_hectares": 242,
+    "livestock": {
+      "cattle": 25,
+      "dairy_cows": 10,
+      "sheep": 645,
+      "goats": 92,
+      "horses": 5,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 152.4,
+    "annual_meat_kg": 20674,
+    "mortality_rate_pct": 3.7,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 89,
+      "milking_equipment": true,
+      "feed_storage_tons": 650.1
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700",
+      "11500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-131",
+    "bin": "05126988578",
+    "name": "КХ «Тұлпар»",
+    "oblast": "Жамбылская область",
+    "district": "Жамбылский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 23,
+    "pasture_hectares": 15,
+    "livestock": {
+      "cattle": 42,
+      "dairy_cows": 15,
+      "sheep": 25,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 293.0,
+    "annual_meat_kg": 2192,
+    "mortality_rate_pct": 2.1,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 30,
+      "milking_equipment": true,
+      "feed_storage_tons": 206.1
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-132",
+    "bin": "10016764443",
+    "name": "СПК «Шаңырақ»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "sheep_focus",
+    "land_hectares": 936,
+    "pasture_hectares": 715,
+    "livestock": {
+      "cattle": 11,
+      "dairy_cows": 10,
+      "sheep": 559,
+      "goats": 123,
+      "horses": 10,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 189.0,
+    "annual_meat_kg": 20330,
+    "mortality_rate_pct": 3.7,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 181,
+      "milking_equipment": true,
+      "feed_storage_tons": 385.1
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700",
+      "01200"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-133",
+    "bin": "10065171133",
+    "name": "КФХ «Сыр-Дария»",
+    "oblast": "Атырауская область",
+    "district": "Махамбетский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 1017,
+    "pasture_hectares": 544,
+    "livestock": {
+      "cattle": 305,
+      "dairy_cows": 124,
+      "sheep": 40,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 3059.3,
+    "annual_meat_kg": 22521,
+    "mortality_rate_pct": 7.2,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 166,
+      "milking_equipment": true,
+      "feed_storage_tons": 1072.1
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-134",
+    "bin": "20045542931",
+    "name": "КХ «Шаңырақ»",
+    "oblast": "Алматинская область",
+    "district": "Кегенский район",
+    "farm_type": "dairy",
+    "land_hectares": 503,
+    "pasture_hectares": 294,
+    "livestock": {
+      "cattle": 211,
+      "dairy_cows": 211,
+      "sheep": 20,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 5147.4,
+    "annual_meat_kg": 8667,
+    "mortality_rate_pct": 3.1,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 79,
+      "milking_equipment": true,
+      "feed_storage_tons": 584.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-135",
+    "bin": "10096604186",
+    "name": "СПК «Көкөзек»",
+    "oblast": "область Абай",
+    "district": "Урджарский",
+    "farm_type": "sheep_focus",
+    "land_hectares": 325,
+    "pasture_hectares": 287,
+    "livestock": {
+      "cattle": 23,
+      "dairy_cows": 0,
+      "sheep": 58,
+      "goats": 16,
+      "horses": 8,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 7992,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 66,
+      "milking_equipment": false,
+      "feed_storage_tons": 148.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00400",
+      "01900",
+      "04000"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-136",
+    "bin": "08096811055",
+    "name": "ИП «Мұрагер»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "large_cattle",
+    "land_hectares": 2495,
+    "pasture_hectares": 2220,
+    "livestock": {
+      "cattle": 1065,
+      "dairy_cows": 472,
+      "sheep": 154,
+      "goats": 0,
+      "horses": 49,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 10888.8,
+    "annual_meat_kg": 64335,
+    "mortality_rate_pct": 2.6,
+    "infrastructure": {
+      "barns": 15,
+      "barn_capacity": 1355,
+      "milking_equipment": true,
+      "feed_storage_tons": 3816.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-137",
+    "bin": "15014570137",
+    "name": "СПК «Тобыл»",
+    "oblast": "Павлодарская область",
+    "district": "Успенский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 862,
+    "pasture_hectares": 501,
+    "livestock": {
+      "cattle": 28,
+      "dairy_cows": 6,
+      "sheep": 1773,
+      "goats": 292,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 101.3,
+    "annual_meat_kg": 45034,
+    "mortality_rate_pct": 9.4,
+    "infrastructure": {
+      "barns": 19,
+      "barn_capacity": 760,
+      "milking_equipment": false,
+      "feed_storage_tons": 1613.0
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-138",
+    "bin": "18126948865",
+    "name": "СПК «Жаңа Күн»",
+    "oblast": "область Ұлытау",
+    "district": "Жезказган Г.А.",
+    "farm_type": "dairy",
+    "land_hectares": 586,
+    "pasture_hectares": 412,
+    "livestock": {
+      "cattle": 177,
+      "dairy_cows": 176,
+      "sheep": 1,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 4180.0,
+    "annual_meat_kg": 7699,
+    "mortality_rate_pct": 3.9,
+    "infrastructure": {
+      "barns": 9,
+      "barn_capacity": 190,
+      "milking_equipment": true,
+      "feed_storage_tons": 727.5
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01200"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-139",
+    "bin": "18056742979",
+    "name": "ТОО «Мұрагер»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "район Бәйтерек",
+    "farm_type": "dairy",
+    "land_hectares": 1019,
+    "pasture_hectares": 581,
+    "livestock": {
+      "cattle": 68,
+      "dairy_cows": 45,
+      "sheep": 5,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 922.3,
+    "annual_meat_kg": 1983,
+    "mortality_rate_pct": 6.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 60,
+      "milking_equipment": true,
+      "feed_storage_tons": 296.8
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "03100",
+      "00100",
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-140",
+    "bin": "18015250365",
+    "name": "СПК «Алтын Дала»",
+    "oblast": "Кызылординская область",
+    "district": "Казалинский район",
+    "farm_type": "pig",
+    "land_hectares": 74,
+    "pasture_hectares": 41,
+    "livestock": {
+      "cattle": 8,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 298
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 13527,
+    "mortality_rate_pct": 3.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 7,
+      "milking_equipment": false,
+      "feed_storage_tons": 17.2
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "02200"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-141",
+    "bin": "08116925113",
+    "name": "ИП «Жаңа Күн»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "dairy",
+    "land_hectares": 332,
+    "pasture_hectares": 217,
+    "livestock": {
+      "cattle": 174,
+      "dairy_cows": 90,
+      "sheep": 16,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1977.8,
+    "annual_meat_kg": 8075,
+    "mortality_rate_pct": 2.3,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 117,
+      "milking_equipment": false,
+      "feed_storage_tons": 315.9
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "02200",
+      "00100"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-142",
+    "bin": "18126910481",
+    "name": "КФХ «Алтын Дала»",
+    "oblast": "область Абай",
+    "district": "Бородулихинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 86,
+    "pasture_hectares": 61,
+    "livestock": {
+      "cattle": 22,
+      "dairy_cows": 5,
+      "sheep": 98,
+      "goats": 14,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 47.4,
+    "annual_meat_kg": 3116,
+    "mortality_rate_pct": 2.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 50,
+      "milking_equipment": false,
+      "feed_storage_tons": 109.5
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-143",
+    "bin": "20124949265",
+    "name": "КХ «Мұрагер»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Кызылжарский район",
+    "farm_type": "camel",
+    "land_hectares": 3523,
+    "pasture_hectares": 2728,
+    "livestock": {
+      "cattle": 0,
+      "dairy_cows": 0,
+      "sheep": 11,
+      "goats": 0,
+      "horses": 9,
+      "camels": 165,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 310.4,
+    "annual_meat_kg": 12826,
+    "mortality_rate_pct": 5.3,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 207,
+      "milking_equipment": false,
+      "feed_storage_tons": 22.3
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-144",
+    "bin": "05094704588",
+    "name": "КХ «Мерей»",
+    "oblast": "область Ұлытау",
+    "district": "Жезказган Г.А.",
+    "farm_type": "small_cattle",
+    "land_hectares": 90,
+    "pasture_hectares": 65,
+    "livestock": {
+      "cattle": 40,
+      "dairy_cows": 2,
+      "sheep": 9,
+      "goats": 0,
+      "horses": 1,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 41.4,
+    "annual_meat_kg": 3711,
+    "mortality_rate_pct": 2.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 45,
+      "milking_equipment": false,
+      "feed_storage_tons": 86.9
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-145",
+    "bin": "20045939956",
+    "name": "СПК «Ақжар»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Жамбылский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 52,
+    "pasture_hectares": 33,
+    "livestock": {
+      "cattle": 47,
+      "dairy_cows": 20,
+      "sheep": 7,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 256.9,
+    "annual_meat_kg": 1306,
+    "mortality_rate_pct": 7.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 55,
+      "milking_equipment": true,
+      "feed_storage_tons": 189.0
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-146",
+    "bin": "05106858776",
+    "name": "КФХ «Сыр-Дария»",
+    "oblast": "Карагандинская область",
+    "district": "Нуринский район",
+    "farm_type": "horse",
+    "land_hectares": 1669,
+    "pasture_hectares": 1351,
+    "livestock": {
+      "cattle": 17,
+      "dairy_cows": 0,
+      "sheep": 6,
+      "goats": 0,
+      "horses": 269,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 461.7,
+    "annual_meat_kg": 7276,
+    "mortality_rate_pct": 10.6,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 257,
+      "milking_equipment": false,
+      "feed_storage_tons": 418.8
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-147",
+    "bin": "08124733735",
+    "name": "СПК «Шұбар»",
+    "oblast": "Актюбинская область",
+    "district": "Темирский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 404,
+    "pasture_hectares": 261,
+    "livestock": {
+      "cattle": 164,
+      "dairy_cows": 84,
+      "sheep": 17,
+      "goats": 0,
+      "horses": 14,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1387.6,
+    "annual_meat_kg": 4959,
+    "mortality_rate_pct": 1.0,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 234,
+      "milking_equipment": true,
+      "feed_storage_tons": 342.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "03100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-148",
+    "bin": "20025777204",
+    "name": "ИП «Қоңыр»",
+    "oblast": "Алматинская область",
+    "district": "Илийский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 15,
+    "pasture_hectares": 11,
+    "livestock": {
+      "cattle": 38,
+      "dairy_cows": 11,
+      "sheep": 12,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 259.6,
+    "annual_meat_kg": 3863,
+    "mortality_rate_pct": 9.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 30,
+      "milking_equipment": true,
+      "feed_storage_tons": 133.2
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700",
+      "03100"
+    ],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-149",
+    "bin": "18074129423",
+    "name": "ИП «Ақжар»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "large_cattle",
+    "land_hectares": 4749,
+    "pasture_hectares": 4059,
+    "livestock": {
+      "cattle": 527,
+      "dairy_cows": 306,
+      "sheep": 35,
+      "goats": 0,
+      "horses": 33,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 3309.5,
+    "annual_meat_kg": 14652,
+    "mortality_rate_pct": 1.6,
+    "infrastructure": {
+      "barns": 15,
+      "barn_capacity": 559,
+      "milking_equipment": true,
+      "feed_storage_tons": 1395.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02000",
+      "01200"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-150",
+    "bin": "20076887532",
+    "name": "КХ «Мерей»",
+    "oblast": "Жамбылская область",
+    "district": "Жуалынский район",
+    "farm_type": "poultry",
+    "land_hectares": 14,
+    "pasture_hectares": 7,
+    "livestock": {
+      "cattle": 1,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 17425,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 51,
+    "mortality_rate_pct": 3.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 4.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02000",
+      "11500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-151",
+    "bin": "15016989406",
+    "name": "ИП «Тұлпар»",
+    "oblast": "Жамбылская область",
+    "district": "Шуский район",
+    "farm_type": "dairy",
+    "land_hectares": 140,
+    "pasture_hectares": 120,
+    "livestock": {
+      "cattle": 65,
+      "dairy_cows": 46,
+      "sheep": 12,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 669.4,
+    "annual_meat_kg": 2042,
+    "mortality_rate_pct": 10.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 68,
+      "milking_equipment": true,
+      "feed_storage_tons": 281.7
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "02200",
+      "11500",
+      "00400"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-152",
+    "bin": "05096109426",
+    "name": "ТОО «Шұбар»",
+    "oblast": "Актюбинская область",
+    "district": "Хромтауский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 1667,
+    "pasture_hectares": 1346,
+    "livestock": {
+      "cattle": 25,
+      "dairy_cows": 9,
+      "sheep": 767,
+      "goats": 150,
+      "horses": 1,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 137.1,
+    "annual_meat_kg": 33261,
+    "mortality_rate_pct": 3.7,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 162,
+      "milking_equipment": false,
+      "feed_storage_tons": 473.4
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "05801",
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-153",
+    "bin": "08115256083",
+    "name": "ТОО «Ертіс»",
+    "oblast": "Кызылординская область",
+    "district": "Сырдарьинский район",
+    "farm_type": "large_cattle",
+    "land_hectares": 2877,
+    "pasture_hectares": 1739,
+    "livestock": {
+      "cattle": 2695,
+      "dairy_cows": 483,
+      "sheep": 144,
+      "goats": 0,
+      "horses": 28,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 8888.2,
+    "annual_meat_kg": 227949,
+    "mortality_rate_pct": 1.6,
+    "infrastructure": {
+      "barns": 71,
+      "barn_capacity": 2983,
+      "milking_equipment": true,
+      "feed_storage_tons": 6201.3
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-154",
+    "bin": "05045960998",
+    "name": "КФХ «Отандастар»",
+    "oblast": "Жамбылская область",
+    "district": "Жамбылский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 206,
+    "pasture_hectares": 116,
+    "livestock": {
+      "cattle": 375,
+      "dairy_cows": 11,
+      "sheep": 11,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 176.2,
+    "annual_meat_kg": 21846,
+    "mortality_rate_pct": 6.1,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 421,
+      "milking_equipment": false,
+      "feed_storage_tons": 1318.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00100",
+      "05801",
+      "00700",
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-155",
+    "bin": "10045894773",
+    "name": "СПК «Тұлпар»",
+    "oblast": "область Жетісу",
+    "district": "Талдыкорган Г.А.",
+    "farm_type": "dairy",
+    "land_hectares": 173,
+    "pasture_hectares": 111,
+    "livestock": {
+      "cattle": 30,
+      "dairy_cows": 20,
+      "sheep": 2,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 498.9,
+    "annual_meat_kg": 2137,
+    "mortality_rate_pct": 2.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 31,
+      "milking_equipment": false,
+      "feed_storage_tons": 111.6
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "01700"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-156",
+    "bin": "20015731721",
+    "name": "СПК «Шаңырақ»",
+    "oblast": "Акмолинская область",
+    "district": "Есильский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 81,
+    "pasture_hectares": 42,
+    "livestock": {
+      "cattle": 23,
+      "dairy_cows": 10,
+      "sheep": 30,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 216.5,
+    "annual_meat_kg": 4102,
+    "mortality_rate_pct": 3.4,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 36,
+      "milking_equipment": true,
+      "feed_storage_tons": 105.6
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "02000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-157",
+    "bin": "08045427289",
+    "name": "КФХ «Байтерек»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "mixed",
+    "land_hectares": 332,
+    "pasture_hectares": 201,
+    "livestock": {
+      "cattle": 199,
+      "dairy_cows": 38,
+      "sheep": 73,
+      "goats": 18,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 102,
+      "pigs": 0
+    },
+    "daily_milk_liters": 739.2,
+    "annual_meat_kg": 20225,
+    "mortality_rate_pct": 11.5,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 222,
+      "milking_equipment": true,
+      "feed_storage_tons": 763.9
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01200"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-158",
+    "bin": "12086808790",
+    "name": "КФХ «Арал»",
+    "oblast": "область Абай",
+    "district": "Аягозский район",
+    "farm_type": "camel",
+    "land_hectares": 327,
+    "pasture_hectares": 263,
+    "livestock": {
+      "cattle": 0,
+      "dairy_cows": 0,
+      "sheep": 5,
+      "goats": 0,
+      "horses": 15,
+      "camels": 148,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 251.1,
+    "annual_meat_kg": 8323,
+    "mortality_rate_pct": 3.7,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 171,
+      "milking_equipment": false,
+      "feed_storage_tons": 31.2
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-159",
+    "bin": "12125587995",
+    "name": "СПК «Қаратау»",
+    "oblast": "Жамбылская область",
+    "district": "Таласский район",
+    "farm_type": "honey",
+    "land_hectares": 50,
+    "pasture_hectares": 38,
+    "livestock": {
+      "cattle": 0,
+      "dairy_cows": 0,
+      "sheep": 10,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 326,
+    "mortality_rate_pct": 2.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 3.8
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700",
+      "11500",
+      "00700",
+      "02000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-160",
+    "bin": "12056428958",
+    "name": "СПК «Қоңыр»",
+    "oblast": "Жамбылская область",
+    "district": "Шуский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 114,
+    "pasture_hectares": 61,
+    "livestock": {
+      "cattle": 22,
+      "dairy_cows": 7,
+      "sheep": 17,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 157.9,
+    "annual_meat_kg": 1334,
+    "mortality_rate_pct": 3.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 24,
+      "milking_equipment": false,
+      "feed_storage_tons": 82.0
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "02200",
+      "11500",
+      "04500"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-161",
+    "bin": "12125685801",
+    "name": "ИП «Шұбар»",
+    "oblast": "область Абай",
+    "district": "Бескарагайский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 117,
+    "pasture_hectares": 87,
+    "livestock": {
+      "cattle": 33,
+      "dairy_cows": 10,
+      "sheep": 8,
+      "goats": 0,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 141.3,
+    "annual_meat_kg": 2298,
+    "mortality_rate_pct": 2.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 36,
+      "milking_equipment": true,
+      "feed_storage_tons": 124.1
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700",
+      "11500"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-162",
+    "bin": "10125869288",
+    "name": "ТОО «Отандастар»",
+    "oblast": "Восточно-Казахстанская область",
+    "district": "район Марқакөл",
+    "farm_type": "pig",
+    "land_hectares": 63,
+    "pasture_hectares": 47,
+    "livestock": {
+      "cattle": 6,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 312
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 22557,
+    "mortality_rate_pct": 5.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 21.8
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "02000"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-163",
+    "bin": "12056400623",
+    "name": "ТОО «Көкше»",
+    "oblast": "Жамбылская область",
+    "district": "Байзакский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 105,
+    "pasture_hectares": 81,
+    "livestock": {
+      "cattle": 10,
+      "dairy_cows": 3,
+      "sheep": 5,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 29.3,
+    "annual_meat_kg": 429,
+    "mortality_rate_pct": 2.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 6,
+      "milking_equipment": false,
+      "feed_storage_tons": 24.2
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-164",
+    "bin": "18095505875",
+    "name": "ТОО «Жайлау»",
+    "oblast": "Карагандинская область",
+    "district": "Бухар-Жырауский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 121,
+    "pasture_hectares": 92,
+    "livestock": {
+      "cattle": 27,
+      "dairy_cows": 7,
+      "sheep": 1812,
+      "goats": 333,
+      "horses": 7,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 172.0,
+    "annual_meat_kg": 114256,
+    "mortality_rate_pct": 7.6,
+    "infrastructure": {
+      "barns": 18,
+      "barn_capacity": 777,
+      "milking_equipment": false,
+      "feed_storage_tons": 1241.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "03100",
+      "01900"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-165",
+    "bin": "15074617403",
+    "name": "КФХ «Көкше»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Петропавловск Г.А.",
+    "farm_type": "medium_cattle",
+    "land_hectares": 418,
+    "pasture_hectares": 259,
+    "livestock": {
+      "cattle": 50,
+      "dairy_cows": 43,
+      "sheep": 97,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 595.4,
+    "annual_meat_kg": 7271,
+    "mortality_rate_pct": 11.4,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 86,
+      "milking_equipment": true,
+      "feed_storage_tons": 228.7
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "01200"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-166",
+    "bin": "08024469774",
+    "name": "ИП «Бейбарыс»",
+    "oblast": "Атырауская область",
+    "district": "Махамбетский район",
+    "farm_type": "large_cattle",
+    "land_hectares": 3432,
+    "pasture_hectares": 2450,
+    "livestock": {
+      "cattle": 2616,
+      "dairy_cows": 677,
+      "sheep": 177,
+      "goats": 0,
+      "horses": 48,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 8544.9,
+    "annual_meat_kg": 167356,
+    "mortality_rate_pct": 1.8,
+    "infrastructure": {
+      "barns": 61,
+      "barn_capacity": 2266,
+      "milking_equipment": true,
+      "feed_storage_tons": 9005.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01200",
+      "01700"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-167",
+    "bin": "18044604367",
+    "name": "КХ «Ақжар»",
+    "oblast": "Акмолинская область",
+    "district": "Ерейментауский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 37,
+    "pasture_hectares": 23,
+    "livestock": {
+      "cattle": 24,
+      "dairy_cows": 15,
+      "sheep": 11,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 297.7,
+    "annual_meat_kg": 832,
+    "mortality_rate_pct": 10.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 12,
+      "milking_equipment": true,
+      "feed_storage_tons": 58.8
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "11500",
+      "00100",
+      "00400"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-168",
+    "bin": "10016319364",
+    "name": "КХ «Сайрам»",
+    "oblast": "Актюбинская область",
+    "district": "Байганинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 1413,
+    "pasture_hectares": 1261,
+    "livestock": {
+      "cattle": 21,
+      "dairy_cows": 4,
+      "sheep": 1018,
+      "goats": 199,
+      "horses": 5,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 42.8,
+    "annual_meat_kg": 79172,
+    "mortality_rate_pct": 2.6,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 192,
+      "milking_equipment": false,
+      "feed_storage_tons": 464.0
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01200",
+      "00400",
+      "11500"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-169",
+    "bin": "05035739423",
+    "name": "СПК «Шұбар»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "pig",
+    "land_hectares": 98,
+    "pasture_hectares": 72,
+    "livestock": {
+      "cattle": 1,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 210
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 7369,
+    "mortality_rate_pct": 3.1,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 1.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-170",
+    "bin": "10094581187",
+    "name": "ТОО «Жайлау»",
+    "oblast": "Павлодарская область",
+    "district": "район Тереңкөл",
+    "farm_type": "horse",
+    "land_hectares": 177,
+    "pasture_hectares": 109,
+    "livestock": {
+      "cattle": 8,
+      "dairy_cows": 0,
+      "sheep": 2,
+      "goats": 0,
+      "horses": 88,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 233.0,
+    "annual_meat_kg": 5247,
+    "mortality_rate_pct": 2.5,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 102,
+      "milking_equipment": false,
+      "feed_storage_tons": 301.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "11500",
+      "02200",
+      "00700"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-171",
+    "bin": "08026141709",
+    "name": "КХ «Арал»",
+    "oblast": "область Жетісу",
+    "district": "Панфиловский район",
+    "farm_type": "dairy",
+    "land_hectares": 189,
+    "pasture_hectares": 102,
+    "livestock": {
+      "cattle": 152,
+      "dairy_cows": 117,
+      "sheep": 2,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2245.3,
+    "annual_meat_kg": 8060,
+    "mortality_rate_pct": 2.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 163,
+      "milking_equipment": true,
+      "feed_storage_tons": 375.7
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00100",
+      "00700"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-172",
+    "bin": "12065176419",
+    "name": "СПК «Көкше»",
+    "oblast": "Алматинская область",
+    "district": "Уйгурский район",
+    "farm_type": "poultry",
+    "land_hectares": 8,
+    "pasture_hectares": 5,
+    "livestock": {
+      "cattle": 5,
+      "dairy_cows": 0,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 40211,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 121,
+    "mortality_rate_pct": 1.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 6,
+      "milking_equipment": false,
+      "feed_storage_tons": 14.5
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "04500"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-173",
+    "bin": "10116307328",
+    "name": "ТОО «Сайрам»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Уалихановский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 265,
+    "pasture_hectares": 175,
+    "livestock": {
+      "cattle": 168,
+      "dairy_cows": 146,
+      "sheep": 49,
+      "goats": 0,
+      "horses": 6,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1647.3,
+    "annual_meat_kg": 13249,
+    "mortality_rate_pct": 3.8,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 202,
+      "milking_equipment": true,
+      "feed_storage_tons": 638.3
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "00400"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-174",
+    "bin": "05055390833",
+    "name": "ИП «Қайнар»",
+    "oblast": "Павлодарская область",
+    "district": "Майский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 302,
+    "pasture_hectares": 258,
+    "livestock": {
+      "cattle": 19,
+      "dairy_cows": 3,
+      "sheep": 931,
+      "goats": 165,
+      "horses": 9,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 51.8,
+    "annual_meat_kg": 47774,
+    "mortality_rate_pct": 3.2,
+    "infrastructure": {
+      "barns": 5,
+      "barn_capacity": 365,
+      "milking_equipment": false,
+      "feed_storage_tons": 305.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-175",
+    "bin": "18126855271",
+    "name": "СПК «Мерей»",
+    "oblast": "Мангистауская область",
+    "district": "Мангистауский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 366,
+    "pasture_hectares": 196,
+    "livestock": {
+      "cattle": 4,
+      "dairy_cows": 1,
+      "sheep": 992,
+      "goats": 182,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 14.2,
+    "annual_meat_kg": 64926,
+    "mortality_rate_pct": 10.5,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 165,
+      "milking_equipment": false,
+      "feed_storage_tons": 729.2
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "00700",
+      "02000"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-176",
+    "bin": "12086880059",
+    "name": "КФХ «Бейбарыс»",
+    "oblast": "Актюбинская область",
+    "district": "Хромтауский район",
+    "farm_type": "mixed",
+    "land_hectares": 214,
+    "pasture_hectares": 185,
+    "livestock": {
+      "cattle": 105,
+      "dairy_cows": 49,
+      "sheep": 121,
+      "goats": 26,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 197,
+      "pigs": 0
+    },
+    "daily_milk_liters": 580.9,
+    "annual_meat_kg": 15088,
+    "mortality_rate_pct": 1.0,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 150,
+      "milking_equipment": true,
+      "feed_storage_tons": 418.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00700",
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-177",
+    "bin": "15025247496",
+    "name": "ТОО «Қазына»",
+    "oblast": "Костанайская область",
+    "district": "Карасуский район",
+    "farm_type": "mixed",
+    "land_hectares": 464,
+    "pasture_hectares": 292,
+    "livestock": {
+      "cattle": 166,
+      "dairy_cows": 11,
+      "sheep": 150,
+      "goats": 25,
+      "horses": 8,
+      "camels": 0,
+      "poultry": 21,
+      "pigs": 0
+    },
+    "daily_milk_liters": 162.5,
+    "annual_meat_kg": 16078,
+    "mortality_rate_pct": 3.3,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 203,
+      "milking_equipment": true,
+      "feed_storage_tons": 672.9
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-178",
+    "bin": "20025499927",
+    "name": "КХ «Достық»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Казталовский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 446,
+    "pasture_hectares": 399,
+    "livestock": {
+      "cattle": 365,
+      "dairy_cows": 123,
+      "sheep": 79,
+      "goats": 0,
+      "horses": 4,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1905.0,
+    "annual_meat_kg": 33803,
+    "mortality_rate_pct": 9.5,
+    "infrastructure": {
+      "barns": 15,
+      "barn_capacity": 456,
+      "milking_equipment": false,
+      "feed_storage_tons": 1658.3
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "11500",
+      "01300",
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-179",
+    "bin": "20026125004",
+    "name": "ТОО «Бұлақ»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Чингирлауский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 651,
+    "pasture_hectares": 497,
+    "livestock": {
+      "cattle": 19,
+      "dairy_cows": 2,
+      "sheep": 1173,
+      "goats": 247,
+      "horses": 10,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 16.6,
+    "annual_meat_kg": 79666,
+    "mortality_rate_pct": 1.1,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 428,
+      "milking_equipment": false,
+      "feed_storage_tons": 591.8
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "00400",
+      "01900",
+      "04000"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-180",
+    "bin": "10116561255",
+    "name": "КХ «Еңбек»",
+    "oblast": "Атырауская область",
+    "district": "Кзылкогинский район",
+    "farm_type": "honey",
+    "land_hectares": 72,
+    "pasture_hectares": 60,
+    "livestock": {
+      "cattle": 4,
+      "dairy_cows": 0,
+      "sheep": 1,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 156,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 5,
+      "milking_equipment": false,
+      "feed_storage_tons": 17.8
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04500"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-181",
+    "bin": "18046281024",
+    "name": "ИП «Жаңа Күн»",
+    "oblast": "область Жетісу",
+    "district": "Кербулакский район",
+    "farm_type": "mixed",
+    "land_hectares": 248,
+    "pasture_hectares": 181,
+    "livestock": {
+      "cattle": 91,
+      "dairy_cows": 33,
+      "sheep": 48,
+      "goats": 21,
+      "horses": 12,
+      "camels": 0,
+      "poultry": 168,
+      "pigs": 0
+    },
+    "daily_milk_liters": 341.0,
+    "annual_meat_kg": 10972,
+    "mortality_rate_pct": 3.0,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 140,
+      "milking_equipment": true,
+      "feed_storage_tons": 493.2
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "02200"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-182",
+    "bin": "05106908644",
+    "name": "ТОО «Мерей»",
+    "oblast": "область Жетісу",
+    "district": "Ескельдинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 84,
+    "pasture_hectares": 46,
+    "livestock": {
+      "cattle": 17,
+      "dairy_cows": 1,
+      "sheep": 188,
+      "goats": 35,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 13.4,
+    "annual_meat_kg": 17612,
+    "mortality_rate_pct": 3.3,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 85,
+      "milking_equipment": false,
+      "feed_storage_tons": 131.7
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "04000",
+      "04500",
+      "01300"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-183",
+    "bin": "08045186682",
+    "name": "КХ «Байтерек»",
+    "oblast": "г.Шымкент",
+    "district": "",
+    "farm_type": "medium_cattle",
+    "land_hectares": 262,
+    "pasture_hectares": 203,
+    "livestock": {
+      "cattle": 294,
+      "dairy_cows": 44,
+      "sheep": 64,
+      "goats": 0,
+      "horses": 19,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 702.6,
+    "annual_meat_kg": 22233,
+    "mortality_rate_pct": 7.1,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 292,
+      "milking_equipment": true,
+      "feed_storage_tons": 495.2
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "04500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-184",
+    "bin": "05096607778",
+    "name": "ТОО «Ертіс»",
+    "oblast": "Алматинская область",
+    "district": "Кегенский район",
+    "farm_type": "mixed",
+    "land_hectares": 929,
+    "pasture_hectares": 752,
+    "livestock": {
+      "cattle": 175,
+      "dairy_cows": 53,
+      "sheep": 194,
+      "goats": 20,
+      "horses": 12,
+      "camels": 0,
+      "poultry": 156,
+      "pigs": 0
+    },
+    "daily_milk_liters": 1270.2,
+    "annual_meat_kg": 21781,
+    "mortality_rate_pct": 2.9,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 205,
+      "milking_equipment": true,
+      "feed_storage_tons": 358.0
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "01900"
+    ],
+    "active_subsidy_count": 3
+  },
+  {
+    "id": "F-185",
+    "bin": "12016334457",
+    "name": "ИП «Мұрагер»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Жанибекский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 994,
+    "pasture_hectares": 563,
+    "livestock": {
+      "cattle": 29,
+      "dairy_cows": 0,
+      "sheep": 652,
+      "goats": 156,
+      "horses": 8,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 62716,
+    "mortality_rate_pct": 2.9,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 139,
+      "milking_equipment": false,
+      "feed_storage_tons": 633.5
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "00700",
+      "01900"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-186",
+    "bin": "20034312492",
+    "name": "ИП «Тұлпар»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Сырымский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 101,
+    "pasture_hectares": 80,
+    "livestock": {
+      "cattle": 10,
+      "dairy_cows": 1,
+      "sheep": 22,
+      "goats": 0,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 18.8,
+    "annual_meat_kg": 879,
+    "mortality_rate_pct": 3.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 21,
+      "milking_equipment": false,
+      "feed_storage_tons": 42.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01700",
+      "03100"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-187",
+    "bin": "08096464529",
+    "name": "КФХ «Мұрагер»",
+    "oblast": "Актюбинская область",
+    "district": "Мартукский район",
+    "farm_type": "medium_cattle",
+    "land_hectares": 470,
+    "pasture_hectares": 257,
+    "livestock": {
+      "cattle": 117,
+      "dairy_cows": 35,
+      "sheep": 0,
+      "goats": 0,
+      "horses": 19,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 735.4,
+    "annual_meat_kg": 2820,
+    "mortality_rate_pct": 2.5,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 150,
+      "milking_equipment": true,
+      "feed_storage_tons": 388.8
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-188",
+    "bin": "12024660108",
+    "name": "КХ «Байтерек»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Акжаикский район",
+    "farm_type": "small_cattle",
+    "land_hectares": 13,
+    "pasture_hectares": 8,
+    "livestock": {
+      "cattle": 7,
+      "dairy_cows": 4,
+      "sheep": 10,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 35.3,
+    "annual_meat_kg": 765,
+    "mortality_rate_pct": 9.4,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 11,
+      "milking_equipment": false,
+      "feed_storage_tons": 27.9
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "04500",
+      "03100",
+      "01700",
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-189",
+    "bin": "15066270019",
+    "name": "ИП «Отандастар»",
+    "oblast": "Карагандинская область",
+    "district": "Актогайский район",
+    "farm_type": "dairy",
+    "land_hectares": 1179,
+    "pasture_hectares": 784,
+    "livestock": {
+      "cattle": 137,
+      "dairy_cows": 94,
+      "sheep": 19,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 845.0,
+    "annual_meat_kg": 8468,
+    "mortality_rate_pct": 2.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 83,
+      "milking_equipment": false,
+      "feed_storage_tons": 331.0
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "02200"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-190",
+    "bin": "10055764128",
+    "name": "СПК «Қоңыр»",
+    "oblast": "Алматинская область",
+    "district": "Талгарский район",
+    "farm_type": "mixed",
+    "land_hectares": 694,
+    "pasture_hectares": 618,
+    "livestock": {
+      "cattle": 20,
+      "dairy_cows": 8,
+      "sheep": 16,
+      "goats": 29,
+      "horses": 3,
+      "camels": 0,
+      "poultry": 188,
+      "pigs": 0
+    },
+    "daily_milk_liters": 179.3,
+    "annual_meat_kg": 4622,
+    "mortality_rate_pct": 2.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 38,
+      "milking_equipment": false,
+      "feed_storage_tons": 44.5
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-191",
+    "bin": "15126988925",
+    "name": "КФХ «Мерей»",
+    "oblast": "область Абай",
+    "district": "район Мақаншы",
+    "farm_type": "medium_cattle",
+    "land_hectares": 159,
+    "pasture_hectares": 132,
+    "livestock": {
+      "cattle": 149,
+      "dairy_cows": 94,
+      "sheep": 43,
+      "goats": 0,
+      "horses": 15,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 2216.0,
+    "annual_meat_kg": 14042,
+    "mortality_rate_pct": 2.4,
+    "infrastructure": {
+      "barns": 2,
+      "barn_capacity": 219,
+      "milking_equipment": false,
+      "feed_storage_tons": 665.0
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-192",
+    "bin": "20055383298",
+    "name": "ИП «Алтын Дала»",
+    "oblast": "Западно-Казахстанская область",
+    "district": "Теректинский район",
+    "farm_type": "dairy",
+    "land_hectares": 405,
+    "pasture_hectares": 247,
+    "livestock": {
+      "cattle": 45,
+      "dairy_cows": 32,
+      "sheep": 12,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 596.8,
+    "annual_meat_kg": 4021,
+    "mortality_rate_pct": 2.2,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 59,
+      "milking_equipment": true,
+      "feed_storage_tons": 75.0
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "01200"
+    ],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-193",
+    "bin": "15024105384",
+    "name": "ТОО «Бейбарыс»",
+    "oblast": "Павлодарская область",
+    "district": "район Тереңкөл",
+    "farm_type": "small_cattle",
+    "land_hectares": 66,
+    "pasture_hectares": 46,
+    "livestock": {
+      "cattle": 35,
+      "dairy_cows": 16,
+      "sheep": 4,
+      "goats": 0,
+      "horses": 1,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 220.5,
+    "annual_meat_kg": 1960,
+    "mortality_rate_pct": 1.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 43,
+      "milking_equipment": true,
+      "feed_storage_tons": 128.9
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "02000",
+      "01900"
+    ],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-194",
+    "bin": "05046811105",
+    "name": "КХ «Шаңырақ»",
+    "oblast": "Северо-Казахстанская область",
+    "district": "Кызылжарский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 767,
+    "pasture_hectares": 555,
+    "livestock": {
+      "cattle": 0,
+      "dairy_cows": 0,
+      "sheep": 1576,
+      "goats": 159,
+      "horses": 10,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 128307,
+    "mortality_rate_pct": 1.6,
+    "infrastructure": {
+      "barns": 6,
+      "barn_capacity": 508,
+      "milking_equipment": false,
+      "feed_storage_tons": 1026.6
+    },
+    "credit_history": "good",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-195",
+    "bin": "12105566124",
+    "name": "ТОО «Алтын Дала»",
+    "oblast": "Карагандинская область",
+    "district": "Каркаралинский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 687,
+    "pasture_hectares": 512,
+    "livestock": {
+      "cattle": 14,
+      "dairy_cows": 0,
+      "sheep": 743,
+      "goats": 138,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 19500,
+    "mortality_rate_pct": 1.2,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 236,
+      "milking_equipment": false,
+      "feed_storage_tons": 321.6
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [
+      "11500"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-196",
+    "bin": "08125971865",
+    "name": "КФХ «Мерей»",
+    "oblast": "область Ұлытау",
+    "district": "Жанааркинский район",
+    "farm_type": "honey",
+    "land_hectares": 26,
+    "pasture_hectares": 13,
+    "livestock": {
+      "cattle": 5,
+      "dairy_cows": 0,
+      "sheep": 7,
+      "goats": 0,
+      "horses": 0,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 0,
+    "annual_meat_kg": 310,
+    "mortality_rate_pct": 2.9,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 7,
+      "milking_equipment": false,
+      "feed_storage_tons": 11.9
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [],
+    "active_subsidy_count": 1
+  },
+  {
+    "id": "F-197",
+    "bin": "05065372949",
+    "name": "ИП «Шұбар»",
+    "oblast": "Акмолинская область",
+    "district": "Аршалынский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 203,
+    "pasture_hectares": 140,
+    "livestock": {
+      "cattle": 19,
+      "dairy_cows": 9,
+      "sheep": 628,
+      "goats": 89,
+      "horses": 2,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 149.7,
+    "annual_meat_kg": 32724,
+    "mortality_rate_pct": 1.3,
+    "infrastructure": {
+      "barns": 3,
+      "barn_capacity": 197,
+      "milking_equipment": false,
+      "feed_storage_tons": 425.1
+    },
+    "credit_history": "good",
+    "previous_subsidies": [
+      "03100"
+    ],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-198",
+    "bin": "15116100242",
+    "name": "СПК «Ақ Бидай»",
+    "oblast": "Костанайская область",
+    "district": "район Беимбета Майлина",
+    "farm_type": "mixed",
+    "land_hectares": 454,
+    "pasture_hectares": 347,
+    "livestock": {
+      "cattle": 39,
+      "dairy_cows": 36,
+      "sheep": 39,
+      "goats": 37,
+      "horses": 14,
+      "camels": 0,
+      "poultry": 83,
+      "pigs": 0
+    },
+    "daily_milk_liters": 627.7,
+    "annual_meat_kg": 8942,
+    "mortality_rate_pct": 11.6,
+    "infrastructure": {
+      "barns": 1,
+      "barn_capacity": 25,
+      "milking_equipment": true,
+      "feed_storage_tons": 185.2
+    },
+    "credit_history": "fair",
+    "previous_subsidies": [],
+    "active_subsidy_count": 0
+  },
+  {
+    "id": "F-199",
+    "bin": "05014834045",
+    "name": "СПК «Сыр-Дария»",
+    "oblast": "область Ұлытау",
+    "district": "Каражал Г.А.",
+    "farm_type": "large_cattle",
+    "land_hectares": 2402,
+    "pasture_hectares": 1398,
+    "livestock": {
+      "cattle": 1796,
+      "dairy_cows": 356,
+      "sheep": 145,
+      "goats": 0,
+      "horses": 48,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 4691.1,
+    "annual_meat_kg": 152357,
+    "mortality_rate_pct": 3.9,
+    "infrastructure": {
+      "barns": 75,
+      "barn_capacity": 1593,
+      "milking_equipment": true,
+      "feed_storage_tons": 7520.5
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [],
+    "active_subsidy_count": 2
+  },
+  {
+    "id": "F-200",
+    "bin": "12114672432",
+    "name": "СПК «Алтай-Агро»",
+    "oblast": "Акмолинская область",
+    "district": "Ерейментауский район",
+    "farm_type": "sheep_focus",
+    "land_hectares": 222,
+    "pasture_hectares": 175,
+    "livestock": {
+      "cattle": 12,
+      "dairy_cows": 6,
+      "sheep": 833,
+      "goats": 103,
+      "horses": 8,
+      "camels": 0,
+      "poultry": 0,
+      "pigs": 0
+    },
+    "daily_milk_liters": 69.5,
+    "annual_meat_kg": 29067,
+    "mortality_rate_pct": 8.4,
+    "infrastructure": {
+      "barns": 4,
+      "barn_capacity": 294,
+      "milking_equipment": false,
+      "feed_storage_tons": 336.1
+    },
+    "credit_history": "poor",
+    "previous_subsidies": [
+      "00700",
+      "00100"
+    ],
+    "active_subsidy_count": 0
+  }
+]

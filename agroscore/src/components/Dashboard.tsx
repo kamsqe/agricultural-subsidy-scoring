@@ -890,6 +890,135 @@ export default function Dashboard() {
               <TriagePipeline triage={summary.triage_distribution} />
             </div>
           </div>
+
+        </div>
+      </section>
+
+      {/* ═══ PROACTIVE MODULE SECTION ═══ */}
+      <section className="py-20 relative overflow-hidden border-t border-indigo-900/30">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-indigo-950/30 via-slate-950 to-slate-950" />
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <SectionHeader num="2½" title="Проактивная Модель: от ожидания заявки к рекомендации" color="bg-indigo-500" />
+
+          {/* Before / After */}
+          <div className="grid md:grid-cols-2 gap-6 mb-10">
+            <div className="bg-red-950/20 border border-red-900/30 rounded-xl p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-red-500 text-lg">✕</span>
+                <h4 className="text-sm font-bold text-red-400 uppercase tracking-wider">Сейчас: Реактивная модель</h4>
+              </div>
+              <div className="space-y-3 text-xs text-slate-400">
+                <div className="flex items-start gap-3">
+                  <span className="w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center text-[10px] text-red-400 font-bold shrink-0 mt-0.5">1</span>
+                  <span>Фермер <span className="text-white">сам ищет</span> подходящую субсидию из 40+ кодов</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center text-[10px] text-red-400 font-bold shrink-0 mt-0.5">2</span>
+                  <span>Часто подаёт на <span className="text-white">неподходящий тип</span> → отказ → повторная подача</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center text-[10px] text-red-400 font-bold shrink-0 mt-0.5">3</span>
+                  <span>Специалист УСХ <span className="text-white">ждёт поступления заявки</span> и проверяет пост-фактум</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center text-[10px] text-red-400 font-bold shrink-0 mt-0.5">4</span>
+                  <span>Мелкие фермеры <span className="text-white">не знают о субсидиях</span> и не подают вовсе</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-indigo-950/20 border border-indigo-500/30 rounded-xl p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-indigo-400 text-lg">✓</span>
+                <h4 className="text-sm font-bold text-indigo-400 uppercase tracking-wider">AgroScore: Проактивная модель</h4>
+              </div>
+              <div className="space-y-3 text-xs text-slate-400">
+                <div className="flex items-start gap-3">
+                  <span className="w-5 h-5 rounded-full bg-indigo-500/20 flex items-center justify-center text-[10px] text-indigo-400 font-bold shrink-0 mt-0.5">1</span>
+                  <span>Система <span className="text-white">анализирует профиль</span> хозяйства из госреестров (ИСЖ, ЕГКН, ПКБ)</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="w-5 h-5 rounded-full bg-indigo-500/20 flex items-center justify-center text-[10px] text-indigo-400 font-bold shrink-0 mt-0.5">2</span>
+                  <span>Проверяет <span className="text-white">22 типа субсидий</span> по агронормам КЗ + мощности хозяйства</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="w-5 h-5 rounded-full bg-indigo-500/20 flex items-center justify-center text-[10px] text-indigo-400 font-bold shrink-0 mt-0.5">3</span>
+                  <span>Считает <span className="text-white">Impact Score</span> для каждой подходящей субсидии (та же формула)</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="w-5 h-5 rounded-full bg-indigo-500/20 flex items-center justify-center text-[10px] text-indigo-400 font-bold shrink-0 mt-0.5">4</span>
+                  <span>Специалист УСХ <span className="text-white">приглашает фермера</span> к подаче целенаправленно</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Flow Diagram */}
+          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 mb-8">
+            <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 text-center">Движок проактивного анализа</h4>
+            <div className="flex items-center justify-center gap-2 flex-wrap text-xs">
+              <div className="px-3 py-2 bg-indigo-500/10 border border-indigo-500/30 rounded-lg text-indigo-300 text-center">
+                <div className="font-bold">Профиль</div>
+                <div className="text-[10px] text-slate-500">ИСЖ + ЕГКН + ПКБ</div>
+              </div>
+              <span className="text-slate-600">→</span>
+              <div className="px-3 py-2 bg-amber-500/10 border border-amber-500/30 rounded-lg text-amber-300 text-center">
+                <div className="font-bold">Мощности</div>
+                <div className="text-[10px] text-slate-500">Пастбища, корма, помещения</div>
+              </div>
+              <span className="text-slate-600">→</span>
+              <div className="px-3 py-2 bg-violet-500/10 border border-violet-500/30 rounded-lg text-violet-300 text-center">
+                <div className="font-bold">Eligibility</div>
+                <div className="text-[10px] text-slate-500">22 кластера × агронормы</div>
+              </div>
+              <span className="text-slate-600">→</span>
+              <div className="px-3 py-2 bg-sky-500/10 border border-sky-500/30 rounded-lg text-sky-300 text-center">
+                <div className="font-bold">Impact Score</div>
+                <div className="text-[10px] text-slate-500">Та же формула</div>
+              </div>
+              <span className="text-slate-600">→</span>
+              <div className="px-3 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-lg text-emerald-300 text-center">
+                <div className="font-bold">Рекомендация</div>
+                <div className="text-[10px] text-slate-500">Приглашение к подаче</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Stats + Data Sources */}
+          <div className="grid grid-cols-3 gap-4 mb-8">
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center">
+              <div className="text-3xl font-black text-indigo-400">200</div>
+              <div className="text-xs text-slate-500 mt-1">Синтетических профилей</div>
+              <div className="text-[10px] text-slate-600">По реальным распределениям КЗ</div>
+            </div>
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center">
+              <div className="text-3xl font-black text-indigo-400">22</div>
+              <div className="text-xs text-slate-500 mt-1">Кластера субсидий</div>
+              <div className="text-[10px] text-slate-600">40 кодов → 22 группы по типу</div>
+            </div>
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center">
+              <div className="text-3xl font-black text-indigo-400">6</div>
+              <div className="text-xs text-slate-500 mt-1">Агронорм проверок</div>
+              <div className="text-[10px] text-slate-600">Пастбища, падёж, корма, помещения...</div>
+            </div>
+          </div>
+
+          {/* Data source badges */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+            <span className="text-xs text-slate-500">Данные:</span>
+            <span className="text-[10px] px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">stat.gov.kz — реальные</span>
+            <span className="text-[10px] px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">plem.kz — реальные</span>
+            <span className="text-[10px] px-2 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">ИСЖ / ЕГКН / ПКБ — синтетический аналог</span>
+          </div>
+
+          {/* CTA */}
+          <div className="flex justify-center">
+            <a href="/workspace" className="group relative inline-flex items-center justify-center gap-3 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_35px_rgba(99,102,241,0.6)] hover:-translate-y-0.5">
+              <span className="text-lg">🎯</span>
+              <span className="text-sm tracking-wide">Открыть Проактивный Модуль</span>
+              <span className="absolute inset-0 rounded-xl border-2 border-white/10 group-hover:border-white/30 transition-colors"></span>
+            </a>
+          </div>
         </div>
       </section>
 

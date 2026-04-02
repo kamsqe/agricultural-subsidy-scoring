@@ -8,10 +8,11 @@ import OblastDecentralization from './OblastDecentralization';
 import PolicyConfigurator from './PolicyConfigurator';
 import AnomalyRadar from './AnomalyRadar';
 import PdfToPython from './PdfToPython';
+import ProactiveFinder from './ProactiveFinder';
 
 export default function Workspace() {
   const [selectedApp, setSelectedApp] = useState<App | null>(null);
-  const [activeTab, setActiveTab] = useState<'registry' | 'precheck' | 'analytics' | 'fraud' | 'policy'>('registry');
+  const [activeTab, setActiveTab] = useState<'registry' | 'precheck' | 'proactive' | 'analytics' | 'fraud' | 'policy'>('registry');
   const [summaryData, setSummaryData] = useState<any>(null);
 
   useEffect(() => {
@@ -26,12 +27,12 @@ export default function Workspace() {
       {/* Workspace Header */}
       <header className="bg-[#0b121a] border-b border-slate-800 px-4 py-2.5 flex items-center justify-between sticky top-0 z-40">
         <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 shrink-0">
+          <a href="/" className="flex items-center gap-2 shrink-0 hover:opacity-80 transition-opacity">
             <div className="w-7 h-7 rounded-md bg-indigo-600 flex items-center justify-center font-bold text-white text-xs shadow-[0_0_15px_rgba(79,70,229,0.5)]">
               Ag
             </div>
             <h1 className="text-base font-bold tracking-tight text-white">AgroScore</h1>
-          </div>
+          </a>
           
           <nav className="hidden lg:flex items-center gap-0.5 border-l border-slate-800 pl-3">
             <button 
@@ -45,6 +46,12 @@ export default function Workspace() {
               className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${activeTab === 'precheck' ? 'bg-slate-800 text-white' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'}`}
             >
               Pre-Check
+            </button>
+            <button 
+              onClick={() => setActiveTab('proactive')}
+              className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${activeTab === 'proactive' ? 'bg-slate-800 text-indigo-400' : 'text-slate-400 hover:text-indigo-400/80 hover:bg-slate-800/50'}`}
+            >
+              Проактивный
             </button>
             <button 
               onClick={() => setActiveTab('analytics')}
@@ -96,6 +103,12 @@ export default function Workspace() {
         {activeTab === 'precheck' && (
           <div className="max-w-4xl mx-auto w-full mt-8">
             <PreCheck />
+          </div>
+        )}
+
+        {activeTab === 'proactive' && (
+          <div className="max-w-7xl mx-auto w-full mt-4">
+            <ProactiveFinder />
           </div>
         )}
 

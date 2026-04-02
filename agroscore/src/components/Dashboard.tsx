@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Simulator from './Simulator';
 
 interface Summary {
   total_applications: number;
@@ -269,7 +270,7 @@ export default function Dashboard() {
             <span>Макс: {ss.max}</span>
           </div>
         </div>
-        <ComparisonCard summary={summary} />
+        <Simulator />
       </div>
 
       {/* Retry Analysis + Status Breakdown */}

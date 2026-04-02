@@ -1,0 +1,196 @@
+{
+  "pending_count": 2854,
+  "total_pending_amount": 13831491951.0,
+  "budget_levels": [
+    {
+      "pct": 10,
+      "fifo": {
+        "n": 285,
+        "avg_score": 58.8,
+        "total_amount": 4097139170,
+        "small_farmers": 190,
+        "oblasts": 5,
+        "avg_fraud": 4.8
+      },
+      "merit": {
+        "n": 285,
+        "avg_score": 65.5,
+        "total_amount": 244035780,
+        "small_farmers": 281,
+        "oblasts": 7,
+        "avg_fraud": 0.7
+      }
+    },
+    {
+      "pct": 20,
+      "fifo": {
+        "n": 570,
+        "avg_score": 57.0,
+        "total_amount": 5471549081,
+        "small_farmers": 447,
+        "oblasts": 6,
+        "avg_fraud": 5.4
+      },
+      "merit": {
+        "n": 570,
+        "avg_score": 64.0,
+        "total_amount": 605001663,
+        "small_farmers": 562,
+        "oblasts": 8,
+        "avg_fraud": 1.1
+      }
+    },
+    {
+      "pct": 30,
+      "fifo": {
+        "n": 856,
+        "avg_score": 56.5,
+        "total_amount": 6194300274,
+        "small_farmers": 720,
+        "oblasts": 6,
+        "avg_fraud": 5.9
+      },
+      "merit": {
+        "n": 856,
+        "avg_score": 62.8,
+        "total_amount": 1044384016,
+        "small_farmers": 834,
+        "oblasts": 12,
+        "avg_fraud": 1.6
+      }
+    },
+    {
+      "pct": 40,
+      "fifo": {
+        "n": 1141,
+        "avg_score": 56.3,
+        "total_amount": 7566705098,
+        "small_farmers": 973,
+        "oblasts": 7,
+        "avg_fraud": 6.1
+      },
+      "merit": {
+        "n": 1141,
+        "avg_score": 61.9,
+        "total_amount": 1602623964,
+        "small_farmers": 1101,
+        "oblasts": 12,
+        "avg_fraud": 1.8
+      }
+    },
+    {
+      "pct": 50,
+      "fifo": {
+        "n": 1427,
+        "avg_score": 56.3,
+        "total_amount": 8763539349,
+        "small_farmers": 1232,
+        "oblasts": 7,
+        "avg_fraud": 6.5
+      },
+      "merit": {
+        "n": 1427,
+        "avg_score": 61.1,
+        "total_amount": 2172271760,
+        "small_farmers": 1364,
+        "oblasts": 12,
+        "avg_fraud": 2.2
+      }
+    },
+    {
+      "pct": 60,
+      "fifo": {
+        "n": 1712,
+        "avg_score": 56.3,
+        "total_amount": 9919144843,
+        "small_farmers": 1484,
+        "oblasts": 7,
+        "avg_fraud": 6.5
+      },
+      "merit": {
+        "n": 1712,
+        "avg_score": 60.3,
+        "total_amount": 2775954314,
+        "small_farmers": 1635,
+        "oblasts": 12,
+        "avg_fraud": 2.9
+      }
+    },
+    {
+      "pct": 70,
+      "fifo": {
+        "n": 1997,
+        "avg_score": 56.7,
+        "total_amount": 10737142853,
+        "small_farmers": 1738,
+        "oblasts": 8,
+        "avg_fraud": 6.5
+      },
+      "merit": {
+        "n": 1997,
+        "avg_score": 59.6,
+        "total_amount": 3995481733,
+        "small_farmers": 1880,
+        "oblasts": 13,
+        "avg_fraud": 3.5
+      }
+    },
+    {
+      "pct": 80,
+      "fifo": {
+        "n": 2283,
+        "avg_score": 56.7,
+        "total_amount": 11506902948,
+        "small_farmers": 1980,
+        "oblasts": 8,
+        "avg_fraud": 6.8
+      },
+      "merit": {
+        "n": 2283,
+        "avg_score": 58.8,
+        "total_amount": 5031005420,
+        "small_farmers": 2132,
+        "oblasts": 13,
+        "avg_fraud": 4.2
+      }
+    },
+    {
+      "pct": 90,
+      "fifo": {
+        "n": 2568,
+        "avg_score": 56.8,
+        "total_amount": 12327809676,
+        "small_farmers": 2217,
+        "oblasts": 10,
+        "avg_fraud": 6.9
+      },
+      "merit": {
+        "n": 2568,
+        "avg_score": 58.0,
+        "total_amount": 10002111431,
+        "small_farmers": 2317,
+        "oblasts": 13,
+        "avg_fraud": 5.6
+      }
+    },
+    {
+      "pct": 100,
+      "fifo": {
+        "n": 2854,
+        "avg_score": 57.0,
+        "total_amount": 13831491951,
+        "small_farmers": 2431,
+        "oblasts": 14,
+        "avg_fraud": 7.2
+      },
+      "merit": {
+        "n": 2854,
+        "avg_score": 57.0,
+        "total_amount": 13831491951,
+        "small_farmers": 2431,
+        "oblasts": 14,
+        "avg_fraud": 7.2
+      }
+    }
+  ]
+}

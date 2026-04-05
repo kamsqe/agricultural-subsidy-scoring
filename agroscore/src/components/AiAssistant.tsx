@@ -5,10 +5,18 @@ interface Message {
   content: string;
 }
 
-const SYSTEM_PROMPT = `Ты — AgroScore AI-ассистент. Ты помогаешь фермерам и чиновникам разобраться в системе ранжирования сельхозсубсидий Казахстана.
+function buildSystemPrompt(stats: any): string {
+  const s = stats?.score_stats || {};
+  const fm = stats?.fifo_vs_merit || {};
+  const fraud = stats?.fraud_analysis || {};
+  const retry = stats?.retry_analysis || {};
+  const gini = stats?.gini || {};
+  const total = stats?.total_applications || '~36000';
+
+  return `Ты — AgroScore AI-ассистент. Ты помогаешь фермерам и чиновникам разобраться в системе ранжирования сельхозсубсидий Казахстана.
 
 КОНТЕКСТ СИСТЕМЫ:
-- AgroScore ранжирует 36,651 заявок на субсидии племенного животноводства (2025 год)
+- AgroScore ранжирует ${total} заявок на субсидии племенного животноводства (2025 год)
 - Вместо FIFO (первым пришёл — первым получил) используется merit-based Impact Score
 - Impact Score = 20% Strategic + 20% Fairness + 20% Need + 20% Efficiency - 10% Fraud + 10% Base(50) + Exception Points(0-15)
 - Triage bands: A(≥65, высокий приоритет), B(55-64, стандартный), C(40-54, низкий), D(<40, отклонение)
@@ -21,16 +29,17 @@ const SYSTEM_PROMPT = `Ты — AgroScore AI-ассистент. Ты помог
 5. Fraud Risk (0-100, вычитается): круглые суммы, outliers, чрезмерные повторы, монополизация, ночные подачи
 
 EXCEPTION POINTS (0-15 бонус):
-- Первая подача: +5
+- Первая подача в районе с высоким % отказов: +3
 - Область с высоким бэклогом: +5
 - Мелкий фермер в монополизированном районе: +5
 
-КЛЮЧЕВЫЕ ДАННЫЕ:
-- Диапазон баллов: 35.9 — 84.0, среднее: 61.8, медиана: 62.6
-- FIFO vs Merit (при 50% бюджете): Merit даёт +4.4 средний балл, +108 мелких фермеров
-- Gini коэффициент (район): 0.648
-- Fraud high-risk: 7 заявок (0.02%)
-- 30% заявок — повторные подачи
+КЛЮЧЕВЫЕ ДАННЫЕ (из scoring_summary.json — актуальные):
+- Диапазон баллов: ${s.min ?? '?'} — ${s.max ?? '?'}, среднее: ${s.mean ?? '?'}, медиана: ${s.median ?? '?'}
+- FIFO vs Merit (при 50% бюджете): Merit даёт +${fm.improvement?.avg_score_delta ?? '?'} средний балл, +${fm.improvement?.small_farmer_delta ?? '?'} мелких фермеров
+- Gini коэффициент (район): ${gini.current_district_gini ?? '?'}
+- Fraud high-risk: ${fraud.high_risk_count ?? '?'} заявок (${fraud.high_risk_pct ?? '?'}%)
+- ML-аномалий обнаружено: ${fraud.ml_anomalies_detected ?? '?'}
+- Повторных подач: ${retry.retry_pct ?? '?'}%
 
 ПРАВИЛА:
 - Отвечай на русском или казахском (как спросили)
@@ -38,6 +47,7 @@ EXCEPTION POINTS (0-15 бонус):
 - Если не знаешь — честно скажи
 - Объясняй как улучшить балл конкретными действиями
 - Не придумывай данных которых нет`;
+}
 
 const SUGGESTED_QUESTIONS = [
   'Как работает Impact Score?',
@@ -54,6 +64,7 @@ export default function AiAssistant() {
   const [apiKey, setApiKey] = useState('');
   const [showKeyInput, setShowKeyInput] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [summaryData, setSummaryData] = useState<any>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -61,6 +72,8 @@ export default function AiAssistant() {
     const envKey = (import.meta as any).env?.PUBLIC_GEMINI_API_KEY || '';
     const storedKey = localStorage.getItem('agroscore_gemini_key') || '';
     setApiKey(envKey || storedKey);
+    // Load live stats for dynamic prompt injection
+    fetch('/data/scoring_summary.json').then(r => r.json()).then(setSummaryData).catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -94,7 +107,7 @@ export default function AiAssistant() {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+            system_instruction: { parts: [{ text: buildSystemPrompt(summaryData) }] },
             contents: [
               ...history,
               { role: 'user', parts: [{ text: text.trim() }] },

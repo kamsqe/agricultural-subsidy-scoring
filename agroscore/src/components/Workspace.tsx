@@ -87,16 +87,44 @@ export default function Workspace() {
       {/* Main Content Area */}
       <main className="flex-1 max-w-[1920px] mx-auto w-full p-4 md:p-6 overflow-hidden flex flex-col">
         {activeTab === 'registry' && (
-          <div className="flex flex-col lg:flex-row gap-6 h-full min-h-[800px]">
-             {/* Left Panel: App Table */}
-             <div className="lg:w-2/3 flex flex-col">
-               <AppTable onRowClick={setSelectedApp} selectedAppId={selectedApp?.r} />
-             </div>
+          <div className="flex flex-col gap-4 h-full min-h-[800px]">
+            {/* KPI Dashboard Strip */}
+            {summaryData && (
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+                <div className="bg-[#0d1620] border border-slate-800 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-black text-white">{summaryData.total_applications?.toLocaleString()}</div>
+                  <div className="text-[10px] text-slate-500 uppercase tracking-wider mt-1">Заявок в реестре</div>
+                </div>
+                <button onClick={() => { setActiveTab('fraud'); }} className="bg-[#0d1620] border border-red-900/30 rounded-xl p-4 text-center hover:border-red-500/50 transition-colors cursor-pointer">
+                  <div className="text-2xl font-black text-red-400">{summaryData.fraud_analysis?.ml_anomalies_detected || 0}</div>
+                  <div className="text-[10px] text-red-400/60 uppercase tracking-wider mt-1">ML Аномалий → аудит</div>
+                </button>
+                <div className="bg-[#0d1620] border border-emerald-900/30 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-black text-emerald-400">{summaryData.triage_distribution?.A?.toLocaleString()}</div>
+                  <div className="text-[10px] text-emerald-400/60 uppercase tracking-wider mt-1">Triage A (fast-track)</div>
+                </div>
+                <div className="bg-[#0d1620] border border-amber-900/30 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-black text-amber-400">{summaryData.triage_distribution?.D}</div>
+                  <div className="text-[10px] text-amber-400/60 uppercase tracking-wider mt-1">Triage D (срочные)</div>
+                </div>
+                <div className="bg-[#0d1620] border border-slate-800 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-black text-sky-400">{summaryData.score_stats?.mean}</div>
+                  <div className="text-[10px] text-slate-500 uppercase tracking-wider mt-1">Средний Impact Score</div>
+                </div>
+              </div>
+            )}
 
-             {/* Right Panel: Inspector */}
-             <div className="lg:w-1/3 sticky top-0 self-start h-[calc(100vh-80px)] overflow-y-auto">
-               <InspectorCard appData={selectedApp} minimal={true} />
-             </div>
+            <div className="flex flex-col lg:flex-row gap-6 flex-1">
+               {/* Left Panel: App Table */}
+               <div className="lg:w-2/3 flex flex-col">
+                 <AppTable onRowClick={setSelectedApp} selectedAppId={selectedApp?.r} />
+               </div>
+
+               {/* Right Panel: Inspector */}
+               <div className="lg:w-1/3 sticky top-0 self-start h-[calc(100vh-80px)] overflow-y-auto">
+                 <InspectorCard appData={selectedApp} minimal={true} />
+               </div>
+            </div>
           </div>
         )}
 

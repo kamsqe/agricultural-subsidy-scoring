@@ -4,6 +4,10 @@ export interface DistrictInfo {
   reject_rate: number;
   top1_share: number;
   median_amount: number;
+  // Enriched fields from pipeline (aligned with Python score.py)
+  backlog_ratio?: number;
+  approval_rate?: number;
+  budget_per_applicant?: number;
 }
 
 export interface SubsidyCode {
@@ -33,6 +37,26 @@ export const TRIAGE_LABELS: Record<string, { label: string; color: string; desc:
   D: { label: 'D — Отклонение вероятно', color: 'text-red-400 bg-red-500/10 border-red-500/30', desc: 'Высокий риск или низкий балл' },
 };
 
+// Priority codes aligned with Python PRIORITY_CODES
+const PRIORITY_CODES = new Set(['01300', '01200', '02000', '04500']);
+
+// Food security tiers aligned with Python FOOD_SECURITY dict
+const FOOD_SECURITY: Record<string, number> = {
+  poultry: 1.0, dairy: 0.8, cattle: 0.7, sheep: 0.6,
+  horses: 0.5, camels: 0.5, pigs: 0.4, meat: 0.7, other: 0.3,
+};
+
+// Map subsidy code prefixes to livestock direction
+function guessDirection(code: string): string {
+  if (code.startsWith('059')) return 'poultry';
+  if (code.startsWith('058') || code.startsWith('013')) return 'dairy';
+  if (code.startsWith('007') || code.startsWith('003') || code.startsWith('004')) return 'cattle';
+  if (code.startsWith('014')) return 'sheep';
+  if (code.startsWith('012')) return 'horses';
+  if (code.startsWith('020')) return 'camels';
+  return 'other';
+}
+
 export function calculateScore(
   district: string,
   subsidyCode: string,
@@ -47,15 +71,19 @@ export function calculateScore(
   const cd = codeData[subsidyCode];
 
   // === STRATEGIC ALIGNMENT (0-100) ===
-  const isBreeding = subsidyCode.startsWith('003') || subsidyCode.startsWith('004') || subsidyCode.startsWith('013');
-  const priorityBonus = isBreeding ? 30 : 15;
-  const foodSecurityScore = isBreeding ? 25 : 15;
-  const specScore = 20;
-  const strategic = Math.min(100, specScore + priorityBonus + foodSecurityScore);
+  // Aligned with Python: priority_score + food_security_score + spec_score
+  const isPriority = PRIORITY_CODES.has(subsidyCode);
+  const priorityScore = isPriority ? 30 : 15;
+  const direction = guessDirection(subsidyCode);
+  const fsPriority = FOOD_SECURITY[direction] ?? 0.3;
+  const foodSecurityScore = fsPriority * 30;
+  // spec_score: without stat.gov.kz regional data, use neutral 15 (same as Python fallback)
+  const specScore = 15;
+  const strategic = Math.min(100, Math.round(specScore + priorityScore + foodSecurityScore));
 
   // === FAIRNESS (0-100) ===
+  // Aligned with Python: monopoly_score + median_score + small_bonus
   const top1 = dd ? dd.top1_share : 0.3;
-  // Use volume vs type median (not broken cross-type amount_vs_median)
   const volRatio = cd && cd.median_volume > 0 ? volume / cd.median_volume : 1;
   const monopolyScore = top1 > 0.5
     ? (volRatio < 1.5 ? 35 : 10)
@@ -69,13 +97,29 @@ export function calculateScore(
   const fairness = monopolyScore + medianScore + sizeScore;
 
   // === REGIONAL NEED (0-100) ===
-  const avgDistrictScore = dd ? dd.avg_score : 60;
-  const rejectRate = dd ? dd.reject_rate : 0.08;
-  const needFromRejectRate = rejectRate > 0.15 ? 20 : rejectRate > 0.08 ? 14 : 8;
-  const needFromAvgScore = avgDistrictScore < 55 ? 20 : avgDistrictScore < 60 ? 14 : 8;
-  const need = needFromRejectRate + needFromAvgScore + 18 + 12;
+  // Aligned with Python: backlog_score + approval_score + budget_score + seasonal_score
+  // Uses enriched district data from pipeline
+  const backlogRatio = dd?.backlog_ratio ?? 0;
+  const backlogScore = backlogRatio > 0.4 ? 30 : backlogRatio > 0.2 ? 22 : backlogRatio > 0.1 ? 15 : 8;
+
+  const approvalRate = dd?.approval_rate ?? 0;
+  const approvalScore = approvalRate > 0 ? (1 - approvalRate) * 25 : 12;
+
+  const budgetPerApp = dd?.budget_per_applicant ?? 0;
+  let budgetScore = 12;
+  if (budgetPerApp > 0) {
+    if (budgetPerApp < 15_000_000) budgetScore = 25;
+    else if (budgetPerApp < 30_000_000) budgetScore = 18;
+    else if (budgetPerApp < 50_000_000) budgetScore = 12;
+    else budgetScore = 5;
+  }
+
+  // Seasonal: use neutral 0.7 (no month in PreCheck — honest limitation)
+  const seasonalScore = 0.7 * 20;
+  const need = Math.round(backlogScore + approvalScore + budgetScore + seasonalScore);
 
   // === EFFICIENCY (0-100) ===
+  // Aligned with Python: same logic
   let historyScore = 30;
   if (retryCount === 0) historyScore = 30;
   else if (retryCount === 1) historyScore = 35;
@@ -84,13 +128,17 @@ export function calculateScore(
   const districtReputation = dd ? (1 - Math.min(dd.reject_rate, 1)) * 40 : 32;
   const amtTypeRatio = cd ? amount / Math.max(cd.median_amount, 1) : 1;
   const amountReasonableness = (amtTypeRatio >= 0.3 && amtTypeRatio <= 2) ? 25 : (amtTypeRatio >= 0.1 && amtTypeRatio <= 5) ? 15 : 5;
-  const efficiency = historyScore + districtReputation + amountReasonableness;
+  const efficiency = Math.round(historyScore + districtReputation + amountReasonableness);
 
   // === FRAUD RISK (0-100) ===
+  // Aligned with Python (minus ML anomaly & late-night — not available in PreCheck)
   let fraud = 0;
-  if (amount > 0 && amount % 1_000_000 === 0) fraud += 15;
-  else if (amount > 0 && amount % 100_000 === 0) fraud += 5;
-  // Use volume vs type median for outlier detection (not cross-type amount)
+  // Norm-derived amount exemption: if code has a norm, check if amount ≈ volume × norm
+  const isNormDerived = cd && cd.norm > 0 && volume > 0 && Math.abs(amount - volume * cd.norm) < volume * cd.norm * 0.1;
+  if (!isNormDerived) {
+    if (amount > 0 && amount % 1_000_000 === 0) fraud += 15;
+    else if (amount > 0 && amount % 100_000 === 0) fraud += 5;
+  }
   if (volRatio > 10) fraud += 25;
   else if (volRatio > 5) fraud += 15;
   else if (volRatio > 3) fraud += 8;
@@ -99,12 +147,16 @@ export function calculateScore(
   else if (retryCount > 1) fraud += 5;
   if (top1 > 0.7) fraud += 15;
   else if (top1 > 0.4) fraud += 8;
+  // NOTE: ML anomaly score and late-night check not available in PreCheck
   fraud = Math.min(fraud, 100);
 
   // === EXCEPTION POINTS (0-15) ===
+  // Aligned with Python: 3 rules
   let exception = 0;
   const exceptionReasons: string[] = [];
+  const rejectRate = dd ? dd.reject_rate : 0.08;
   if (retryCount === 0 && rejectRate > 0.15) { exception += 3; exceptionReasons.push('Первая подача в районе с высоким % отказов (+3)'); }
+  if (backlogRatio > 0.30) { exception += 5; exceptionReasons.push('Область с высоким бэклогом заявок (+5)'); }
   if (amount < 5_000_000 && top1 > 0.4) { exception += 5; exceptionReasons.push('Мелкий фермер в монополизированном районе (+5)'); }
   exception = Math.min(exception, 15);
 
@@ -121,23 +173,25 @@ export function calculateScore(
 
   // === TIPS ===
   const tips: string[] = [];
-  if (!isBreeding) tips.push('Переход на племенное направление (коды 003xx, 004xx) даёт +15 к Strategic');
+  if (!isPriority) tips.push('Приоритетные коды субсидий (01300, 01200, 02000, 04500) дают +15 к Strategic');
+  if (fsPriority < 0.7) tips.push(`Направление "${direction}" имеет низкий приоритет продбезопасности (${(fsPriority * 100).toFixed(0)}%). Молоко/птица — выше`);
   if (amount > 20_000_000) tips.push('Сумма >20 млн снижает Fairness. Рассмотрите разбивку заявки');
   if (retryCount > 3) tips.push('Более 3 повторных подач снижает Efficiency (−13) и повышает Fraud Risk (+12)');
-  if (amount > 0 && amount % 1_000_000 === 0) tips.push('Круглая сумма (кратна 1 млн) добавляет +15 к Fraud Risk');
+  if (!isNormDerived && amount > 0 && amount % 1_000_000 === 0) tips.push('Круглая сумма (кратна 1 млн) добавляет +15 к Fraud Risk. Используйте нормативную формулу');
   if (fraud === 0) tips.push('Нет fraud-аномалий');
   if (sizeScore >= 22) tips.push('Небольшая сумма даёт бонус к Fairness');
-  if (volRatio > 3) tips.push(`Объём (${volume} голов) в ${(volRatio).toFixed(1)}x выше медианы для этого типа субсидии — повышает Fraud Risk`);
+  if (volRatio > 3) tips.push(`Объём (${volume} голов) в ${volRatio.toFixed(1)}x выше медианы для этого типа субсидии — повышает Fraud Risk`);
   else if (volRatio < 0.5 && volRatio > 0) tips.push(`Объём (${volume} голов) ниже половины медианы для этого типа — бонус к Fairness`);
-  if (dd && dd.reject_rate > 0.15) tips.push(`Район ${district} имеет высокий % отказов (${(dd.reject_rate * 100).toFixed(0)}%), что увеличивает Regional Need`);
+  if (dd && rejectRate > 0.15) tips.push(`Район ${district} имеет высокий % отказов (${(rejectRate * 100).toFixed(0)}%), что увеличивает Regional Need`);
+  tips.push('⚠️ PreCheck использует упрощённую формулу (без ML-аномалий и времени подачи). Фактический Pipeline-балл может отличаться.');
 
   // === COUNTERFACTUALS ===
   const counterfactuals: { label: string; delta: number }[] = [];
-  if (!isBreeding) {
-    const altStrategic = Math.min(100, specScore + 30 + 25);
+  if (!isPriority) {
+    const altStrategic = Math.min(100, Math.round(specScore + 30 + 0.8 * 30));
     const altBase = 0.20 * altStrategic + 0.20 * fairness + 0.20 * need + 0.20 * efficiency + 0.10 * 50;
     const altScore = Math.min(100, Math.max(0, altBase - penalty + exception));
-    counterfactuals.push({ label: 'Если бы племенное направление', delta: Math.round((altScore - score) * 10) / 10 });
+    counterfactuals.push({ label: 'Если бы приоритетный код субсидии', delta: Math.round((altScore - score) * 10) / 10 });
   }
   if (amount > 5_000_000) {
     const smallAmount = 3_000_000;

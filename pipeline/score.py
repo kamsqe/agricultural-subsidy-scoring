@@ -451,6 +451,10 @@ def run_scoring():
             "is_retry": app["is_retry"] == "True",
             "month": int(app["month"]),
             "anomaly_score": app.get("anomaly_score", 0),
+            # Oblast-level features (propagated for district aggregation)
+            "oblast_backlog_ratio": app.get("oblast_backlog_ratio", 0),
+            "oblast_approval_rate": app.get("oblast_approval_rate", 0),
+            "budget_per_applicant": app.get("budget_per_applicant", 0),
             **result,
         })
     
@@ -698,10 +702,10 @@ def save_results(scored, summary):
         json.dump(all_apps, f, ensure_ascii=False, indent=None)
     print(f"Saved: {apps_path} ({os.path.getsize(apps_path)/1e6:.1f} MB)")
     
-    # District aggregates for PreCheck (district → {reject_rate, top1_share, avg_score, count})
+    # District aggregates for PreCheck (district → {reject_rate, top1_share, avg_score, count, ...})
     district_agg = {}
     from collections import defaultdict as dd
-    d_data = dd(lambda: {"scores": [], "amounts": [], "count": 0, "rejected": 0})
+    d_data = dd(lambda: {"scores": [], "amounts": [], "count": 0, "rejected": 0, "oblast": ""})
     for s in scored:
         dk = s["district"]
         d_data[dk]["scores"].append(s["score"])
@@ -709,16 +713,33 @@ def save_results(scored, summary):
         d_data[dk]["count"] += 1
         if s["status"] == "Отклонена":
             d_data[dk]["rejected"] += 1
+        if not d_data[dk]["oblast"]:
+            d_data[dk]["oblast"] = s["oblast"]
+    
+    # Build oblast-level aggregates
+    oblast_agg = dd(lambda: {"backlog": 0, "approval_rate": 0, "budget_per_app": 0, "count": 0})
+    for s in scored:
+        ok = s["oblast"]
+        oblast_agg[ok]["count"] += 1
+        oblast_agg[ok]["backlog"] = float(s.get("oblast_backlog_ratio", 0))
+        oblast_agg[ok]["approval_rate"] = float(s.get("oblast_approval_rate", 0))
+        oblast_agg[ok]["budget_per_app"] = float(s.get("budget_per_applicant", 0))
     
     for dk, dd_val in d_data.items():
         total_amt = sum(dd_val["amounts"])
         max_amt = max(dd_val["amounts"]) if dd_val["amounts"] else 0
+        obl = dd_val["oblast"]
+        obl_data = oblast_agg.get(obl, {})
         district_agg[dk] = {
             "count": dd_val["count"],
             "avg_score": round(sum(dd_val["scores"]) / len(dd_val["scores"]), 1),
             "reject_rate": round(dd_val["rejected"] / dd_val["count"], 3) if dd_val["count"] > 0 else 0,
             "top1_share": round(max_amt / total_amt, 3) if total_amt > 0 else 0,
             "median_amount": round(sorted(dd_val["amounts"])[len(dd_val["amounts"]) // 2]),
+            # Oblast-level features for TypeScript engine alignment
+            "backlog_ratio": round(obl_data.get("backlog", 0), 4),
+            "approval_rate": round(obl_data.get("approval_rate", 0), 4),
+            "budget_per_applicant": round(obl_data.get("budget_per_app", 0)),
         }
     
     districts_path = os.path.join(frontend_dir, "districts.json")

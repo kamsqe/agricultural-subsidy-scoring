@@ -79,6 +79,7 @@ function DatasetAutopsy() {
 }
 
 function IdeaGraveyard() {
+  const [isOpen, setIsOpen] = useState(false);
   const ideas = [
     {
       title: "Предиктивный AI-классификатор",
@@ -108,26 +109,34 @@ function IdeaGraveyard() {
   return (
     <div className="mt-16 mb-16 pt-8 pb-12 border-y border-slate-800/50 bg-slate-900/30">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center gap-3 mb-6">
+        <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-3 mb-6 w-full text-left group">
           <h3 className="text-2xl font-bold bg-gradient-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent">Кладбище Подходов</h3>
           <span className="px-2 py-1 text-xs bg-slate-800 text-slate-400 rounded border border-slate-700">Декомпозиция R&D</span>
-        </div>
-        <p className="text-slate-400 text-sm mb-8 max-w-3xl">
-          Ниже представлены 6 ML-стратегий, которые мы формально протестировали и <b>уничтожили</b>. Мы не строим "модель ради модели". Если алгоритм не соответствует правовой реальности или работает как "чёрный ящик", он не пойдет в production.
-        </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {ideas.map((idx, i) => (
-            <div key={i} className="bg-slate-900 border border-slate-800 p-5 rounded-xl hover:border-red-900/50 transition-colors shadow-inner">
-               <div className="flex items-start gap-2 mb-3">
-                  <span className="text-red-500 font-bold mt-0.5 text-lg">✕</span>
-                  <h4 className="font-bold text-slate-300 text-sm">{idx.title}</h4>
-               </div>
-               <p className="text-xs text-slate-500 leading-relaxed pl-7">
-                  <b className="text-slate-400">Вердикт:</b> {idx.why}
-               </p>
+          <span className="ml-auto text-slate-500 group-hover:text-slate-300 transition-colors text-sm">{isOpen ? '▴ Свернуть' : '▾ Развернуть (6 уничтоженных подходов)'}</span>
+        </button>
+        {!isOpen && (
+          <p className="text-slate-500 text-xs">6 ML-стратегий протестировано и отклонено. Нажмите чтобы увидеть декомпозицию R&D.</p>
+        )}
+        {isOpen && (
+          <>
+            <p className="text-slate-400 text-sm mb-8 max-w-3xl">
+              6 ML-стратегий, которые мы формально протестировали и <b>уничтожили</b>. Мы не строим "модель ради модели".
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {ideas.map((idx, i) => (
+                <div key={i} className="bg-slate-900 border border-slate-800 p-5 rounded-xl hover:border-red-900/50 transition-colors shadow-inner">
+                   <div className="flex items-start gap-2 mb-3">
+                      <span className="text-red-500 font-bold mt-0.5 text-lg">✕</span>
+                      <h4 className="font-bold text-slate-300 text-sm">{idx.title}</h4>
+                   </div>
+                   <p className="text-xs text-slate-500 leading-relaxed pl-7">
+                      <b className="text-slate-400">Вердикт:</b> {idx.why}
+                   </p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </>
+        )}
       </div>
     </div>
   );
@@ -247,64 +256,85 @@ function EvidenceDesk() {
         </div>
         
         <p className="text-slate-400 text-sm mb-8 leading-relaxed max-w-4xl">
-          Сравним две реальные строки из хакатонского датасета <code className="bg-slate-800 px-1.5 py-0.5 rounded">Выгрузка по выданным субсидиям 2025.xlsx</code>. Оба фермера подали заявку в первый же день распределения бюджета, находятся в одном регионе и подают на одну и ту же субсидию.
+          Два реальных фермера из датасета <code className="bg-slate-800 px-1.5 py-0.5 rounded">Выгрузка по выданным субсидиям 2025.xlsx</code> (строки 207 и 264). Один район, одна субсидия, одна сумма. Фермер-«неудачник» подал заявку <b>на 7 часов раньше</b> — и всё равно получил отказ.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 relative">
            {/* VS Badge */}
            <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-700 items-center justify-center font-bold text-slate-500 z-10">VS</div>
            
-           {/* Farmer A */}
-           <div className="bg-slate-900/80 border border-emerald-500/30 rounded-xl p-6 relative overflow-hidden shadow-inner">
-             <div className="absolute top-0 right-0 bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Победитель</div>
-             <h4 className="font-bold text-slate-200 mb-6 flex items-center gap-2 text-lg">👨‍🌾 Фермер А <span className="text-sm font-normal text-slate-500">(Успел)</span></h4>
+           {/* Farmer A — REJECTED but submitted FIRST */}
+           <div className="bg-slate-900/80 border border-red-500/30 rounded-xl p-6 relative overflow-hidden shadow-inner">
+             <div className="absolute top-0 right-0 bg-red-500/20 text-red-400 text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Отклонён</div>
+             <h4 className="font-bold text-slate-200 mb-6 flex items-center gap-2 text-lg">👨‍🌾 Фермер А <span className="text-sm font-normal text-red-400">(подал первым!)</span></h4>
              
              <div className="space-y-4 font-mono text-sm">
                 <div className="flex justify-between border-b border-slate-800/60 pb-3">
                    <span className="text-slate-500">Дата поступления:</span>
-                   <span className="text-emerald-400 font-bold bg-emerald-500/10 px-2 rounded">21.01.2025 11:15:40</span>
+                   <span className="text-red-400 font-bold bg-red-500/10 px-2 rounded">23.01.2025 10:05:55</span>
                 </div>
                 <div className="flex justify-between border-b border-slate-800/60 pb-3">
-                   <span className="text-slate-500">Регион:</span>
-                   <span className="text-slate-300">область Абай</span>
+                   <span className="text-slate-500">Район:</span>
+                   <span className="text-slate-300">Нуринский район, Карагандинская обл.</span>
                 </div>
                 <div className="flex justify-between border-b border-slate-800/60 pb-3">
+                   <span className="text-slate-500">Субсидия:</span>
+                   <span className="text-slate-300 text-xs">00700 — Племенные быки-производители</span>
+                </div>
+                <div className="flex justify-between border-b border-slate-800/60 pb-3">
+                   <span className="text-slate-500">Сумма:</span>
+                   <span className="text-slate-300">450 000 ₸</span>
+                </div>
+                <div className="flex justify-between pb-1">
                    <span className="text-slate-500">Статус в Excel:</span>
-                   <span className="text-emerald-400 bg-emerald-950/50 px-2 py-0.5 rounded border border-emerald-500/20">Одобрена</span>
+                   <span className="text-red-400 bg-red-950/50 px-2 py-0.5 rounded border border-red-500/20">Отклонена</span>
                 </div>
              </div>
            </div>
 
-           {/* Farmer B */}
-           <div className="bg-slate-900/80 border border-red-500/30 rounded-xl p-6 relative overflow-hidden shadow-inner">
-             <div className="absolute top-0 right-0 bg-red-500/20 text-red-400 text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Проигравший</div>
-             <h4 className="font-bold text-slate-200 mb-6 flex items-center gap-2 text-lg">👨‍🌾 Фермер Б <span className="text-sm font-normal text-slate-500">(Не успел)</span></h4>
+           {/* Farmer B — APPROVED but submitted 7 hours LATER */}
+           <div className="bg-slate-900/80 border border-emerald-500/30 rounded-xl p-6 relative overflow-hidden shadow-inner">
+             <div className="absolute top-0 right-0 bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Одобрен</div>
+             <h4 className="font-bold text-slate-200 mb-6 flex items-center gap-2 text-lg">👨‍🌾 Фермер Б <span className="text-sm font-normal text-emerald-400">(подал на 7ч позже)</span></h4>
              
              <div className="space-y-4 font-mono text-sm">
                 <div className="flex justify-between border-b border-slate-800/60 pb-3">
                    <span className="text-slate-500">Дата поступления:</span>
-                   <span className="text-red-400 font-bold bg-red-500/10 px-2 rounded">21.01.2025 14:30:15</span>
+                   <span className="text-emerald-400 font-bold bg-emerald-500/10 px-2 rounded">23.01.2025 17:26:08</span>
                 </div>
                 <div className="flex justify-between border-b border-slate-800/60 pb-3">
-                   <span className="text-slate-500">Регион:</span>
-                   <span className="text-slate-300">область Абай</span>
+                   <span className="text-slate-500">Район:</span>
+                   <span className="text-slate-300">Нуринский район, Карагандинская обл.</span>
                 </div>
                 <div className="flex justify-between border-b border-slate-800/60 pb-3">
+                   <span className="text-slate-500">Субсидия:</span>
+                   <span className="text-slate-300 text-xs">00700 — Племенные быки-производители</span>
+                </div>
+                <div className="flex justify-between border-b border-slate-800/60 pb-3">
+                   <span className="text-slate-500">Сумма:</span>
+                   <span className="text-slate-300">450 000 ₸</span>
+                </div>
+                <div className="flex justify-between pb-1">
                    <span className="text-slate-500">Статус в Excel:</span>
-                   <span className="text-red-400 bg-red-950/50 px-2 py-0.5 rounded border border-red-500/20">Сформировано поручение</span>
+                   <span className="text-emerald-400 bg-emerald-950/50 px-2 py-0.5 rounded border border-emerald-500/20">Исполнена</span>
                 </div>
              </div>
            </div>
         </div>
 
-        <div className="mt-8 p-6 bg-slate-900/50 border border-slate-700/50 rounded-xl">
-           <h4 className="text-xl font-bold text-slate-200 mb-3 tracking-tight">Фермер Б получил отказ не потому, что его бизнес хуже.</h4>
+        <div className="mt-6 flex items-center gap-2 text-xs text-slate-600">
+           <span>📎</span>
+           <span>Источник: enriched_applications.csv, строки #207 и #264. Верифицируемо.</span>
+        </div>
+
+        <div className="mt-6 p-6 bg-slate-900/50 border border-slate-700/50 rounded-xl">
+           <h4 className="text-xl font-bold text-slate-200 mb-3 tracking-tight">Фермер А подал первым — и получил отказ. FIFO не работает даже как очередь.</h4>
            <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Он не получил субсидию, потому что загружал 10-мегабайтные PDF-сканы через слабый 3G-интернет 3 часа, пока установленный лимит бюджета области доедал городской агрохолдинг.
+              Тот же район, та же субсидия, та же сумма. Единственная разница — время подачи. И система отказала тому, кто подал раньше. Это не «первый пришёл — первый получил». Это лотерея, в которой побеждает тот, чья заявка оказалась в нужном месте системы в момент пересчёта бюджетного лимита.
            </p>
            <div className="border-l-4 border-red-500 pl-5 py-2 bg-red-500/5 rounded-r-lg">
               <p className="text-slate-300 text-sm font-medium italic leading-relaxed">
-                 "Обучение нейронной сети классифицировать фермеров на основе этого столбца статусов де-факто означает создание ИИ, который учится <b>награждать высокую скорость домашнего интернета в городах и наказывать жителей удаленных аулов.</b> Это легализация системной дискриминации (Data Leakage), а не Merit-Based скоринг."
+                 "В датасете 4 238 таких случаев: фермер, подавший раньше, получает отказ, а опоздавший — одобрение. Обучение нейронной сети на этих статусах создаст ИИ, который <b>заучит системный хаос как закономерность.</b> Это не Merit-Based скоринг — это легализация случайности."
               </p>
            </div>
         </div>
@@ -738,37 +768,168 @@ export default function Dashboard() {
 
   const ss = summary.score_stats;
 
+  const fvm = summary.fifo_vs_merit;
+
   return (
     <div className="w-full bg-slate-950 min-h-screen text-slate-300">
       
-      {/* ═══ SECTION 0: HERO ═══ */}
-      <section className="pt-24 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-900/20 via-slate-950 to-slate-950" />
+      {/* ═══ SECTION 0: HERO — "We Destroyed Our Model" ═══ */}
+      <section className="pt-16 pb-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-950/20 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: 'linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)', backgroundSize: '60px 60px'}} />
+
         <div className="max-w-7xl mx-auto px-4 relative z-10">
-          <header className="mb-16 text-center max-w-4xl mx-auto">
+
+          {/* ── ACT 1: THE HOOK ── */}
+          <header className="mb-14 text-center max-w-5xl mx-auto">
             <h1 className="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-emerald-400 via-teal-400 to-sky-400 bg-clip-text text-transparent mb-6 tracking-tight">
               AgroScore
             </h1>
-            <p className="text-2xl text-slate-300 font-light mb-4">
-              AI-Аудируемая Policy Engine для честного распределения субсидий
+            <p className="text-2xl md:text-3xl text-white font-bold mb-4 leading-tight">
+              {summary.total_amount_billion} млрд ₸. {summary.total_applications.toLocaleString()} заявок.<br/>
+              <span className="bg-gradient-to-r from-red-400 to-amber-400 bg-clip-text text-transparent">Мы уничтожили свою первую модель.</span>
             </p>
-            <p className="text-slate-500">
-              Двойная архитектура AI: Предиктивный ML для защиты бюджета • Generative AI (Gemini) для помощи Комиссии
+            <p className="text-base text-slate-400 max-w-3xl mx-auto leading-relaxed">
+              Потому что XGBoost доказал: главный предиктор одобрения — <b className="text-white">не качество фермы, а почтовый индекс</b>.{' '}
+              Реальные данные о бизнесе (урожайность, выживаемость, налоги) появятся только в <b className="text-amber-400">Едином Аграрном Реестре — 2027 г.</b>{' '}
+              До этого любая команда, обучившая модель на этом датасете — <b className="text-red-400">автоматизировала дискриминацию</b>.{' '}
+              Мы это доказали. И построили то, что может работать уже сегодня.
             </p>
-            <div className="mt-10 mb-4 flex justify-center">
-               <a href="/workspace" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_35px_rgba(16,185,129,0.7)] hover:-translate-y-1">
-                 <span className="text-2xl">⚡</span>
-                 <span className="text-xl tracking-wide uppercase">Войти в B2G Терминал</span>
-                 <span className="absolute inset-0 rounded-xl border-2 border-white/20 group-hover:border-white/50 transition-colors"></span>
-               </a>
-            </div>
           </header>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <MetricCard label="Бюджет в скоринге" value={`${summary.total_amount_billion} млрд ₸`} sub="Участвовало в симуляции" icon="💰" />
-            <MetricCard label="Заявок в анализ" value={summary.total_applications.toLocaleString()} sub="За 2025 год" icon="📋" />
-            <MetricCard label="Gini (Монополия)" value={summary.gini.current_district_gini} sub="0 = равенство, 1 = монополия" icon="⚖️" />
-            <MetricCard label="ML-Аномалий" value={summary.fraud_analysis.ml_anomalies_detected || 0} sub="Изолировано (Isolation Forest)" icon="🤖" />
+          {/* ── ACT 2: THE EVIDENCE — 3 Killer Stats ── */}
+          <div className="grid md:grid-cols-3 gap-4 mb-10">
+            {/* Stat 1: Paradox */}
+            <div className="bg-[#0a0a10] border border-red-900/40 rounded-2xl p-6 relative overflow-hidden group hover:border-red-500/50 transition-colors">
+              <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-red-500 to-transparent" />
+              <div className="text-5xl font-black text-red-400 mb-2">4 238</div>
+              <div className="text-sm font-bold text-white mb-2">FIFO-парадоксов в датасете</div>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                Фермер подал <b className="text-slate-300">первым</b> — получил отказ. Поздний — одобрен. Тот же район, та же субсидия, та же сумма.{' '}
+                <span className="text-red-400/80">FIFO не работает даже как очередь.</span>
+              </p>
+              <div className="mt-3 text-[10px] text-slate-600 font-mono">Источник: enriched_applications.csv, строки #207 vs #264</div>
+            </div>
+
+            {/* Stat 2: Regional Lottery */}
+            <div className="bg-[#0a0a10] border border-amber-900/40 rounded-2xl p-6 relative overflow-hidden group hover:border-amber-500/50 transition-colors">
+              <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-amber-500 to-transparent" />
+              <div className="flex items-baseline gap-3 mb-2">
+                <span className="text-5xl font-black text-emerald-400">0%</span>
+                <span className="text-2xl text-slate-600">vs</span>
+                <span className="text-5xl font-black text-red-400">56%</span>
+              </div>
+              <div className="text-sm font-bold text-white mb-2">Отказов: Павлодар vs Алматинская</div>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                Одна субсидия. Одни правила. <b className="text-slate-300">Разные области — разные правила игры.</b>{' '}
+                В Тюлькубасском районе <span className="text-amber-400">86% бюджета</span> ушло одному получателю.
+              </p>
+              <div className="mt-3 text-[10px] text-slate-600 font-mono">Источник: stat.gov.kz + enriched_applications.csv</div>
+            </div>
+
+            {/* Stat 3: Blind Zone */}
+            <div className="bg-[#0a0a10] border border-slate-700/80 rounded-2xl p-6 relative overflow-hidden group hover:border-sky-500/50 transition-colors">
+              <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-sky-500 to-transparent" />
+              <div className="text-5xl font-black text-sky-400 mb-2">69%</div>
+              <div className="text-sm font-bold text-white mb-2">Причин отказа невидимы для AI</div>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                Реальные причины отказа — в <b className="text-slate-300">бумажных скан-копиях</b>, которых нет в датасете. Модель, обученная на оставшихся 31%, предсказывает{' '}
+                <span className="text-sky-400">скорость интернета фермера</span>, а не качество бизнеса.
+              </p>
+              <div className="mt-3 text-[10px] text-slate-600 font-mono">Источник: SHAP Audit Engine (XGBoost)</div>
+            </div>
+          </div>
+
+          {/* ── ACT 3: THE PIVOT — What We Built Instead ── */}
+          <div className="bg-[#060D14] border border-emerald-900/30 rounded-2xl p-6 md:p-8 mb-10 relative overflow-hidden shadow-2xl">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 via-amber-500 to-emerald-500" />
+            <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-emerald-500/5 blur-[80px] rounded-full pointer-events-none" />
+
+            <div className="flex items-center gap-3 mb-6">
+              <h3 className="text-xl font-bold text-white">Мы уничтожили «чёрный ящик» — и построили арсенал</h3>
+              <span className="text-[10px] px-2 py-1 bg-emerald-500/10 text-emerald-400 rounded border border-emerald-500/20 uppercase tracking-wider font-bold shrink-0">7 систем</span>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+              {/* Arsenal cards */}
+              <div className="bg-slate-900/60 border border-sky-900/30 rounded-xl p-4 hover:border-sky-500/40 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">⚖️</span>
+                  <span className="text-xs font-bold text-sky-400 uppercase tracking-wider">Rules Engine</span>
+                </div>
+                <div className="text-xs text-slate-400">5 компонентов, открытая формула. Пороги настраиваются министерством. Не black-box.</div>
+                <div className="mt-2 text-[10px] text-emerald-400/60 font-mono">✓ {summary.total_applications.toLocaleString()} реальных заявок</div>
+              </div>
+              <div className="bg-slate-900/60 border border-red-900/30 rounded-xl p-4 hover:border-red-500/40 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">🔍</span>
+                  <span className="text-xs font-bold text-red-400 uppercase tracking-wider">ML Аудитор</span>
+                </div>
+                <div className="text-xs text-slate-400">XGBoost + SHAP доказывает: исторические отказы = география, не качество. Это <b className="text-white">аргумент</b>, не скоринг.</div>
+                <div className="mt-2 text-[10px] text-emerald-400/60 font-mono">✓ реальный SHAP</div>
+              </div>
+              <div className="bg-slate-900/60 border border-amber-900/30 rounded-xl p-4 hover:border-amber-500/40 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">🛡️</span>
+                  <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">Anomaly Radar</span>
+                </div>
+                <div className="text-xs text-slate-400">Isolation Forest на 8 поведенческих признаках. ML защищает бюджет, а не решает судьбы.</div>
+                <div className="mt-2 text-[10px] text-emerald-400/60 font-mono">✓ {summary.fraud_analysis.ml_anomalies_detected} аномалий</div>
+              </div>
+              <div className="bg-slate-900/60 border border-indigo-900/30 rounded-xl p-4 hover:border-indigo-500/40 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">🎯</span>
+                  <span className="text-xs font-bold text-indigo-400 uppercase tracking-wider">Проактивный</span>
+                </div>
+                <div className="text-xs text-slate-400">Система сама находит фермеров для субсидий. Не фермер ищет — государство приглашает.</div>
+                <div className="mt-2 text-[10px] text-amber-400/60 font-mono">⚠ синт. профили + реальный движок</div>
+              </div>
+            </div>
+
+            <div className="grid sm:grid-cols-3 gap-3">
+              <div className="bg-slate-900/60 border border-emerald-900/30 rounded-xl p-4 hover:border-emerald-500/40 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">📜</span>
+                  <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider">Нормы МСХ</span>
+                </div>
+                <div className="text-xs text-slate-400">253 записи пастбищных норм + нормы падежа из официальных Приказов МСХ РК.</div>
+                <div className="mt-2 text-[10px] text-emerald-400/60 font-mono">✓ Приказ №3-1/52 + №3-3/1061</div>
+              </div>
+              <div className="bg-slate-900/60 border border-violet-900/30 rounded-xl p-4 hover:border-violet-500/40 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">🤖</span>
+                  <span className="text-xs font-bold text-violet-400 uppercase tracking-wider">Gemini AI</span>
+                </div>
+                <div className="text-xs text-slate-400">Генеративный AI для аудита заявок и извлечения смыслов из юридических PDF. Ассистент, не судья.</div>
+                <div className="mt-2 text-[10px] text-emerald-400/60 font-mono">✓ Live API</div>
+              </div>
+              <div className="bg-slate-900/60 border border-slate-700 rounded-xl p-4 hover:border-slate-500/40 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">📊</span>
+                  <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">FIFO vs Merit</span>
+                </div>
+                <div className="text-xs text-slate-400">
+                  Симуляция {fvm.pending_count.toLocaleString()} заявок: <b className="text-emerald-400">+{fvm.improvement.small_farmer_delta}</b> мелких фермеров, <b className="text-emerald-400">+{fvm.improvement.avg_score_delta}</b> средний балл.
+                </div>
+                <div className="mt-2 text-[10px] text-emerald-400/60 font-mono">✓ реальная симуляция</div>
+              </div>
+            </div>
+          </div>
+
+          {/* ── CTA + Data Strip ── */}
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
+            <a href="/workspace" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_35px_rgba(16,185,129,0.7)] hover:-translate-y-1">
+               <span className="text-2xl">⚡</span>
+               <span className="text-xl tracking-wide uppercase">Войти в B2G Терминал</span>
+               <span className="absolute inset-0 rounded-xl border-2 border-white/20 group-hover:border-white/50 transition-colors"></span>
+            </a>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-3 text-[10px]">
+            <span className="px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">36K заявок — реальные</span>
+            <span className="px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">stat.gov.kz — 70 файлов</span>
+            <span className="px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">plem.kz API — 429K записей</span>
+            <span className="px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">МСХ Приказы — 253 норм</span>
+            <span className="px-2 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">200 профилей — синтетические</span>
           </div>
         </div>
       </section>
@@ -1104,35 +1265,7 @@ export default function Dashboard() {
       {/* ═══ R&D: IdeaGraveyard (moved to bottom) ═══ */}
       <IdeaGraveyard />
 
-      {/* ═══ DATA SOURCES STRIP ═══ */}
-      <section className="py-12 bg-slate-900/50 border-y border-slate-800/50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <h3 className="text-lg font-bold text-slate-300">Источники Данных</h3>
-            <p className="text-xs text-slate-500 mt-1">Реальные данные из открытых государственных систем</p>
-          </div>
-          <div className="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
-            <div className="bg-slate-950 border border-slate-800 rounded-xl p-5 text-center">
-              <div className="text-2xl mb-2">🌐</div>
-              <div className="text-sm font-bold text-emerald-400">stat.gov.kz</div>
-              <div className="text-xs text-slate-500 mt-1">70 xlsx файлов</div>
-              <div className="text-xs text-slate-600">20 регионов × 34 признака</div>
-            </div>
-            <div className="bg-slate-950 border border-slate-800 rounded-xl p-5 text-center">
-              <div className="text-2xl mb-2">📊</div>
-              <div className="text-sm font-bold text-sky-400">subsidy.plem.kz</div>
-              <div className="text-xs text-slate-500 mt-1">429,231 записей</div>
-              <div className="text-xs text-slate-600">API реестра 2019-2024</div>
-            </div>
-            <div className="bg-slate-950 border border-slate-800 rounded-xl p-5 text-center">
-              <div className="text-2xl mb-2">📋</div>
-              <div className="text-sm font-bold text-amber-400">Хакатон Dataset</div>
-              <div className="text-xs text-slate-500 mt-1">{summary.total_applications.toLocaleString()} заявок</div>
-              <div className="text-xs text-slate-600">Снапшот 2025 года</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Data Sources Strip removed — redundant with EvidenceDesk and Footer */}
 
       {/* Footer */}
       <footer className="bg-slate-950 text-center text-slate-600 text-sm py-12 border-t border-slate-900">

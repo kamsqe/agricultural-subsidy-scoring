@@ -43,11 +43,28 @@ interface EligibilityCluster {
 }
 
 interface AgroNorms {
-  pasture_load: Record<string, { default: number; steppe?: number; irrigated?: number; unit: string }>;
-  mortality_norms_pct: Record<string, number>;
+  pasture_load_fallback: Record<string, { default: number; unit: string }>;
+  mortality_norms_pct: Record<string, any>;
   milk_yield_liters_per_day: Record<string, number>;
   infrastructure: Record<string, number>;
   subsidy_eligibility: Record<string, EligibilityCluster>;
+}
+
+interface OblastMedians {
+  cattle: number;
+  sheep: number;
+  horses: number;
+  camels: number;
+  cattle_range: [number, number];
+  sheep_range: [number, number];
+  count: number;
+}
+
+interface PastureNormsData {
+  source: string;
+  url: string;
+  total_rows: number;
+  oblast_medians: Record<string, OblastMedians>;
 }
 
 interface Recommendation {
@@ -69,20 +86,61 @@ interface Recommendation {
 
 type RecAction = 'new' | 'invited' | 'dismissed';
 
+function normalizeOblast(oblast: string): string {
+  return oblast
+    .replace(/\s*область$/i, '')
+    .replace(/^область\s*/i, '')
+    .replace(/^г\./, '')
+    .trim();
+}
+
 // ── Capacity Analysis ────────────────────────────────────────────────
 
-function computeCapacity(profile: FarmerProfile, norms: AgroNorms) {
+function getOblastPastureNorms(
+  profile: FarmerProfile,
+  pastureData: PastureNormsData | null,
+  norms: AgroNorms,
+): { cattle: number; sheep: number; horses: number; camels: number; source: string; range?: [number, number] } {
+  const fb = norms.pasture_load_fallback;
+  const fallback = {
+    cattle: fb.cattle?.default || 10, sheep: fb.sheep?.default || 2,
+    horses: fb.horses?.default || 12, camels: fb.camels?.default || 14,
+    source: 'fallback (общенациональный)', range: undefined as [number, number] | undefined,
+  };
+  if (!pastureData) return fallback;
+
+  const norm = normalizeOblast(profile.oblast);
+  const medians = pastureData.oblast_medians;
+  const key = Object.keys(medians).find(k => k === norm || normalizeOblast(k) === norm);
+  if (!key) return fallback;
+
+  const m = medians[key];
+  return { cattle: m.cattle, sheep: m.sheep, horses: m.horses, camels: m.camels, source: `Приказ МСХ №3-1/52, ${key} (${m.count} зон)`, range: m.cattle_range };
+}
+
+function getAdultMortalityNorm(norms: AgroNorms, ls: FarmerProfile['livestock']): number {
+  const mn = norms.mortality_norms_pct;
+  if (ls.cattle > ls.sheep && ls.cattle > ls.poultry) return mn.cattle_dairy?.adult || mn.cattle_meat?.adult || 3;
+  if (ls.sheep > ls.cattle && ls.sheep > ls.poultry) return mn.sheep?.adult || 3;
+  if (ls.poultry > ls.cattle && ls.poultry > ls.sheep) return typeof mn.poultry_meat === 'number' ? mn.poultry_meat : 7.5;
+  if (ls.horses > ls.cattle) return mn.horses_pasture?.foals_to_weaning || 2.3;
+  if (ls.pigs > ls.cattle) return mn.pigs?.fattening || 1;
+  return mn.cattle_dairy?.adult || 3;
+}
+
+function computeCapacity(profile: FarmerProfile, norms: AgroNorms, pastureData: PastureNormsData | null) {
   const ls = profile.livestock;
-  const pl = norms.pasture_load;
+  const pn = getOblastPastureNorms(profile, pastureData, norms);
+  const fb = norms.pasture_load_fallback;
 
   const landUsed =
-    ls.cattle * (pl.cattle?.default || 3) +
-    ls.sheep * (pl.sheep?.default || 0.5) +
-    ls.goats * (pl.goats?.default || 0.6) +
-    ls.horses * (pl.horses?.default || 4) +
-    ls.camels * (pl.camels?.default || 6) +
-    ls.poultry * (pl.poultry?.default || 0.005) +
-    ls.pigs * (pl.pigs?.default || 0.02);
+    ls.cattle * pn.cattle +
+    ls.sheep * pn.sheep +
+    ls.goats * pn.sheep +
+    ls.horses * pn.horses +
+    ls.camels * pn.camels +
+    ls.poultry * (fb.poultry?.default || 0.005) +
+    ls.pigs * (fb.pigs?.default || 0.02);
 
   const landUtilization = profile.pasture_hectares > 0
     ? Math.round((landUsed / profile.pasture_hectares) * 100)
@@ -100,19 +158,17 @@ function computeCapacity(profile: FarmerProfile, norms: AgroNorms) {
     ? profile.infrastructure.feed_storage_tons / feedNeeded
     : 1;
 
-  const mortalityNorm = (() => {
-    if (ls.cattle > ls.sheep && ls.cattle > ls.poultry) return norms.mortality_norms_pct.cattle || 3;
-    if (ls.sheep > ls.cattle && ls.sheep > ls.poultry) return norms.mortality_norms_pct.sheep || 5;
-    if (ls.poultry > ls.cattle && ls.poultry > ls.sheep) return norms.mortality_norms_pct.poultry || 10;
-    return 3;
-  })();
+  const mortalityNorm = getAdultMortalityNorm(norms, ls);
   const mortalityAboveNorm = profile.mortality_rate_pct > mortalityNorm;
 
   const warnings: string[] = [];
-  if (landUtilization > 100) warnings.push(`Пастбища перегружены: ${landUtilization}% использования (норма ≤100%)`);
+  if (landUtilization > 100) {
+    const rangeStr = pn.range ? ` (диапазон ${pn.range[0]}–${pn.range[1]} га/гол по зонам)` : '';
+    warnings.push(`Пастбища перегружены: ${landUtilization}% использования${rangeStr}`);
+  }
   if (housingRatio < 0.8) warnings.push(`Недостаток помещений: ${Math.round(housingRatio * 100)}% от нормы (мин. 80%)`);
   if (feedRatio < 0.8) warnings.push(`Запасы кормов: ${Math.round(feedRatio * 100)}% от потребности на зиму`);
-  if (mortalityAboveNorm) warnings.push(`Падёж ${profile.mortality_rate_pct}% выше нормы ${mortalityNorm}%`);
+  if (mortalityAboveNorm) warnings.push(`Падёж ${profile.mortality_rate_pct}% выше нормы ${mortalityNorm}% (Приказ МСХ №3-3/1061)`);
   if (ls.dairy_cows >= 10 && !profile.infrastructure.milking_equipment) {
     warnings.push('Нет доильного оборудования при ≥10 дойных коровах');
   }
@@ -126,6 +182,7 @@ function computeCapacity(profile: FarmerProfile, norms: AgroNorms) {
     mortalityNorm,
     warnings,
     freeHectares: Math.max(0, Math.round(profile.pasture_hectares - landUsed)),
+    pastureSource: pn.source,
   };
 }
 
@@ -137,12 +194,13 @@ function checkEligibility(
   codeData: Record<string, SubsidyCode>,
   districtData: Record<string, DistrictInfo>,
   allScores: number[],
+  pastureData: PastureNormsData | null = null,
 ): Recommendation[] {
   const ls = profile.livestock;
   const infra = profile.infrastructure;
   const totalLivestock = ls.cattle + ls.sheep + ls.goats + ls.horses + ls.camels + ls.poultry + ls.pigs;
 
-  const capacity = computeCapacity(profile, norms);
+  const capacity = computeCapacity(profile, norms, pastureData);
   const recommendations: Recommendation[] = [];
 
   for (const [clusterKey, cluster] of Object.entries(norms.subsidy_eligibility)) {
@@ -358,6 +416,18 @@ function MethodologyPanel({ show }: { show: boolean }) {
               <span className="text-slate-600">— нормы субсидий</span>
               <span className="text-[9px] bg-emerald-500/10 text-emerald-400 px-1 py-0.5 rounded ml-auto">реальные</span>
             </div>
+            <div className="flex items-center gap-2">
+              <span className="w-5 h-5 rounded bg-sky-500/20 flex items-center justify-center text-[10px]">🌾</span>
+              <span className="text-slate-300">Приказ МСХ №3-1/52</span>
+              <span className="text-slate-600">— нормы пастбищ (253 записи)</span>
+              <span className="text-[9px] bg-emerald-500/10 text-emerald-400 px-1 py-0.5 rounded ml-auto">реальные</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-5 h-5 rounded bg-sky-500/20 flex items-center justify-center text-[10px]">📉</span>
+              <span className="text-slate-300">Приказ МСХ №3-3/1061</span>
+              <span className="text-slate-600">— нормы падежа</span>
+              <span className="text-[9px] bg-emerald-500/10 text-emerald-400 px-1 py-0.5 rounded ml-auto">реальные</span>
+            </div>
           </div>
         </div>
         <div>
@@ -369,7 +439,7 @@ function MethodologyPanel({ show }: { show: boolean }) {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-[10px] font-bold shrink-0">2</span>
-              <span>Для каждого: <span className="text-white">агронормы КЗ</span> → проверка мощностей</span>
+              <span>Для каждого: <span className="text-white">нормы МСХ по области</span> → проверка мощностей</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-[10px] font-bold shrink-0">3</span>
@@ -396,6 +466,7 @@ function MethodologyPanel({ show }: { show: boolean }) {
 export default function ProactiveFinder() {
   const [profiles, setProfiles] = useState<FarmerProfile[]>([]);
   const [norms, setNorms] = useState<AgroNorms | null>(null);
+  const [pastureNorms, setPastureNorms] = useState<PastureNormsData | null>(null);
   const [districtData, setDistrictData] = useState<Record<string, DistrictInfo>>({});
   const [codeData, setCodeData] = useState<Record<string, SubsidyCode>>({});
   const [allScores, setAllScores] = useState<number[]>([]);
@@ -415,9 +486,11 @@ export default function ProactiveFinder() {
       fetch('/data/districts.json').then(r => r.json()),
       fetch('/data/subsidy_codes.json').then(r => r.json()),
       fetch('/data/scoring_summary.json').then(r => r.json()),
-    ]).then(([profs, nrms, districts, codes, summary]) => {
+      fetch('/data/pasture_norms_official.json').then(r => r.json()).catch(() => null),
+    ]).then(([profs, nrms, districts, codes, summary, pastureData]) => {
       setProfiles(profs);
       setNorms(nrms);
+      setPastureNorms(pastureData as PastureNormsData | null);
       setDistrictData(districts);
       setCodeData(codes);
       const hist = summary.score_distribution as Record<string, number>;
@@ -455,13 +528,13 @@ export default function ProactiveFinder() {
 
   const recommendations = useMemo(() => {
     if (!selectedProfile || !norms) return [];
-    return checkEligibility(selectedProfile, norms, codeData, districtData, allScores);
-  }, [selectedProfile, norms, codeData, districtData, allScores]);
+    return checkEligibility(selectedProfile, norms, codeData, districtData, allScores, pastureNorms);
+  }, [selectedProfile, norms, codeData, districtData, allScores, pastureNorms]);
 
   const capacity = useMemo(() => {
     if (!selectedProfile || !norms) return null;
-    return computeCapacity(selectedProfile, norms);
-  }, [selectedProfile, norms]);
+    return computeCapacity(selectedProfile, norms, pastureNorms);
+  }, [selectedProfile, norms, pastureNorms]);
 
   const eligibleRecs = useMemo(() => recommendations.filter(r => r.eligible), [recommendations]);
   const ineligibleRecs = useMemo(() => recommendations.filter(r => !r.eligible), [recommendations]);
@@ -594,6 +667,11 @@ export default function ProactiveFinder() {
                 <span className="text-slate-500">Свободные пастбища:</span>
                 <span className={`font-mono font-medium ${capacity.freeHectares > 0 ? 'text-emerald-400' : 'text-red-400'}`}>{capacity.freeHectares} га</span>
               </div>
+              {capacity.pastureSource && (
+                <div className="mt-1 text-[10px] text-slate-600 truncate" title={capacity.pastureSource}>
+                  Норма: {capacity.pastureSource}
+                </div>
+              )}
               {capacity.warnings.length > 0 && (
                 <div className="mt-3 space-y-1">
                   {capacity.warnings.map((w, i) => (

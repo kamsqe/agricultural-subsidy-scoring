@@ -142,6 +142,59 @@ ML Аномалия: ${appData.ano}%
         </div>
       )}
 
+      {/* AI Case Narrative */}
+      {appData && (
+        <div className="mb-4 p-3 bg-sky-950/30 border border-sky-900/30 rounded-lg relative z-10">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-4 h-4 rounded-full bg-sky-500/20 flex items-center justify-center">
+              <span className="text-sky-400 text-[8px]">AI</span>
+            </div>
+            <span className="text-[10px] text-sky-400/80 uppercase tracking-wider font-bold">Резюме заявки</span>
+          </div>
+          <p className="text-xs text-slate-300 leading-relaxed">
+            {(() => {
+              const obl = appData.o.replace('область', 'обл.').replace('Казахстанская', 'Каз.').trim();
+              const amt = (appData.amt / 1e6).toFixed(1);
+              const topPct = appData.p;
+              const parts: string[] = [];
+
+              // Line 1: Identity
+              parts.push(`Заявка №${appData.r} — ${appData.cat} из ${appData.d}, ${obl}. Сумма ${amt}М ₸.`);
+
+              // Line 2: Score analysis
+              if (appData.t === 'A') {
+                parts.push(`Impact Score ${appData.s.toFixed(1)} (TOP ${topPct}%) — приоритет «Fast-track». Стратегическое соответствие ${appData.sc}/100, справедливость ${appData.fc}/100.`);
+              } else if (appData.t === 'D') {
+                const worstComponent = [
+                  { name: 'стратегическое соответствие', val: appData.sc },
+                  { name: 'справедливость', val: appData.fc },
+                  { name: 'региональная нужда', val: appData.nc },
+                  { name: 'эффективность', val: appData.ec },
+                ].sort((a, b) => a.val - b.val)[0];
+                parts.push(`Impact Score ${appData.s.toFixed(1)} — класс D (отклонение). Слабейший компонент: ${worstComponent.name} (${worstComponent.val}/100).`);
+              } else {
+                parts.push(`Impact Score ${appData.s.toFixed(1)} (${topPct}%) — класс ${appData.t}. Стратегия ${appData.sc}, справедливость ${appData.fc}, нужда ${appData.nc}, эффективность ${appData.ec}.`);
+              }
+
+              // Line 3: Risk + recommendation
+              if (appData.ano > 70) {
+                parts.push(`⚠ ML-аномалия ${appData.ano}% — рекомендуется глубокий аудит комиссией.`);
+              } else if (appData.fr > 40) {
+                parts.push(`Повышенный Fraud Risk (${appData.fr}). Требуется проверка целевого использования.`);
+              } else if (appData.retry > 2) {
+                parts.push(`${appData.retry} повторных подач — поведенческий маркер. Проверить историю заявок.`);
+              } else if (appData.t === 'A') {
+                parts.push(`Рекомендация: одобрение в приоритетном порядке.`);
+              } else {
+                parts.push(`Стандартная верификация. Аномалий не выявлено.`);
+              }
+
+              return parts.join(' ');
+            })()}
+          </p>
+        </div>
+      )}
+
       <div className={`grid gap-6 relative z-10 flex-1 overflow-auto ${minimal ? 'grid-cols-1' : 'lg:grid-cols-[1fr_1.5fr_1fr]'}`}>
         {/* Left: Applicant Profile */}
         <div className="bg-[#111827] border border-slate-800 rounded-xl p-5 shadow-inner flex flex-col shrink-0">
@@ -279,7 +332,11 @@ ML Аномалия: ${appData.ano}%
       </div>
 
       {/* Action Buttons (Workflow) */}
-      <div className="mt-6 pt-5 border-t border-slate-800 flex gap-3">
+      <div className="mt-4 flex items-center gap-2 text-[10px] text-slate-600">
+        <span>⚠️</span>
+        <span>Демо-режим: действия не сохраняются. Требуется интеграция с ГИСС для production.</span>
+      </div>
+      <div className="mt-2 pt-4 border-t border-slate-800 flex gap-3">
         <button 
           onClick={() => setModalConfig({
             type: 'approve',
@@ -288,7 +345,7 @@ ML Аномалия: ${appData.ano}%
           })}
           className="flex-1 bg-emerald-600/20 hover:bg-emerald-500 border border-emerald-500/50 hover:border-emerald-400 text-emerald-400 hover:text-white text-sm font-bold py-2.5 px-4 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2"
         >
-          Одобрить транш
+          Одобрить транш <span className="text-[9px] opacity-60">(демо)</span>
         </button>
         {appData.fr > 50 || appData.ano > 70 ? (
           <button 
@@ -299,7 +356,7 @@ ML Аномалия: ${appData.ano}%
             })}
             className="flex-1 bg-amber-600/20 hover:bg-amber-500 border border-amber-500/50 hover:border-amber-400 text-amber-400 hover:text-white text-sm font-bold py-2.5 px-4 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2"
           >
-            Назначить Комиссию
+            Назначить Комиссию <span className="text-[9px] opacity-60">(демо)</span>
           </button>
         ) : (
           <button 
@@ -310,7 +367,7 @@ ML Аномалия: ${appData.ano}%
             })}
             className="flex-1 bg-red-950/30 hover:bg-red-900 border border-red-900/50 hover:border-red-500 text-red-500 hover:text-red-100 text-sm font-bold py-2.5 px-4 rounded-lg transition-all flex items-center justify-center gap-2"
           >
-            Отклонить заявку
+            Отклонить заявку <span className="text-[9px] opacity-60">(демо)</span>
           </button>
         )}
       </div>

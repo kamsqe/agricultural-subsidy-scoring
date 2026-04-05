@@ -29,3 +29,4 @@ agroscore/public/data/all_apps.json
 node_modules/
 agroscore/node_modules/
 agroscore/dist/
+.windsurf/

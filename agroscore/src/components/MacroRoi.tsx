@@ -1,4 +1,30 @@
+import { useState, useEffect } from 'react';
+
+interface FifoVsMerit {
+  pending_count: number;
+  fifo: { avg_score: number; small_farmer_count: number; total_amount: number };
+  merit: { avg_score: number; small_farmer_count: number; total_amount: number };
+  improvement: { avg_score_delta: number; small_farmer_delta: number };
+}
+
 export default function MacroRoi() {
+  const [data, setData] = useState<FifoVsMerit | null>(null);
+
+  useEffect(() => {
+    fetch('/data/scoring_summary.json')
+      .then(r => r.json())
+      .then(d => setData(d.fifo_vs_merit))
+      .catch(console.error);
+  }, []);
+
+  const ratio = data
+    ? (data.fifo.total_amount / Math.max(data.merit.total_amount, 1)).toFixed(1)
+    : '—';
+  const smallDelta = data ? `+${data.improvement.small_farmer_delta}` : '—';
+  const fifoB = data ? (data.fifo.total_amount / 1e9).toFixed(2) : '—';
+  const meritB = data ? (data.merit.total_amount / 1e9).toFixed(2) : '—';
+  const pendingCount = data ? data.pending_count.toLocaleString() : '—';
+
   return (
     <section className="py-24 relative overflow-hidden bg-[#020617] border-t border-slate-800/50">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-emerald-900/20 via-[#020617] to-[#020617]" />
@@ -29,11 +55,11 @@ export default function MacroRoi() {
               </div>
               <div className="space-y-1 mb-4">
                 <div className="text-5xl md:text-6xl font-black text-amber-400 drop-shadow-[0_0_15px_rgba(245,158,11,0.3)] tracking-tighter">
-                  3.9<span className="text-3xl">x</span>
+                  {ratio}<span className="text-3xl">x</span>
                 </div>
               </div>
               <p className="text-slate-300 text-lg leading-relaxed">
-                Эффективнее расход бюджета: merit-based тратит 2.22 млрд ₸ вместо 8.76 млрд ₸ при FIFO для того же числа одобренных заявок.
+                Эффективнее расход бюджета: merit-based тратит {meritB} млрд ₸ вместо {fifoB} млрд ₸ при FIFO для того же числа одобренных заявок.
               </p>
             </div>
           </div>
@@ -50,12 +76,12 @@ export default function MacroRoi() {
               </div>
               <div className="space-y-1 mb-4">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl md:text-6xl font-black text-emerald-400 drop-shadow-[0_0_15px_rgba(16,185,129,0.3)] tracking-tighter">+93</span>
+                  <span className="text-5xl md:text-6xl font-black text-emerald-400 drop-shadow-[0_0_15px_rgba(16,185,129,0.3)] tracking-tighter">{smallDelta}</span>
                   <span className="text-2xl text-emerald-500/70 font-bold">фермеров</span>
                 </div>
               </div>
               <p className="text-slate-300 text-lg leading-relaxed">
-                Дополнительных малых хозяйств попадают в финансирование при переключении с FIFO на merit-based (симуляция на 2,854 заявках).
+                Дополнительных малых хозяйств попадают в финансирование при переключении с FIFO на merit-based (симуляция на {pendingCount} заявках).
               </p>
             </div>
           </div>
@@ -64,7 +90,7 @@ export default function MacroRoi() {
         <div className="mt-16 flex justify-center">
             <div className="inline-flex items-center gap-3 px-6 py-3 bg-slate-900 border border-slate-800 rounded-full shadow-lg">
                <span className="w-3 h-3 rounded-full bg-sky-500 animate-pulse" />
-               <span className="text-slate-300 text-sm font-mono">Прототип | Расчёт на реальных данных 2025</span>
+               <span className="text-slate-300 text-sm font-mono">Прототип | Расчёт на реальных данных 2025 | scoring_summary.json</span>
             </div>
         </div>
       </div>

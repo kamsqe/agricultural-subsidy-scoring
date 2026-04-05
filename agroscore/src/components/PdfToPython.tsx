@@ -79,7 +79,7 @@ export default function PdfToPython() {
           <button 
             onClick={handleConvert}
             disabled={isProcessing}
-            className="mt-4 w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2 rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+            className="mt-4 w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 shadow-[0_0_15px_rgba(99,102,241,0.3)] hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] text-sm"
           >
             {isProcessing ? <span className="animate-spin">⚙️</span> : <span>✨</span>}
             Транслировать в Policy JSON

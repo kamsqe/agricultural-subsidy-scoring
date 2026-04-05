@@ -1,21 +1,29 @@
 {
-  "pasture_load": {
-    "cattle":  { "steppe": 4.0, "irrigated": 1.8, "default": 3.0, "unit": "ha/head" },
-    "sheep":   { "steppe": 0.8, "irrigated": 0.3, "default": 0.5, "unit": "ha/head" },
-    "goats":   { "default": 0.6, "unit": "ha/head" },
-    "horses":  { "steppe": 5.0, "irrigated": 2.5, "default": 4.0, "unit": "ha/head" },
-    "camels":  { "default": 6.0, "unit": "ha/head" },
+  "pasture_load_fallback": {
+    "_note": "Упрощённый fallback. Реальные нормы — pasture_norms_official.json (Приказ МСХ РК №3-1/52 от 30.01.2015, ред. №394 от 09.12.2024)",
+    "cattle":  { "default": 10.0, "unit": "ha/head" },
+    "sheep":   { "default": 2.0, "unit": "ha/head" },
+    "goats":   { "default": 2.0, "unit": "ha/head" },
+    "horses":  { "default": 12.0, "unit": "ha/head" },
+    "camels":  { "default": 14.0, "unit": "ha/head" },
     "poultry": { "default": 0.005, "unit": "ha/head" },
     "pigs":    { "default": 0.02, "unit": "ha/head" }
   },
   "mortality_norms_pct": {
-    "cattle": 3.0,
-    "sheep": 5.0,
-    "goats": 5.0,
-    "horses": 2.0,
-    "camels": 2.0,
-    "poultry": 10.0,
-    "pigs": 4.0
+    "_source": "Приказ МСХ РК №3-3/1061 от 03.12.2015 (https://adilet.zan.kz/rus/docs/V1500012488)",
+    "cattle_dairy": { "adult": 3.0, "calves_0_20d": 3.5, "calves_20d_6m": 2.5, "young_6_12m": 1.0, "young_12_20m": 0.4, "fattening": 0.4 },
+    "cattle_meat": { "adult": 2.0, "calves_to_weaning": 2.0, "young_fattening": 2.0, "young_remont": 1.5 },
+    "cattle_import": { "air": 2.5, "road_2000km": 5.0, "sea_road": 7.5 },
+    "sheep": { "adult": 3.0, "lambs_to_weaning": 5.0, "young_to_18m": 2.0, "fattening": 1.0 },
+    "goats": { "adult": 3.0, "kids_to_weaning": 5.0, "young_to_18m": 2.0, "fattening": 1.0 },
+    "horses_pasture": { "foals_to_weaning": 2.3, "young_to_1_5y": 2.7, "young_1_5_3y": 2.1 },
+    "horses_stable": { "foals_to_weaning": 0.3, "young_to_1_5y": 0.2, "young_1_5_3y": 0.2 },
+    "camels": { "calves_to_15m": 6.0, "females_to_2y": 1.7, "males_to_2y": 2.7, "females_2_3y": 0.9, "males_2_3y": 0.6 },
+    "pigs": { "piglets_suckling": 12.5, "piglets_growing": 5.2, "fattening": 1.0 },
+    "poultry_meat": 7.5,
+    "poultry_egg": 7.5,
+    "rabbits": { "young": 27.0, "adult": 0.65 },
+    "maral": { "calves_female": 4.5, "calves_male": 5.3, "young_female": 6.2, "young_male": 6.0, "adult_male": 2.0, "adult_female": 2.1 }
   },
   "milk_yield_liters_per_day": {
     "local_cow": 14,

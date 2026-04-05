@@ -129,10 +129,10 @@ export default function PreCheck() {
     <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
       <div className="flex items-start justify-between mb-2">
         <div>
-          <h3 className="text-lg font-semibold">Pre-Check: Проверь свою заявку</h3>
-          <p className="text-slate-400 text-sm">Заполните форму как в ГИСС — получите предварительный балл и рекомендации</p>
+          <h3 className="text-lg font-semibold">Pre-Check: Консультация до подачи</h3>
+          <p className="text-slate-400 text-sm">Инструмент специалиста УСХ — введите параметры заявки фермера и покажите предварительный балл до подачи в ГИСС</p>
         </div>
-        <span className="text-xs bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded">Зеркало ГИСС</span>
+        <span className="text-xs bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded">Для специалиста УСХ</span>
       </div>
 
       <div className="grid md:grid-cols-3 gap-4 mt-5 mb-5">
@@ -239,7 +239,7 @@ export default function PreCheck() {
       })()}
 
       <button onClick={handleCalculate} className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2.5 rounded-lg transition mb-5">
-        Рассчитать Impact Score
+        Рассчитать прогноз (Pre-Check)
       </button>
 
       {result && (

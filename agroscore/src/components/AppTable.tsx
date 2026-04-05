@@ -132,6 +132,35 @@ export default function AppTable({ onRowClick, selectedAppId }: AppTableProps = 
         </div>
       </div>
 
+      {/* Smart Filter Presets */}
+      <div className="flex flex-wrap gap-2 mb-3">
+        <button
+          onClick={() => { resetFilters(); setTriageFilter('D'); setPage(0); }}
+          className={`text-xs px-3 py-1.5 rounded-lg font-bold transition-colors border ${triageFilter === 'D' && !oblastFilter && !statusFilter ? 'bg-red-500/20 text-red-400 border-red-500/30' : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:border-red-500/30 hover:text-red-400'}`}
+        >
+          🔴 Срочные (D) — {apps.filter(a => a.t === 'D').length}
+        </button>
+        <button
+          onClick={() => { resetFilters(); setTriageFilter('C'); setPage(0); }}
+          className={`text-xs px-3 py-1.5 rounded-lg font-bold transition-colors border ${triageFilter === 'C' && !oblastFilter && !statusFilter ? 'bg-amber-500/20 text-amber-400 border-amber-500/30' : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:border-amber-500/30 hover:text-amber-400'}`}
+        >
+          ⚠ К аудиту (C) — {apps.filter(a => a.t === 'C').length.toLocaleString()}
+        </button>
+        <button
+          onClick={() => { resetFilters(); setTriageFilter('A'); setPage(0); }}
+          className={`text-xs px-3 py-1.5 rounded-lg font-bold transition-colors border ${triageFilter === 'A' && !oblastFilter && !statusFilter ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:border-emerald-500/30 hover:text-emerald-400'}`}
+        >
+          ⭐ Fast-track (A) — {apps.filter(a => a.t === 'A').length.toLocaleString()}
+        </button>
+        <button
+          onClick={() => { resetFilters(); setScoreMin(0); setScoreMax(100); setPage(0); /* filter retry>3 done via search */ setSearch(''); }}
+          className="text-xs px-3 py-1.5 rounded-lg font-bold bg-slate-800/50 text-slate-400 border border-slate-700 hover:border-violet-500/30 hover:text-violet-400 transition-colors"
+          title="Показать заявки с retry > 0"
+        >
+          🔁 Повторные — {apps.filter(a => a.retry > 0).length.toLocaleString()}
+        </button>
+      </div>
+
       {/* Filters */}
       <div className="grid grid-cols-2 md:grid-cols-6 gap-2 mb-4">
         <input
